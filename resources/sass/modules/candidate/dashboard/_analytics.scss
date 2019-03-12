@@ -1,0 +1,28 @@
+/**/
+#candidate_analytics_page {
+  .candidate-analytics-tab {
+    a {
+      background-color: $sky !important;
+      border-top: 1px solid $sky;
+      border-left: 1px solid $sky;
+      border-right: 1px solid $sky;
+      color: #fff !important;
+      padding: 10px;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+        color: $sky;
+      }
+    }
+
+    &.active {
+      a {
+        background-color: #fff !important;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        color: $gray !important;
+      }
+    }
+  }
+}

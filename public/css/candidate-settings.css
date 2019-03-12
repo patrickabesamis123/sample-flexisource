@@ -1,0 +1,738 @@
+.user-settings {
+  background-color: #f2f2f2;
+  float: left;
+  margin: 0 auto;
+  max-width: 1680px;
+  /*padding: 0px 15px 0px;*/ }
+  @media (min-width: 768px) {
+    .user-settings {
+      /*padding: 20px 15px 0px;*/ } }
+  .user-settings.user-settings--candidate .can-settings {
+    float: right; }
+    @media (min-width: 768px) {
+      .user-settings.user-settings--candidate .can-settings {
+        margin: 0 0px 0px 15px;
+        width: 88.3%; } }
+    @media (min-width: 1200px) {
+      .user-settings.user-settings--candidate .can-settings {
+        margin: 0 0px 0px 20px;
+        width: 89.7%; } }
+    @media (min-width: 1366px) {
+      .user-settings.user-settings--candidate .can-settings {
+        width: 90.3%; } }
+    .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item {
+      background-color: #e4e4e4;
+      border: 1px #e4e4e4 solid;
+      border-bottom: 2px #e4e4e4 solid;
+      display: block;
+      margin: -1px 0 0 0;
+      transition: all .4s;}
+      @media (min-width: 768px) {
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item {
+          display: inline-block;
+          border: 1px solid #fff;
+          border-top: 1px solid
+          width: auto; } }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:hover {
+        background-color: #eee;
+        box-shadow: -2px -2px 5px 0px rgba(69, 65, 78, 0.08); }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:hover a {
+          color: #00aeed; }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item a {
+        color: #5c5c5c;
+        display: inline-block;
+        padding: 14px 15px;
+        text-transform: uppercase;
+        transition: all .4s;
+        width: 100%; }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item.active {
+        background-color: #fff;
+      }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item.active a {
+          color: #00aeed; }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:first-child {
+        position: relative; 
+        transition: all .3s;
+      }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:first-child:after {
+          content: " ";
+          top: 50%;
+          right: -3px;
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: #d4d4d4;
+          z-index: 9;
+          transform: translateY(-50%); }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:first-child.active {
+          border: 1px solid #fff !important;
+          box-shadow: -2px -2px 5px 0px rgba(69, 65, 78, 0.08);
+        }
+          .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:first-child.active:after {
+            display: none; }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:nth-child(2) {
+        position: relative; }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:nth-child(2).active a {
+          position: relative;
+          z-index: 11; }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:nth-child(2).active:before {
+          content: " ";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: #fff;
+          top: 0;
+          left: 0;
+          z-index: 10; }
+      .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:last-child {
+        position: relative; }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:last-child:after {
+          /* content: " "; */
+          top: 50%;
+          left: -3px;
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: #d4d4d4;
+          z-index: 9;
+          transform: translateY(-50%); }
+        .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:last-child.active {
+          border: 1px solid #fff;}
+          .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:last-child.active:after {
+            display: none; }
+          @media (min-width: 768px) {
+            .user-settings.user-settings--candidate .can-settings .pvm-tab-list--settings .pvm-tab__item:last-child.active {
+              border-bottom: 1px #fff solid; } }
+    .user-settings.user-settings--candidate .can-settings .settings__header {
+      float: none; }
+    .user-settings.user-settings--candidate .can-settings .settings__header--margin-top {
+      margin: 0 0 15px; }
+    .user-settings.user-settings--candidate .can-settings .settings {
+      /* some .settings style here */ }
+      .user-settings.user-settings--candidate .can-settings .settings.settings--account {
+        /* some .settings style but for account tab only */
+        margin: 0 0 30px 0;
+        padding: 20px 20px 50px; }
+        @media (min-width: 1200px) {
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account {
+            padding: 20px 30px 50px; } }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .setting-acct__alert {
+          margin: 0 0 8px 0; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-form {
+          text-align: justify; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-password .forgot-password {
+          display: inline-block;
+          margin: 7px 0 0 0;
+          font-size: 14px;
+          color: #37cccc;
+          padding: 8px 0; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-disable .settings-acct-disable__message {
+          font-size: 15px;
+          line-height: 1.5;
+          margin: 0 0 15px 0; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-disable .settings-acct-disable__btn-disable {
+          background-color: #fd4c54;
+          border: none;
+          color: #fff;
+          display: inline-block;
+          float: right;
+          font-size: 14px;
+          width: auto !important;
+          padding: 20px;
+          text-transform: uppercase;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-disable .settings-acct-disable__btn-disable:hover {
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__message {
+          margin: 0 0 25px 0; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__left {
+          float: left;
+          display: inline-block;
+          width: 150px;
+          padding: 0 8px 0 0; }
+          @media (min-width: 768px) {
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__left {
+              line-height: 50px;
+              text-align: right; } }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__left.settings-acct-public-url__left--margin-bot {
+            margin: 15px 0 0 0; }
+            @media (min-width: 768px) {
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__left.settings-acct-public-url__left--margin-bot {
+                margin: 0; } }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__right {
+          float: left;
+          display: block;
+          width: 100%; }
+          @media (min-width: 768px) {
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__right {
+              display: inline-block;
+              width: auto; } }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__right .settings-acct-public-url__right__link {
+            margin: 0 3px 0 0;
+            line-height: 30px;
+            max-width: 100%;
+            font-size: 12px; }
+            @media (min-width: 414px) {
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__right .settings-acct-public-url__right__link {
+                font-size: 14px; } }
+            @media (min-width: 768px) {
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .settings-acct-public-url .settings-acct-public-url__right .settings-acct-public-url__right__link {
+                line-height: 50px; } }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page {
+          position: relative; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-tab-page__loader {
+            background-color: #fff;
+            height: 100%;
+            padding: 10% 0 0 0;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 9; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item {
+            padding: 0 0 5px 0; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-label {
+              display: inline-block;
+              font-weight: 500;
+              line-height: 26px;
+              margin: 17px 0 10px 0;
+              width: 100%; }
+              @media (min-width: 1200px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-label {
+                  margin: 7px 0 10px 0; } }
+              @media (min-width: 1200px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-label--comm {
+                  width: 60%; } }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-switch--float-right {
+              float: right; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-switch-container {
+              display: inline-block;
+              float: right;
+              min-width: 100px;
+              width: 100%; }
+              @media (min-width: 414px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-switch-container {
+                  min-width: 320px;
+                  width: 30%; } }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-switch-container .pvm-switch-label {
+                display: inline-block;
+                float: right;
+                font-size: 14px;
+                line-height: 26px;
+                margin: 6px 5px 0 0; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-switch-container .pvm-select--float-left {
+                float: left;
+                width: 100%; }
+                @media (min-width: 414px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item .pvm-setting-switch-container .pvm-select--float-left {
+                    width: 180px; } }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page .pvm-setting-item.pvm-setting-item--bordered-bottom {
+              border-bottom: 1px solid #d1d1d1;
+              margin: 0 0 15px 0; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning {
+            margin: 0 0 15px;
+            padding: 15px 15px 15px 90px;
+            background-color: #ff8202;
+            position: relative; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning .fa {
+              color: #fff;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 40px;
+              left: 30px; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning .pvm-tab-page-warning__message {
+              color: #fff;
+              font-size: 14px;
+              line-height: 1.4;
+              letter-spacing: 1px;
+              margin: 0 0 10px 0;
+              font-family: "Montserrat-Light",Arial,serif; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning .pvm-tab-page-warning__message:last-child {
+                margin: 0; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning .pvm-tab-page-warning__message strong {
+                font-weight: normal;
+                color: #000; }
+            @media (min-width: 1200px) {
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning {
+                margin: 0px -20px 15px;
+                padding: 25px 25px 25px 120px; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-tab-page-warning .fa {
+                  font-size: 50px;
+                  left: 35px; } }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-item-profile-control .pvm-setting-item-profile-control__label {
+            display: inline-block;
+            float: left;
+            font-size: 16px;
+            line-height: 37px;
+            margin: 0 30px 0 0; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-item-profile-control .pvm-setting-item-profile-control_option {
+            float: left;
+            width: 200px;
+            color: #000; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item {
+            margin: 0 0 20px 0;
+            transition: background .4s; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item:hover {
+              background: #efefef; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item.isVisibleDesktop {
+              display: none; }
+              @media (min-width: 768px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item.isVisibleDesktop {
+                  display: block; } }
+            @media (min-width: 768px) {
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item {
+                margin: 0 0 16px 0; } }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__label {
+              width: 100%;
+              display: inline-block;
+              padding: 5px 0 0 0;
+              font-size: 14px; }
+              @media (min-width: 768px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__label {
+                  float: left;
+                  width: 50%;
+                  margin: 0 0 5px 0;
+                  padding: 5px 0 0 10px; } }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls {
+              width: 100%; }
+              @media (min-width: 768px) {
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls {
+                  width: 320px;
+                  float: right; } }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting--controls-label {
+                display: inline-block;
+                float: left;
+                margin: 4px 5px 0 0;
+                width: 190px;
+                color: #000; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting--controls-label.isvisible-mobile {
+                  display: inline-block; }
+                  @media (min-width: 768px) {
+                    .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting--controls-label.isvisible-mobile {
+                      display: none; } }
+                @media (min-width: 414px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting--controls-label {
+                    width: auto; } }
+                @media (min-width: 768px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting--controls-label {
+                    margin: 7px 5px 0 0;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0; } }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-switch-container {
+                max-width: 100%;
+                width: 50px;
+                float: left;
+                min-width: 50px !important; }
+                @media (min-width: 768px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-switch-container {
+                    float: none;
+                    text-align: center;
+                    width: 100%; } }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-switch-container .pvm-switch--lg-labeled {
+                  top: 4px; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-privacy-item-public {
+                float: none;
+                width: 100%;
+                margin: 8px 0 7px; }
+                @media (min-width: 414px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-privacy-item-public {
+                    margin: 0;
+                    float: left;
+                    width: 50%; } }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-privacy-item-search-engine {
+                float: none;
+                width: 100%; }
+                @media (min-width: 414px) {
+                  .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-item .pvm-setting-privacy-item__controls .pvm-setting-privacy-item-search-engine {
+                    float: left;
+                    width: 50%; } }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list {
+            max-height: 380px;
+            overflow-y: auto;
+            padding: 0; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item {
+            background-color: #01bce7;
+            color: #fff;
+            display: inline-block;
+            float: left;
+            font-smoothing: subpixel-antialiased;
+            list-style: none;
+            margin: 0 10px 10px 0;
+            padding: 7px 45px 7px 20px;
+            position: relative;
+            transition: all .4s;
+            -webkit-font-smoothing: subpixel-antialiased; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item:hover {
+              -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+              -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5); }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item span {
+              font-size: 18px; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item a {
+              color: #fff;
+              font-size: 24px;
+              position: absolute;
+              right: 9px;
+              top: 57%;
+              transform: translateY(-50%);
+              transition: color .4s; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item a:hover {
+                color: #ff5353; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item a .btn-remove-item {
+                content: " ";
+                position: relative;
+                display: inline-block;
+                width: 21px;
+                height: 21px;
+                font-size: 0;
+                margin-top: -5px; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item a .btn-remove-item:before {
+                  background-color: #fff;
+                  content: " ";
+                  height: 3px;
+                  width: 100%;
+                  top: 50%;
+                  left: 50%;
+                  position: absolute;
+                  -ms-transform: rotate(45deg) translate(-50%, -50%);
+                  /* IE 9 */
+                  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+                  /* Safari 3-8 */
+                  transform: rotate(45deg) translate(-50%, -50%);
+                  -webkit-transform-origin: 0 0;
+                  /* Safari 3-8 */
+                  -ms-transform-origin: 0 0;
+                  /* IE 9 */
+                  transform-origin: 0 0; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-block .pvm-setting-privacy-company-block__list-item a .btn-remove-item:after {
+                  background-color: #fff;
+                  content: " ";
+                  height: 3px;
+                  width: 100%;
+                  top: 50%;
+                  left: 50%;
+                  position: absolute;
+                  -ms-transform: rotate(-45deg) translate(-50%, -50%);
+                  /* IE 9 */
+                  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+                  /* Safari 3-8 */
+                  transform: rotate(-45deg) translate(-50%, -50%);
+                  -webkit-transform-origin: 0 0;
+                  /* Safari 3-8 */
+                  -ms-transform-origin: 0 0;
+                  /* IE 9 */
+                  transform-origin: 0 0; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search {
+            position: relative; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search input {
+              margin: 0;
+              color: #000 !important; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search input::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #000;
+                opacity: 1;
+                /* Firefox */ }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search input:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #000; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search input::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #000; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search .pvm-search-input-container {
+              position: relative; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search .pvm-search-input-container .pvm-search-control {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #545454; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search .pvm-search-input-container .pvm-search-control:hover i {
+                  transform: scale(1.2); }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-tab-page.pvm-tab-page--privacy .pvm-setting-privacy-company-search .pvm-search-input-container .pvm-search-control i {
+                  font-size: 25px;
+                  transition: all .2s; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result {
+          padding: 0;
+          -webkit-box-shadow: 0px 2px 26px -5px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 0px 2px 26px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 26px -5px rgba(0, 0, 0, 0.75);
+          max-height: 400px;
+          overflow-y: auto; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item__no-result {
+            padding: 15px 20px; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item {
+            list-style: none;
+            border-bottom: 1px #ccc solid; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item:last-child {
+              border: none; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__link {
+              display: block;
+              padding: 15px 20px;
+              transition: all .4s; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__link:hover {
+                background-color: #e9e9e9; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__link:hover .pvm-search-result__item__link__label {
+                  color: #00aeed; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__link .pvm-search-result__item__link__label {
+                line-height: 50px;
+                margin: 0 0 0 10px;
+                color: #000; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__text-message {
+              display: inline-block;
+              margin: 0 0 0 10px;
+              line-height: 50px;
+              float: left;
+              color: #5f5c66; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__text-message.pvm-search-result__item__text-message--no-data {
+                line-height: 1;
+                min-height: 15px;
+                display: inline-block; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item i {
+              font-size: 23px;
+              line-height: 36px; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item--no-request {
+              padding: 0 0 0 15px;
+              line-height: 1; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__accept {
+              border: #35cccc 2px solid;
+              height: 40px;
+              padding: 0 !important;
+              position: absolute;
+              right: 70px;
+              text-align: center;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 40px;
+              transition: all .4s; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__accept i {
+                color: #35cccc;
+                transition: all .4s; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__accept:hover {
+                background: #35cccc !important; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__accept:hover i {
+                  color: #fff; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__decline {
+              border: #d0021b 2px solid;
+              height: 40px;
+              padding: 0 !important;
+              position: absolute;
+              right: 20px;
+              text-align: center;
+              top: 50%;
+              transform: translateY(-50%);
+              transition: all .4s;
+              width: 40px; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__decline i {
+                color: #d0021b;
+                transition: all .4s; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__decline:hover {
+                background: #d0021b !important; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item .pvm-search-result__item__decline:hover i {
+                  color: #fff; }
+            .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item.pvm-search-result__item--bordered-top {
+              border-bottom: none;
+              border-top: 1px #ccc solid;
+              position: relative; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item.pvm-search-result__item--bordered-top a {
+                display: inline-block;
+                padding: 7px 20px; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item.pvm-search-result__item--bordered-top:hover {
+                background-color: #fff; }
+                .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item.pvm-search-result__item--bordered-top:hover a {
+                  background-color: #fff; }
+              .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result .pvm-search-result__item.pvm-search-result__item--bordered-top:last-child {
+                border-top: 1px #ccc solid; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result.pvm-search-result--request-access {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .pvm-search-result--absolute {
+          position: absolute;
+          width: 100%;
+          background-color: #fff;
+          z-index: 999999; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .member-initials--md {
+          height: 50px;
+          width: 50px;
+          border-radius: 50% 50%;
+          line-height: 50px;
+          float: left; }
+        .user-settings.user-settings--candidate .can-settings .settings.settings--account .logo-container {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          border-radius: 50% 50%;
+          overflow: hidden;
+          display: inline-block;
+          float: left; }
+          .user-settings.user-settings--candidate .can-settings .settings.settings--account .logo-container .logo-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: auto;
+            transform: translate(-50%, -50%); }
+  .user-settings .pvm-setting-frequency-select {
+    float: right;
+    width: 50%;
+    text-align: right; }
+    .user-settings .pvm-setting-frequency-select .frequency-label {
+      display: inline-block;
+      margin-right: 10px; }
+    .user-settings .pvm-setting-frequency-select .pvm-select {
+      max-width: 150px;
+      height: auto !important;
+      padding: 8px 10px; }
+  .user-settings .pvm-settings-check-uncheck {
+    margin: 0 0 0 8px; }
+    .user-settings .pvm-settings-check-uncheck input {
+      display: none;
+      pointer-events: none; }
+    .user-settings .pvm-settings-check-uncheck .fa-check {
+      color: #35cccc;
+      font-size: 29px;
+      line-height: 33px; }
+    .user-settings .pvm-settings-check-uncheck .fa-circle {
+      color: #c0bfbf;
+      line-height: 33px;
+      margin: 0 0 0 9px; }
+      @media (min-width: 414px) {
+        .user-settings .pvm-settings-check-uncheck .fa-circle {
+          margin: 0; } }
+    @media (min-width: 414px) {
+      .user-settings .pvm-settings-check-uncheck {
+        margin: 0; } }
+  .user-settings .settings-form__input {
+    color: #4a4a4e;
+    width: 100%;
+    margin: 0;
+    font-weight: normal; }
+    .user-settings .settings-form__input:disabled {
+      background-color: #fff;
+      border: 1px #ababab solid;
+      color: #02b7f4; }
+    .user-settings .settings-form__input.settings-form__input--left {
+      float: left; }
+    .user-settings .settings-form__input.settings-form__input--middle {
+      float: left;
+      margin: 5px 0 0 0; }
+      @media (min-width: 667px) {
+        .user-settings .settings-form__input.settings-form__input--middle {
+          margin: 0; } }
+      @media (min-width: 768px) {
+        .user-settings .settings-form__input.settings-form__input--middle {
+          margin: 0 2%; } }
+    .user-settings .settings-form__input.settings-form__input--right {
+      float: none; }
+      @media (min-width: 768px) {
+        .user-settings .settings-form__input.settings-form__input--right {
+          float: right; margin-right: 2%;} }
+    .user-settings .settings-form__input.settings-form__input--url {
+      width: 100% !important;
+      margin: 0; }
+      @media (min-width: 768px) {
+        .user-settings .settings-form__input.settings-form__input--url {
+          width: 300px !important; } }
+    @media (min-width: 667px) {
+      .user-settings .settings-form__input {
+        width: 48%; } }
+    @media (min-width: 768px) {
+      .user-settings .settings-form__input {
+        width: 30%; } }
+  .user-settings .settings-form__btn-submit {
+    background-color: #35cccc;
+    border: none;
+    border-radius: 0 !important;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    width: auto;
+    padding: 20px 60px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .user-settings .settings-form__btn-submit:hover {
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
+  .user-settings .pvm-tab-page-warning {
+    margin: 0 0 15px;
+    padding: 15px 15px 15px 90px;
+    background-color: #f5a623;
+    position: relative; }
+    .user-settings .pvm-tab-page-warning .fa {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      left: 30px; }
+    .user-settings .pvm-tab-page-warning .pvm-tab-page-warning__message {
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      margin: 0 0 15px 0; }
+      .user-settings .pvm-tab-page-warning .pvm-tab-page-warning__message:last-child {
+        margin: 0; }
+      .user-settings .pvm-tab-page-warning .pvm-tab-page-warning__message strong {
+        font-weight: normal;
+        color: #000; }
+    @media (min-width: 1200px) {
+      .user-settings .pvm-tab-page-warning {
+        margin: 0px -20px 15px;
+        padding: 25px 25px 25px 120px; }
+        .user-settings .pvm-tab-page-warning .fa {
+          font-size: 50px;
+          left: 35px; } }
+    .user-settings .pvm-tab-page-warning.pvm-tab-page-warning--with-max {
+      margin: 20px 0 9px; }
+  .user-settings .settings__header--no-border {
+    border: none;
+    margin: 20px 0 0 0;
+    padding: 5px 0 6px; }
+  .user-settings .settings__header__sub {
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 0 15px;
+    padding: 0 0 15px; }
+  .user-settings .pvm-setting__helper-link {
+    line-height: 34px;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px; }
+  .user-settings .grey {
+    background-color: #999 !important; }
+  .user-settings .text-bold {
+    font-weight: bold; }
+  .user-settings .text-bold--black {
+    color: #000; }
+  .user-settings .text-bold--uppercase {
+    text-transform: uppercase; }
+  .user-settings .pvm__modal-popup__content--large {
+    max-width: 900px; }
+
+/*This section will be removed once 2.0 is done*/
+#CandidateSettings .settings_container_holder .btn-pvm {
+  margin: 0px; }
+
+.note {
+  color: #999;
+}
+
+.flexbox-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

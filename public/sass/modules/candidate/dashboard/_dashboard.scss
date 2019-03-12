@@ -1,0 +1,422 @@
+.pvm-dashboard {
+  padding: 20px 15px 0px;
+
+  &.pvm-dashboard--candidate {
+
+    .dash__right {
+      float: left;
+      width: 100%;
+      
+      @include tablet-land {
+        width: 75%;
+      }
+
+      @include desktop {
+        width: 80%;
+      }
+
+      .dash__ana-summary {
+        .dash__ana-handler {
+          background-color: #fff;
+          color: $sky;
+          float: left;
+          margin: 0px 0px 10px;
+          padding: 30px 20px;
+          width: 100%;
+
+          @include iphone6-land {
+            min-height: 140px;
+            width: 33.3%;
+          }
+
+          @include tablet {
+            min-height: 100px;
+            padding: 30px 15px;
+          }
+
+          @include desktop {
+            min-height: 120px;
+            padding: 30px;
+          }
+
+          .dash__ana-count {
+            float: left;
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0px;
+            text-align: center;
+            width: 32%;
+
+            @include desktop {
+              font-size: 50px;
+              line-height: 52px;
+            }
+          }
+
+          .dash__ana-desc {
+            float: left;
+            font-family: $pvm-reg-font;
+            font-size: 12px;
+            margin: 0px;
+            padding: 0px 0px 0px 35px;
+            text-transform: uppercase;
+            width: 68%;
+
+            @include tablet {
+              font-size: 13px;
+              padding: 0px 0px 0px 25px;
+            }
+
+            @include desktop {
+              font-size: 15px;
+              margin: 5px 0px 0px;
+            }
+          }
+        }
+      }
+
+      .dash__half-right {
+        .dash__applied-con {
+          background-color: #fff;
+          float: left;
+          padding: 15px;
+          width: 100%;
+
+          @include iphone6-land {
+            margin: 0px 10px 15px 0px;
+            width: 53.9%;
+          }
+
+          @include tablet-land {
+            width: 53.5%;
+          }
+
+          @include md-desktop {
+            width: 64.9%;
+          }
+
+          @include desktop {
+            width: 72%;
+          }
+
+          .dash__applied-title {
+            color: $gray;
+            font-family: $pvm-reg-font;
+            font-size: 15px;
+            margin: 10px 0px 5px;
+            text-transform: uppercase;
+
+            @include tablet {
+              font-size: 18px;
+            }
+
+            @include md-desktop {
+              font-size: 21px;
+              letter-spacing: 0.03em;
+              line-height: 13px;
+              margin: 10px 0px;
+            }
+          }
+
+          #applied_jobs_scroll {
+            @include tablet-land {
+              height: 500px;
+            }
+          }
+
+          .fa-spin {
+            display: block;
+            font-size: 30px;
+            margin: 10px auto 0px;
+            text-align: center;
+          }
+
+          .dash__applied-roles-list {
+            margin: 15px 0px;
+            padding: 0px;
+            list-style-type: none;
+
+            .dash__applied-roles-item {
+              border-bottom: 1px solid #efefef;
+              margin: 0px 0px 10px;
+              padding: 0px 0px 10px;
+              position: relative;
+
+              .dash__role-title-link {
+                color: $sky;
+                display: block;
+                font-family: $pvm-reg-font;
+                font-size: 13px;
+                line-height: 15px;
+                margin: 10px 0px 5px;
+
+                @include tablet {
+                  max-width: 70%;
+                  font-size: 14px;
+                  line-height: 17px;
+                }
+
+                @include md-desktop {
+                  font-size: 16px;
+                  line-height: 18px;
+                }
+              }
+
+              .dash__role-company {
+                color: $gray;
+                font-family: $pvm-reg-font;
+                font-size: 12px;
+                line-height: 13px;
+                margin: 0px;
+
+                @include tablet {
+                  font-size: 13px;
+                  line-height: 14px;
+                  max-width: 75%;
+                }
+              }
+
+              .dash__app-status {
+                color: #aaa;
+                font-family: $pvm-reg-font;
+                font-size: 11px;
+                margin: 5px 0px 0px;
+                text-transform: uppercase;
+
+                @include tablet {
+                  line-height: 15px;
+                  margin: 0px;
+                  max-width: 30%;
+                  position: absolute;
+                  text-align: right;
+                  top: 0px;
+                  right: 15px;
+                  vertical-align: top;
+                }
+              }
+
+              .dash__app-status--hired {
+                color: $pvm-green;
+              }
+            }
+          }
+
+          .dash__view-all-link {
+            display: block;
+            font-size: 14px;
+            margin: 20px 10px 10px 0px;
+            text-align: right;
+            text-transform: uppercase;
+
+            @include tablet {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .dash__left {
+          float: left;
+          width: 100%;
+
+          @include iphone6-land {
+            width: 45%;
+          }
+
+          @include md-desktop {
+            width: 34%;
+          }
+
+          @include desktop {
+            width: 27.15%;
+          }
+
+          .dash__featured-con {
+            background-image: url('../../images/bgs/dash_featured.png');
+            margin: 15px 0px 0px;
+            padding: 15px;
+
+            @include iphone6-land {
+              margin: 0px;
+            }
+
+            .fa-spin {
+              color: #fff;
+              display: block;
+              font-size: 30px;
+              margin: 10px auto 0px;
+              text-align: center;
+            }
+
+            .dash__feat-title {
+              color: #fff;
+              font-size: 15px;
+              margin: 0px;
+              text-transform: uppercase;
+
+              @include tablet {
+                font-size: 18px;
+              }
+
+              @include md-desktop {
+                font-size: 21px;
+                letter-spacing: 0.03em;
+                line-height: 13px;
+                margin: 10px 0px;
+              }
+            }
+
+            .dash__feat-roles-list {
+              margin: 0px 0px 15px;
+              padding: 0px;
+              list-style-type: none;
+
+              .dash__feat-roles-item {
+                margin: 0px 0px 10px;
+                padding: 5px 0px 0px 30px;
+                position: relative;
+
+                &:before {
+                  content: '';
+                  width: 20px;
+                  height: 25px;
+                  background-image: url(../../images/icons/flag.png);
+                  background-size: 100%;
+                  display: inline-block;
+                  position: absolute;
+                  left: 0;
+                  top: 18px;
+                }
+
+                .dash__role-title-link {
+                  color: #fff;
+                  display: block;
+                  font-family: $pvm-bold-font;
+                  font-size: 13px;
+                  line-height: 15px;
+                  margin: 10px 0px 5px;
+                  position: relative;
+
+                  @include tablet {
+                    font-size: 14px;
+                    line-height: 17px;
+                  }
+
+                  .dash__role-company {
+                    font-family: $pvm-reg-font;
+                    font-size: 12px;
+                    line-height: 13px;
+                    margin: 0px;
+
+                    @include tablet {
+                      font-size: 13px;
+                      line-height: 14px;
+                    }
+                  }
+
+                  .fa-chevron-right {
+                    position: absolute;
+                    top: 2px;
+                    right: 10px;
+                  }
+                }
+              }
+            }
+          }
+
+          .dash__watch-con {
+            background-color: #fff;
+            margin: 15px 0px;
+            padding: 15px;
+
+            .fa-spin {
+              color: $gray;
+              display: block;
+              font-size: 30px;
+              margin: 10px auto 0px;
+              text-align: center;
+            }
+
+            .dash__watch-title {
+              color: $gray;
+              font-size: 15px;
+              margin: 0px;
+              text-transform: uppercase;
+
+              @include tablet {
+                font-size: 18px;
+              }
+
+              @include tablet-land {
+                margin: 0px 0px 5px;
+              }
+
+              @include md-desktop {
+                font-size: 21px;
+                letter-spacing: 0.03em;
+                line-height: 13px;
+                margin: 10px 0px;
+              }
+            }
+
+            #watchlist_scroll {
+              @include tablet-land {
+                height: 296px;
+              }
+
+              @include md-desktop {
+                height: 273px;
+              }
+            }
+
+            .dash__watch-roles-list {
+              margin: 0px 0px 15px;
+              padding: 0px;
+              list-style-type: none;
+
+              .dash__watch-roles-item {
+                margin: 0px 0px 10px;
+                padding: 0px;
+                position: relative;
+
+                .dash__role-title-link {
+                  color: $gray;
+                  display: block;
+                  font-family: $pvm-bold-font;
+                  font-size: 13px;
+                  line-height: 15px;
+                  margin: 10px 0px 5px;
+                  max-width: 95%;
+
+                  @include tablet {
+                    font-size: 14px;
+                    line-height: 17px;
+                  }
+
+                  .dash__role-company {
+                    font-family: $pvm-reg-font;
+                    font-size: 12px;
+                    line-height: 13px;
+                    margin: 3px 0px 0px;
+
+                    @include tablet {
+                      font-size: 13px;
+                      line-height: 14px;
+                    }
+                  }
+
+                  .fa-eye {
+                    color: $sky;
+                    position: absolute;
+                    top: 2px;
+                    right: 10px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

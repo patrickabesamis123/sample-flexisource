@@ -1,0 +1,35 @@
+@media print {
+	.printOnly { display: block !important; }
+	.hideOnPrint{display: none!important; visibility: hidden!important;}
+	/*TMS*/
+	header, footer, #EmployerManageTalent .tmshead, #EmployerManageTalent .tab-nav-container, #EmployerManageTalent .leftTab, #EmployerManageTalent .unexpand, #EmployerManageTalent .expand, .applicantList li.expanded.cloned .right .linkme, #EmployerManageTalent .JobDetailsSection, #EmployerManageTalent .bulkEmail, .selectme_cont, .glyphicon-trash, .non-print { display: none !important; }
+	.applicantList li { display: none; }
+	.applicantList li.expanded.cloned { display: block !important; }
+
+	.applicantList li img.printOnly { margin: 0 auto }
+	.text-print-left { text-align: left !important }
+	.text-print-right { text-align: right !important }
+	.text-print-center { text-align: center !important }
+	.text-print-justify { text-align: justify !important }
+	#EmployerManageTalent .rightTab { width: 100%; float: none; margin: 0 }
+	#EmployerManageTalent .vid_cont { float: none; display: none }
+	.applicantList .expanded .profile_container { border: none; width: 100% }
+	.applicantList li.expanded.cloned .dets { text-align: center; width: 100%; float: none; padding: 0 }
+	.applicantList li.expanded.cloned .img { width: 100%; float: none; padding: 0 }
+	.JobDetailsSection { text-align: center; }
+	.applicantList li.expanded.cloned .left { margin: 0; float: none; width: 100% }
+	.applicantList li.expanded.cloned .right { width: 100%; float: none }
+	#tabs-1, #tabs-2, #tabs-3, #tabs-4 { display: block !important; height: initial !important; }
+	.applicantList .expanded .answerTable .answers { color: #ebebeb !important; }
+	.applicantList .expanded .answerTable .blue, .applicantList .expanded .blue { color: #2aade5 !important; }
+	.applicantList .colorpanel .orange { background-color: rgba(255, 130, 3, 0.8) !important; border: 1px solid #ff8203 !important; }
+	.applicantList .colorpanel .green { background-color: rgba(54, 204, 204, 0.8) !important; border: 1px solid #35cccc !important; }
+	.applicantList .colorpanel .red { background-color: rgba(255, 117, 122, 0.8) !important; border: 1px solid #ff757a !important; }
+	form { display: none }
+	.notes .tse-scrollable { height: initial !important; overflow: initial !important; }
+	.expandedSection > .col-md-3 { display: none; }
+	.tse-scrollable .tse-scroll-content, #tabs-1 .tse-scroll-content, #tabs-4 .tse-scroll-content { height: auto !important; overflow: initial !important }
+
+	.applicantList .expanded .left h2.blueMonBold, .notes h3, #GeneralInformation h2{color: #00afed!important}
+
+}

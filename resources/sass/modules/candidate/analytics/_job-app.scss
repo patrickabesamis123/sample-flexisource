@@ -1,0 +1,327 @@
+.head-secondary {
+    @extend .text-uppercase;
+}
+.head-tertiary {
+    font-size: 3rem;
+    font-weight: 800;
+    &--green {
+        color: lighten(desaturate(adjust-hue($text-brand, -16), 41.73), 6.47);
+    }
+    &--violet {
+        color: #B291D8;
+    }
+    &--red {
+        color: $text-danger;
+    }
+}
+
+.analytics {
+    width: 100%;
+    .well {
+        background-color: $white;
+        margin-top: 15px;  
+    }
+    .job-views {
+        color: $text-primary-invert;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        &__count {
+            background-color: #00B0EC;
+            padding: 2rem;
+        }
+        h1 {
+            @extend .text-center;
+            color: $text-primary-invert;
+            font-family: inherit;
+            font-size: 7rem;
+            margin: 0;
+            padding: 1.5rem 0 4rem;
+            @include breakpoint('phone-md') {
+                font-size: 5rem;
+                padding: 1rem 0 2rem;;
+            }
+        }
+    }
+    .applications {
+        @extend .text-uppercase;
+        .row {
+            padding: 4rem 0;
+        }
+        ul {
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+        .head-secondary {
+            font-size: 16px;
+            display: block;
+            
+        }
+        h1 {
+            @extend .mp-reset;
+            font-family: inherit;
+            font-size: 9rem;
+            color: $text-brand;
+            font-weight: 800;
+            @include breakpoint('tablet')  {
+                font-size: 7rem;
+            }
+            @include breakpoint('phone-lg')  {
+                font-size: 5rem;
+            }
+        }
+        h2 {
+            @extend .mp-reset;
+            font-size: 4rem;
+            font-weight: 800;
+            @include breakpoint('tablet')  {
+                font-size: 3rem;
+            }
+            @include breakpoint('phone-lg')  {
+                font-size: 2rem;
+            }
+        }
+    }
+    .experience {
+        &.well {
+            border-bottom: 0;
+        }
+        .head-secondary {
+            padding: 25px 30px;
+        }
+        &__yr {
+            background-color: darken(saturate($bg-brand, 6.53), 1.76);
+            color: $text-primary-invert;
+            height: 100%;
+            padding: 3rem;
+            @extend .text-center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .glyphicon-triangle-right {
+                position: absolute;
+                right: -29px;
+                color: #00afec;
+                font-size: 40px;
+                z-index: 9;
+                top: 38px;
+            }
+            h1 {
+                color: $text-primary-invert;
+                font-weight: 800;
+                font-size: 6rem;
+                font-family: inherit;
+                margin: 2rem 0;
+            }
+            p {
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+        }
+        &__table {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            @extend .noborder-r;
+            @include breakpoint('phone-md') {
+                font-size: 14px;
+            }
+            tr {
+                @extend .noborder-r;
+                th {
+                    &:last-child {
+                        @extend .noborder-r;
+                    }
+                    border-bottom: 0;
+                    @extend .text-center;
+                    font-weight: 300;
+                    color: lighten(#545454, 20.39);
+                }
+                td {
+                    &:last-child {
+                        @extend .noborder-r;
+                    }
+                    vertical-align: middle;
+                    padding: 3rem;
+                    @extend .text-center;
+                    @include breakpoint('phone-lg') {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 2rem 5rem;
+                        &:before {
+                            margin-top: 10px;
+                        }
+                    }
+                    .head-tertiary {
+                        font-size: 4rem;
+                        @include breakpoint('phone-md') {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+            tbody tr td {
+                border-top: 0;
+            }
+        }
+    }
+
+    .regions {
+        .head-secondary {
+            padding-bottom: 7rem;
+            @include breakpoint('phone-md') {
+                padding-bottom: 3rem;
+            }
+        }
+        .pvm__header {
+            font-size: 18px;
+        }
+        &__list {
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 3rem;
+                    @include breakpoint('tablet')  {
+                        padding-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.8rem;
+            &-count {
+                color: $text-brand;
+            }
+            @include breakpoint('tablet')  {
+                font-size: 16px;
+            }
+        }
+        .progress{
+            height: 10px;
+            border-radius: 10px;
+            &-bar {
+                background-color: $bg-brand;
+            }
+        }
+    }
+
+    .legend {
+        padding-top: 2rem;
+        li {
+            width: 25%;
+            float: left;
+            font-size: 16px;
+            padding: 10px 10px 10px 35px;
+            position: relative;
+            list-style: none;
+            @include breakpoint('phone-md') {
+                font-size: 14px;
+                width: 50%;
+            }
+            &:before {
+                content: '\2022';      /* Unicode for • character */
+                position: absolute;
+                top: 0;
+                left: 0;          /* Adjust this value so that it appears where you want. */
+                font-size: 5em;      /* Adjust this value so that it appears what size you want. */
+            }
+        }
+    }
+
+    .pre-approval {
+        .pvm__header {
+            border-bottom: 0;
+            width: auto;
+            margin-bottom: 0;
+        }
+        .flexbox-sb-c {
+            border-bottom: 1px solid #d1d1d1;
+            @include breakpoint('phone-md') {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .fa-circle {
+            color: $text-brand-secondary;
+        }
+        .table {
+            thead {
+                background-color: #ededed;
+            }
+            tbody {
+                td {
+                    padding: 15px 8px;
+                }
+            }
+            tr {
+                th {
+                    @extend td;
+                }
+                td {
+                    &:first-child {
+                        width: 80%;
+                        @include breakpoint('desktop-lg') {
+                            width: 70%;
+                        }
+                        @include breakpoint('tablet-port') {
+                            width: 50%;
+                        }
+                    }
+                    &:not(:first-child) {
+                        text-align: center;
+                    }
+                    &.accepted {
+                        color: $text-brand;
+                        position: relative;
+                        font-weight: 600;
+                        .fa-circle {
+                            // padding-left: 5px;
+                            
+                        }
+                    }
+                    .wrap-accepted {
+                        position: relative;
+                        width: 80px;
+                        display: inline-block;
+                        .fa-circle {
+                            position: absolute;
+                            top: 3px;
+                            right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#pie-application {
+    min-width: 360px; 
+    height: 450px; 
+    max-width: 600px; 
+    margin: 0 auto;
+    @include breakpoint('tablet')  {
+        min-width: 300px;
+        height: 390px;
+    }
+    @include breakpoint('phone-lg')  {
+        min-width: 200px;
+        height: 290px;
+    }
+}
+#pie-candidate {
+    min-width: 320px; 
+    height: 420px; 
+    max-width: 600px; 
+    margin: 0 auto;
+    @include breakpoint('tablet')  {
+        min-width: 300px;
+        height: 350px;
+    }
+    @include breakpoint('phone-lg')  {
+        min-width: 200px;
+        height: 290px;
+    }
+}

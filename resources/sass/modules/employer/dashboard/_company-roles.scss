@@ -1,0 +1,289 @@
+.roles-page {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      list-style-type: none;
+      margin: 0px;
+    }
+  }
+
+  .roles-container {
+    .roles__type-list {
+      .roles__type-item {
+        top: 2px;
+
+        &.active {
+          a {
+            background-color: #fff !important;
+            color: $gray;
+          }
+        }
+
+        a {
+          background-color: #e0e0e0;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+
+          &:hover {
+            border-bottom: 1px solid transparent;
+            color: $sky;
+          }
+        }
+      }
+    }
+
+    .roles-list-container {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top-color: transparent;
+      margin-bottom: 30px;
+      min-height: 788px;
+      padding: 20px 15px;
+      width: 100%;
+
+      .role-splasher {
+        height: 100vh;
+        text-align: center;
+        padding-top: 15%;
+
+        .img {
+          top: 50%;
+          posistion: absolute
+        }
+      }
+
+      .roles-pane {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        .roles__list {
+          .roles__item {
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+
+            .role__head {
+              font-family: $pvm-reg-font;
+              font-size: 18px;
+              margin-bottom: 15px;
+
+              .role__title {
+                display: inline-block;
+                width: 90%;
+              }
+
+              .role__action-container {
+                display: inline-block;
+                position: relative;
+                text-align: right;
+                width: 9%;
+
+                .fa {
+                  color: $pvm-green;
+                  cursor: pointer;
+                  font-size: 20px;
+                  margin-left: 5px;
+
+                  &.fa-close {
+                    font-size: 23px;
+                  }
+
+                  &.fa-file-text {
+                    font-size: 18px;
+                  }
+                }
+
+                .role__close-msg-list {
+                  background: #f0f0f0;
+                  @include box-shadow(0px 2px 3px #e0e0e0);
+                  padding: 5px;
+                  position: absolute;
+                  right: 0px;
+                  text-align: left;
+                  top: 25px;
+
+                  .role__close-msg-item {
+                    border-bottom: 1px solid #e0e0e0;
+                    padding: 0px 15px 5px;
+
+                    &:last-child {
+                      border-bottom: none;
+                    }
+
+                    .role__close-confirm-link {
+                      font-size: 12px;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .role__details-container {
+              .role__details {
+                float: left;
+                width: 85%;
+
+                .role__details-div {
+                  float: left;
+                  min-width: 250px;
+                  padding-right: 30px;
+                  width: 33.3%;
+
+                  .role__det-label {
+                    color: #999;
+                    font-size: 11px;
+                    margin-bottom: 3px;
+                    text-transform: uppercase;
+                  }
+
+                  .role__det-value {
+                    color: $gray;
+                    font-size: 14px;
+
+                    .role__team-members-list {
+                      float: left;
+                      margin-top: 5px;
+                      width: 100%;
+                      padding: 0px;
+
+                      .role__team-name {
+                        color: $gray;
+                        display: block;
+                        font-family: $pvm-reg-font;
+                        font-size: 14px;
+                      }
+
+                      .role__team-members-item {
+                        cursor: pointer;
+                        display: inline-block;
+                        float: left;
+                        margin: 3px 8px 8px 0;
+                        position: relative;
+                        text-align: center;
+                        @include transition(border .25s linear);
+
+                        .role__team-manager {
+                          font-family: $pvm-light-font;
+                          font-size: 9px;
+                          margin: 0px;
+                        }
+                        .member-initials {
+                          margin: 0px;
+                        }
+                      }
+                    }
+
+                    .role__remaining-days {
+                      color: #fff;
+                      background: $pvm-green;
+                      padding: 3px 5px;
+                      border-radius: 3px;
+                      font-size: 12px;
+                      line-height: 15px;
+                      margin-left: 5px;
+                    }
+
+                    .role__remaining-days--near {
+                      background: $pvm-orange;
+                    }
+
+                    .role__remaining-days--none {
+                      background: $pvm-red;
+                    }
+                  }
+
+                  .role__det-value--flex {
+                    @include flexbox();
+                    @include flex-wrap(wrap);
+                  }
+                }
+
+                .role__details-div--team {
+                  width: 66%;
+
+                  .TMS__flex-team {
+                    @include flexbox();
+                    @include flex-wrap(wrap);
+                  }
+                }
+              }
+
+              .role__numbers {
+                float: left;
+                text-align: center;
+                width: 15%;
+
+                .role__det-label {
+                  color: #999;
+                  font-size: 11px;
+                  margin-bottom: 3px;
+                  text-transform: uppercase;
+                }
+
+                .role__det-numbers {
+                  color: $sky;
+                  font-size: 43px;
+                  font-family: $pvm-bold-font;
+                  line-height: 45px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.job-application-section {
+	.jobShortDescription {
+		color: $gray !important;
+	}
+
+	.jobsmaldeatils {
+		&.role-buttons {
+			text-align: center;
+
+			.expires_date_container {
+				color: $gray;
+				margin: 0px !important;
+
+				strong {
+					text-transform: uppercase;
+				}
+			}
+
+			#SearchPage {
+				margin-top: 10px;
+
+				.btn-pvm {
+					min-width: 135px;
+
+					.fa {
+						font-size: 11px;
+						position: relative;
+						top: 0px;
+					}
+
+					.settings-icon {
+						height: 13px;
+						top: 2px;
+						width: 13px;
+					}
+				}
+			}
+
+	  }
+	}
+}

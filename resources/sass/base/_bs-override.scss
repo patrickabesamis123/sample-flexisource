@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains override bootstrap styles.
+// -----------------------------------------------------------------------------
+
+.well {
+    border-radius: 0;
+    padding: 25px 30px;
+    border: 2px solid #ddd;
+}
+
+.panel {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+}

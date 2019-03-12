@@ -1,0 +1,8 @@
+public/js/*.js
+public/js/ng/controllers/*.js
+public/js/minified/candidate/*.js
+public/js/minified/controllers/*.js
+public/js/minified/login/*.js
+public/js/minified/public/*.js
+resources/views/layouts/*.php
+resources/views/includes/*.php

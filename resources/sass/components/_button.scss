@@ -1,0 +1,98 @@
+.btn-pvm {
+    transition: all .3s;
+    border-radius: 2px !important;
+    height: auto !important;
+    &:hover {
+        @extend .shadow-hover;
+    }
+    &:active {
+        @extend .shadow-click;
+    }
+    &.btn-primary {
+        &:hover {
+            background-color: darken(desaturate($bg-brand, 3.04), 7.06) !important;
+        }
+    }
+}
+
+.emp-new-role--can .radio__options-list--gpa .radio__options-item .role__answers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emp-new-role--can .middle-pane--ra {
+    padding: 0 55rem 0 7rem;
+    @include breakpoint('desktop-sm') {
+        padding: 0 25rem 0 5rem;
+    }
+}
+
+// button link
+.btn-link {
+    padding: 0;
+    border: 0;
+    &:focus, &:hover, &:active {
+        outline: 0 !important;
+    }
+}
+
+// SHADOW effect on hover and on click
+
+.shadow-hover {
+    box-shadow: 0 3px 10px lighten($bg-primary, 60.00);
+  }
+  
+.shadow-click {
+box-shadow: 0 1px 5px lighten($bg-primary, 60.00);
+}
+
+.btn-add {
+    border: 1px solid lighten($bg-primary, 60.00);
+    color: $text-brand;
+    width: auto;
+    background: transparent;
+    padding: 8px;
+    font-size: 12px;
+    transition: all .3s;
+    &:hover, &:focus {
+        background-color: $bg-brand;
+        @extend .shadow-hover;
+        color: $text-primary-invert;
+        outline: 0;
+    }
+    &:active {
+        @extend .shadow-click;
+    }
+    .fa {
+        padding-right: 5px;
+    }
+}
+
+.btn {
+    padding: 9px 12px;
+    @include breakpoint('phone-lg') {
+        padding: 6px 9px;
+    }
+}
+
+.btn-save {
+    text-transform: uppercase;
+    background-color: #fffd72;
+    color: $text-brand;
+    transition: all .3s;
+    @include breakpoint('phone-lg') {
+        font-size: 11px;
+    }
+    &:hover, &:focus {
+        background-color: #f1ed04;
+        color: $text-brand;
+        @extend .shadow-hover;
+    }
+    &:active {
+        @extend .shadow-click;
+    }
+    .fa {
+        padding-right: 10px;
+    }
+}

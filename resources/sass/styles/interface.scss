@@ -1,0 +1,43 @@
+.settings-acct-form-field {
+    width: 30%;
+}
+
+.settings-acct-form-field--mid {
+    margin: 0px 20px;
+}
+
+.can__education .portlet__header .fa-exclamation-triangle {
+    color: #ff8202;
+}
+
+.can__education .portlet__header--colored .fa-exclamation-triangle {
+    color: #ffffff;
+}
+
+cd .can__work-history {
+    margin: 0px 10px 0px 0px;
+    width: 49%;
+}
+
+.cardx {
+    float: left;
+    padding: 20px;
+}
+
+.interface__donut {
+    margin: 20px 0px;
+}
+
+.interface__donut--green {
+    .interface__chart {
+        .quad {
+            background: $pvm-green !important;
+        }
+
+        .chart-center {
+            span {
+                color: $pvm-green !important;
+            }
+        }
+    }
+}

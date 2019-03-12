@@ -1,0 +1,190 @@
+.sourceeducation__allcandidate-article {
+	margin-bottom: 10px;
+	border: 1px solid $light-gray2;
+
+	div {
+		/**/
+		h4 {
+			margin: 0 0 45px 0;
+		}
+	}
+
+	.sourceeducation__allcandidate-main {
+		@include flexbox();
+		@include flex-wrap(nowrap);
+		justify-content: space-between;
+		padding: 16px;
+
+		.sourceeducation__allcandidate-pie {
+				flex-grow: 	1;
+
+				canvas {
+					margin-right: -475px;
+				}
+		}
+
+		.sourceeducation__allcandidate-details {
+			flex-grow:	1;
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					/*margin-bottom: 1vw;*/
+					font-size: 1vw;
+				}
+
+				div {
+					padding: 0;
+					clear: both;
+					.sourceeducation_allcandidate_schoolname {
+						float: left;
+					}
+
+					.sourceeducation_allcandidate_schoolcount {
+						float: right;
+
+					}
+				}
+
+				.sourceeducation_allcandidate_schoolbar {
+					padding: 0;
+
+					.progress-bar {
+					  background-color: whiteSmoke;
+					  border-radius: 2px;
+					  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+
+					  width: 100%;
+					  height: 20px;
+
+					  position: relative;
+					  display: block;
+
+					  span {
+						  /*background-color: #00aeed;*/
+						  border-radius: 2px;
+						  /*width: 80%;*/
+						  display: block;
+						  text-indent: -9999px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	.sourceeducation__allcandidate-key {
+		padding: 16px;
+
+		ul {
+			@include flexbox();
+			@include flex-wrap(nowrap);
+			justify-content: space-between;
+			padding: 0;
+
+			li {
+				list-style-type: none;
+				flex-grow: 1;
+
+				.sourceeducation__allcandidate-keydots {
+			    border-radius: 15px;
+			    margin: 0 10px 0 0;
+			    padding: 3px 11px;
+			  }
+			}
+		}
+	}
+
+	.sourceeducation__eduserviceprovider-main {
+		padding: 16px;
+
+		.sourceeducation__eduserviceprovider-bar {
+			margin: 20px auto;
+			border: none;
+			overflow-x: scroll;
+			white-space: nowrap;
+	    overflow-y: hidden;
+
+	    .sourceeducation__eduserviceprovider-innerbar {
+	    	width: 63vw;
+	    }
+
+			canvas {
+				border: none;
+				/*display: inline-block !important;*/
+
+			}
+		}
+
+
+	}
+
+	.sourceeducation__eduserviceprovider-keys {
+
+		table {
+			word-break: break-all;
+			width: 100%;
+
+			tr, th, td {
+				text-align: center;
+				width: 14vw;
+
+				p {
+					margin: 0;
+
+					.sourceeducation__eduserviceprovider-keypercent {
+						font-size: 2vw;
+    				font-weight: bold;
+					}
+
+					.sourceeducation__eduserviceprovider-keyoverall {
+						font-family: 'Montserrat-light',Arial,serif;
+						font-size: 1vw;
+					}
+				}
+
+				td {
+					padding: 1vw;
+				}
+
+				.sourceeducation__eduserviceprovider-coltitle {
+					padding: 50px 0;
+					font-size: 21px;
+					font-weight: 600;
+					text-align: left;
+				}
+
+				.sourceeducation__eduserviceprovider-keydots {
+			    border-radius: 15px;
+			    padding: 3px 11px;
+
+			  }
+
+			  .sourceeducation__eduserviceprovider--completedbg {
+			  	background:#35cccc;
+			  }
+			  .sourceeducation__eduserviceprovider--failedbg {
+			  	background:#9755d4;
+			  }
+			  .sourceeducation__eduserviceprovider--incompletebg {
+			  	background:$pvm-red;
+			  }
+			  .sourceeducation__eduserviceprovider--completedcolor {
+			  	color:#35cccc;
+			  }
+			  .sourceeducation__eduserviceprovider--failedcolor {
+			  	color:#9755d4;
+			  }
+			  .sourceeducation__eduserviceprovider--incompletedcolor {
+			  	color:$pvm-red;
+			  }
+			}
+		}
+	}
+}
+
+

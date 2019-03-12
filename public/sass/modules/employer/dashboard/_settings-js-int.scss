@@ -1,0 +1,208 @@
+.emp-set-js-int {
+  border-bottom: 2px solid #ccc;
+  margin: 0px 30px 30px;
+  padding: 0px 0px 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .js-int__title {
+    color: $sky;
+    font-family: $pvm-reg-font;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 0px 0px 40px;
+    text-transform: uppercase;
+  }
+
+  .js-int__con {
+    .js-int__enable-js {
+      padding: 0px 0px 25px;
+      border-bottom: 1px solid #DBDBDB;
+    }
+  }
+
+  .js-int__editor-con {
+    border-bottom: 1px solid #DBDBDB;
+
+    .js-int__layout-attr {
+      float: left;
+      padding: 0px 55px 5px 0px;
+      width: 25%;
+
+      .js-int__editor-desc {
+        margin: 0px 0px 30px;
+
+        .pvm-switch--lg-labeled {
+          float: right;
+          top: 0px;
+        }
+      }
+
+      .js-int__grouping-list {
+        margin: 20px 0px 30px;
+
+        .js-int__grouping-item {
+          .pvm-radio-design {
+          }
+
+          .js-int__group-desc-con {
+            float: left;
+            width: 85%;
+
+            .js-int__group-label {
+
+            }
+            .js-int__group-desc {
+              color: #ABABAB;
+              font-family: $pvm-light-font;
+              font-size: 12px;
+              letter-spacing: 0.07em;
+              line-height: 15px;
+              width: 90%;
+            }
+          }
+
+          .js-int__group-desc-con--sm {
+            width: 15%;
+          }
+
+        }
+      }
+
+      .js-int__font-fam {
+        margin: 20px 0px 10px;
+      }
+
+      .js-int__column {
+        margin: 20px 0px 30px;
+      }
+
+      .js-int__color-picker {
+        + .sp-replacer {
+          background-color: transparent;
+          border: 0px;
+          float: left;
+          height: 40px;
+          padding: 0px;
+          width: 37px;
+
+          .sp-preview {
+            border: 1px solid #959595;
+            border-right: 0px;
+            height: 40px;
+            width: 37px;
+          }
+
+          .sp-dd {
+            display: none;
+            padding: 0px;
+          }
+        }
+      }
+
+      .js-int__color-picker-val {
+        display: inline-block;
+        margin: 0px 0px 30px;
+        width: 85.5%;
+
+        @include mac-air {
+          width: 77.5%;
+        }
+
+        /*@include desktop {
+          width: 85.5%;
+        }*/
+      }
+    }
+
+    .js-int__preview-con {
+      background-color: #EDEDED;
+      float: left;
+      min-height: 941px;
+      padding: 30px;
+      width: 75%;
+
+      .js-int__preview-handler {
+        margin-top: 40px;
+      }
+    }
+
+    .js-int__editor-title {
+      color: $sky;
+      font-family: $pvm-reg-font;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.07em;
+      margin: 30px 0px 38px;
+      min-width: 200px;
+      text-transform: uppercase;
+    }
+
+    .js-int__editor-title--sub {
+      color: $gray;
+      margin: 0px;
+    }
+
+    .js-int__disclaimer {
+      background-color: $pvm-yellow;
+      @include border-radius(5px);
+      font-size: 12px;
+      line-height: 17px;
+      margin: 10px 0px 0px;
+      padding: 5px;
+    }
+  }
+
+  .js-int__con--no-access {
+    background-color: #EDEDED;
+    border: 1px solid #DCDADC;
+    float: left;
+    margin: 0px 0px 45px;
+    text-align: center;
+    width: 100%;
+
+    .fa-lock {
+      color: #EDEDED;
+      background: #9B9B9B;
+      @include border-radius(50%);
+      font-size: 30px;
+      height: 42px;
+      line-height: 42px;
+      margin: 38px 0px 20px;
+      width: 42px;
+    }
+
+    .js-int__no-access-msg {
+      margin: 0px 0px 20px;
+    }
+
+    .js-int__req-access-btn {
+      display: inline-block;
+      margin: 0px 0px 40px;
+    }
+  }
+
+  .js-int__embed-con {
+    .js-int__embed-title {
+      color: $gray;
+      font-family: $pvm-reg-font;
+      font-size: 14px;
+      margin: 30px 0px 20px;
+      text-transform: uppercase;
+    }
+
+    .js-int__embed-code-area {
+      background-color: #f4f4f4;
+      border: 1px solid #cecece;
+      @include box-shadow(none);
+      height: 125px;
+      outline: none;
+      resize: none;
+    }
+  }
+}

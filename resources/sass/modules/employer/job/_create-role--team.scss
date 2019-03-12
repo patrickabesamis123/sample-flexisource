@@ -1,0 +1,265 @@
+.emp-new-role {
+  .middle-pane {
+    .role__team-content {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include md-desktop {
+        padding: 0px 15px 10px;
+      }
+
+      @include desktop {
+        padding: 0px 30px 30px;
+      }
+
+      .pvm-input-text, .pvm-select {
+        border: 1px solid #dfdfdf;
+      }
+
+      .role__team-box {
+        float: left;
+        position: relative;
+        width: 100%;
+
+        .fa-search {
+          color: #dfdfdf;
+          cursor: pointer;
+          padding: 3px 2px;
+          position: absolute;
+          right: 5px;
+          top: 5px;
+
+          @include md-desktop {
+            padding: 6px 2px;
+          }
+        }
+
+        .role__automplete {
+          float: left;
+          display: none;
+          position: relative;
+          width: 100%;
+
+          .role__team-members-list {
+            background-color: #fff;
+            float: left;
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            width: 100%;
+            z-index: 1;
+
+            @include desktop {
+              max-width: 400px;
+            }
+
+            .role__team-members-item {
+              float: left;
+              padding: 5px 10px;
+              width: 100%;
+
+              input[type=checkbox], input[type=radio] {
+                display: none;
+              }
+
+              .role__team-name {
+                font-family: $pvm-reg-font;
+                font-size: 12px;
+                line-height: 15px;
+
+                @include tablet {
+                  font-size: 14px;
+                  line-height: 17px;
+                }
+
+                .role__team-img {
+                  @include border-radius(50%);
+                  height: 30px;
+                  margin: 0px 5px 0px 0px;
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .role__invite-list {
+        float: left;
+        width: 100%;
+
+        .role__invite-item {
+          float: left;
+          margin: 0px 0px 10px;
+          width: 100%;
+
+          .role__invite-last-name {
+            @include iphone6 {
+              margin: 0px 4px 10px 0px;
+              width: 48%;
+            }
+
+            @include iphone6-land {
+              width: 32%;
+            }
+
+            @include tablet-land {
+              width: 48%;
+            }
+
+            @include desktop {
+              margin: 0px 3px 0px 0px;
+              width: 32%;
+            }
+          }
+
+          .role__invite-first-name {
+            @include iphone6 {
+              margin: 0px 0px 10px 4px;
+              width: 48%;
+            }
+
+            @include iphone6-land {
+              width: 32%;
+            }
+
+            @include tablet-land {
+              width: 48%;
+            }
+
+            @include desktop {
+              margin: 0px 0px 0px 3px;
+              width: 32%;
+            }
+          }
+
+          .role__invite-email {
+            @include iphone6-land {
+              margin: 0px 9px 10px 0px;
+              width: 32%;
+            }
+
+            @include tablet-land {
+              margin: 0px 0px 10px 0px;
+              width: 100%;
+            }
+
+            @include desktop {
+              margin: 0px 6px 0px 0px;
+              width: 32%;
+            }
+          }
+        }
+      }
+
+      .role__add-invite-link {
+        float: left;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 5px 0px 10px;
+        width: 100%;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .role__invite-msg {
+        font-size: 12px;
+        line-height: 32px;
+        margin: 0px 0px 0px 10px;
+
+        @include tablet {
+          font-size: 14px;
+        }
+      }
+
+      .role__send-invite-link {
+        float: left;
+        margin: 0px 0px 15px;
+
+        @include desktop {
+          margin: 0px 0px 35px;
+        }
+      }
+
+      .role__inv-exp {
+        float: left;
+        width: 100%;
+
+        @include iphone6 {
+          margin: 0px 10px 0px 0px;
+          width: 50%;
+        }
+      }
+
+      .role__create-invite-link {
+        float: left;
+        margin: 0px 0px 15px;
+
+        @include lg-desktop {
+          margin: 0px 0px 25px;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .right-pane {
+    padding: 20px;
+    .role__member-list {
+      float: left;
+      width: 100%;
+
+      .role__member-item {
+        //background-color: #f6f6f6;
+        //@include border-radius(12px);
+        border-bottom: 1px solid #dfdfdf;
+        float: left;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0px 5px 10px 0px;
+        max-width: 450px;
+        padding: 2px 4px;
+        position: relative;
+        width: 100%;
+
+        @include tablet {
+          font-size:14px;
+          line-height: 16px;
+          padding: 4px;
+        }
+
+        .role__team-img {
+          @include border-radius(50%);
+          float: left;
+          font-size: 20px;
+          height: 50px;
+          line-height: 50px;
+          margin: 0px 10px 0px 0px;
+          width: 50px;
+        }
+
+        .role__member-name {
+          font-family: $pvm-light-font;
+          float: left;
+          line-height: 50px;
+          margin: 0px 25px 0px 0px;
+        }
+
+        .role__close-btn {
+          line-height: 18px; ;
+          right: 4px;
+          top: 2px;
+
+        }
+      }
+    }
+
+    .role__member-list--filled {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}

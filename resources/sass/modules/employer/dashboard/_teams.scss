@@ -1,0 +1,77 @@
+#EmployerTeamContainer {
+  #EmployerTeams {
+    position: relative;
+
+    .sliderContainer {
+      min-height: 739px;
+
+      .button-container {
+        margin: 20px 0px;
+      }
+
+      .deleteTeam {
+        height: 32px;
+        margin-left: 5px;
+      }
+
+      .page_title_blue {
+        margin: 0px 0px 5px;
+        line-height: 38px;
+      }
+
+      .pvm-search-team {
+        margin: 0px;
+      }
+
+      .secondary-title {
+        margin-top: 0px !important;
+      }
+
+      .tse-scroll-content {
+        min-height: 819px;
+      }
+
+      .team-textbox {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .member-list {
+    margin-top: 25px;
+
+    .member-item {
+      background: #fafafa;
+      border: 1px solid #e0e0e0;
+      list-style-type: none;
+      margin-bottom: 15px;
+      margin-right: 10px;
+      padding: 20px 0px;
+      position: relative;
+
+      .btn-transparent {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+      }
+
+      .member-name {
+        font-family: 'Montserrat-Regular',Arial,serif;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0px;
+      }
+
+      .member-name--first {
+        margin-top: 20px;
+      }
+
+      .member-role {
+        color: $light-gray2;
+        font-family: 'Montserrat-Light',Arial,serif;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 5px 0px 20px;
+      }
+    }
+  }
+}

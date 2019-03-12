@@ -1,0 +1,73 @@
+.employer-settings {
+  #TeamAdminPermission {
+    .settingHead {
+      .comp-settings {
+        .pvm-blue {
+          margin-top: 10px !important;
+        }
+
+        &.text-right {
+          padding-top: 8px;
+        }
+      }
+    }
+
+    #SearchMember {
+      .userList {
+        .img-circle {
+          max-width: 35px;
+        }
+      }
+    }
+
+    .autoc-img-con {
+      padding: 0px 10px;
+
+      input[type="checkbox"] {
+        margin: 0px 5px 0px;
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    .autoc-name-con {
+      line-height: 37px;
+      padding: 0px;
+    }
+
+    .userList {
+      .member-item {
+        background: #fafafa;
+        border: 1px solid #e0e0e0;
+        margin-bottom: 15px;
+        margin-right: 5px;
+        padding: 20px 0px;
+        position: relative;
+        width: 24%;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        .btn-transparent {
+          position: absolute;
+          right: 3px;
+          top: 3px;
+        }
+
+        .member-name {
+          font-family: 'Montserrat-Regular', Arial, serif;
+          font-size: 13px;
+          line-height: 18px;
+          margin: 0px;
+          text-transform: initial;
+        }
+
+        .member-name--first {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @import 'settings-js-int';
+}

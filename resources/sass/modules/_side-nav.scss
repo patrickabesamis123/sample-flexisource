@@ -1,0 +1,209 @@
+.pvm-side-nav {
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    @include md-desktop {
+      //padding: 0px 0px 215px;
+    }
+  }
+
+  &.pvm-side-nav--candidate {
+    float: left;
+    width: 100%;
+
+    @include tablet {
+      width: 70px;
+    }
+
+    @include tablet {
+      width: 100px;
+    }
+
+    @include lg-desktop {
+      width: 135px;
+    }
+
+    .side-nav__who-am-i {
+      background-color: #f8f8f8;
+      margin: 20px 0px;
+      padding: 15px;
+
+      .side-nav__me {
+        font-size: 15px;
+        margin: 5px 0px;
+        position: relative;
+
+        @include tablet {
+          font-size: 18px;
+        }
+
+        .fa-bars {
+          border: 1px solid #ddd;
+          @include border-radius(3px);
+          color: $gray;
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 22px;
+          margin: 0px 0px 0px 5px;
+          padding: 5px 10px;
+          position: absolute;
+          text-align: right;
+          right: 0px;
+          top: -9px;
+
+          &:hover {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+
+    .side-nav__nav-bar {
+      background-color: #59595c;
+      display: none;
+      float: left;
+      margin: 0px 0px 15px;
+      width: 100%;
+
+      &.show-bar {
+        display: block;
+      }
+
+      @include tablet-land {
+        display: block;
+        margin: 0px 15px 15px 0px; 
+      }
+
+      .side-nav__profile-link {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0px;
+        text-align: center;
+
+        .side-nav__profile-img {
+          font-size: 32px;
+          height: 65px;
+          line-height: 65px;
+          width: 65px;
+        }
+      }
+
+      .side-nav__nav-name {
+        border-bottom: 1px solid $gray;
+        color: #fff;
+        font-family: $pvm-reg-font;
+        font-size: 13px;
+        margin: 0px 10px 10px;
+        padding: 0px 0px 20px;
+        text-align: center;
+      }
+
+      .side-nav__nav-list {
+        float: left;
+        width: 100%;
+
+        .side-nav__nav-item {
+          float: left;
+          width: 16.666%;
+
+          @include tablet {
+            width: 100%;
+          }
+
+          &.active {
+            background-color: $gray;
+            border-bottom: 4px solid $sky;
+
+            @include tablet {
+              border: none;
+              border-left: 4px solid $sky;
+            }
+          }
+
+          .side-nav__link {
+            color: #fff;
+            display: block;
+            float: left;
+            font-size: 12px;
+            padding: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+
+            @include tablet {
+              padding: 15px;
+            }
+
+            .side-nav__profile-img {
+              height: 65px;
+              margin: 0px 0px 3px;
+              font-size: 32px;
+              line-height: 65px;
+              width: 65px;
+            }
+
+            .fa {
+              float: left;
+              font-size: 20px;
+              line-height: 28px;
+              margin: 0px 10px 0px 0px;
+              width: 100%;
+
+              @include tablet {
+                font-size: 25px;
+                line-height: 34px;
+              }
+            }
+
+            .side-nav__title {
+              font-family: $pvm-light-font;
+              font-size: 9px;
+              float: left;
+              letter-spacing: 0.8px;
+              line-height: 15px;
+              margin:3px 0px 0px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.pvm-side-nav--fixed {
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+
+    @include tablet {
+      top: 10px;
+      left: 15px;
+    }
+  }
+
+  &.pvm-side-nav--fixed-btm {
+    bottom: 434px;
+    top: auto;
+  }
+
+}
+
+
+// remove this when done with my drafts clean up
+#my_job_application_page {
+  .row {
+    .col-md-2 {
+      .row {
+
+        .pvm-side-nav--candidate {
+          @include sm-desktop {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "success":true,
+    "message":" - ",
+    "data": {
+        "application_questions":[{
+            "question": "q1", "type": "multiple_choice", "answer_type": "multiple_choice", "answer": "[\"1\"]"
+        }
+        ,   
+        {
+            "question":"q2",
+            "type":"file_upload",
+            "answer_type":"file_upload",
+            "answer": {
+                "doc_file_type": "pdf", "doc_url": "https:\/\/pvmlive.blob.core.windows.net\/huhpl1hs\/1533002124_certificate_of_training.pdf", "doc_filename": "1533002124_certificate_of_training.pdf", "id": 11962, "doc_type": "application_question_answer"
+            }
+        }
+        ,
+        {
+            "question":"q3",
+            "type":"video",
+            "answer_type":"video",
+            "answer": {
+                "doc_file_type": "mp4", "doc_url": "https:\/\/518761399c1a4eb19173af408d10c8d6.azureedge.net\/d4355c29-8004-49eb-b214-9b06ccb26198\/5e06b53aa709c020e04378159d07eefe.ism\/manifest", "doc_filename": "5e06b53aa709c020e04378159d07eefe.mp4", "id": 11963, "doc_type": "video"
+            }
+        }
+        ],
+        "pre_apply_questions":[ {
+            "question": "Do you have experience working as an Account Coordinator, Sales Coordinator or similar role?", "answer": "yes", "decides_outcome": false, "type": "basic"
+        }
+        ,
+        {
+            "question": "Do you exhibit excellent computer skills particularly in Microsoft Office?", "answer": "yes", "decides_outcome": false, "type": "basic"
+        }
+        ]
+    }
+}

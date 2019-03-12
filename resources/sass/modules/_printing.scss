@@ -1,0 +1,200 @@
+@media print {
+  header, footer {
+    display: none;
+  }
+
+  a[href]:after {
+    content: none !important;
+  }
+
+  #tawkchat-minified-wrapper {
+    display: none !important;
+  }
+
+  /*for Print Purposes*/
+  .page-break {
+    display: block;
+    break-before: always;
+    page-break-before: always;
+    position: relative;
+  }
+
+
+
+  #EmployerManageTalent {
+    div, p, section {
+      float: none !important;
+    }
+    .TMS-job-details, .tmshead {
+      display: none;
+    }
+
+    .TMS-applicant-section {
+      .TMS__header, .TMS__desc, .TMS__bucket-list, .TMS__email-button {
+        display: none !important;
+      }
+
+      .TMS-applicants-view {
+        .TMS-left-tab {
+          display: none;
+        }
+
+        .TMS-right-tab {
+          .TMS__filters {
+            display: none;
+          }
+
+          .TMS__applicant-list {
+            .TMS__applicant-item {
+              display: none;
+
+              .applicant-name {
+                color: $sky !important;
+              }
+            }
+
+            .expander {
+              &.print-profile {
+                display: block !important;
+              }
+
+              .unexpand {
+                display: none !important;
+              }
+              .applicant-name, .TMS__applicant-header {
+                color: $sky !important;
+              }
+
+              .TMS__profile-navs {
+                width: 100% !important;
+
+                .applicant__section-list {
+                  display: none !important;
+                }
+
+                .tab-pane {
+                  display: block !important;
+                  height: auto !important;
+                  opacity: 1 !important;
+                  padding: 0px !important;
+
+                  .tse-scrollbar {
+                    display: none !important;
+                  }
+
+                  .tse-scroll-content {
+                    height: auto !important;
+
+                    .TMS__questions-file-link {
+                      display: none;
+                    }
+
+                    .TMS__questions-file-link--print {
+                      display: block;
+                    }
+                  }
+              }
+              }
+
+              .TMS__profile-actions {
+                display: none !important;
+              }
+
+              .TMS__profile-photo {
+                width: 100% !important;
+              }
+
+              .TMS__profile-summary {
+                text-align: center;
+                width: 100% !important;
+              }
+
+              .TMS__profile-vid-box {
+                display: none !important;
+
+                .expvideoLoaded {
+                  display: none !important;
+                }
+              }
+            }
+          }
+
+          .TMS__more-applicant {
+            display: none !important;
+
+          }
+        }
+      }
+    }
+  }
+
+  #AnalyticsSidebar {
+    display: none !important;
+  }
+  #AnalyticsMainDiv {
+    .tawkchat-minified-container {
+      display: none !important;
+    }
+    #AnalyticsContolHeader {
+      display: none !important;
+    }
+
+    .analytics-main {
+      position: absolute;
+      input, label {
+        display:  none !important;
+      }
+    }
+
+    #AnalyticsOverview {
+      border: none !important;
+
+      .analytics-control {
+        display: none !important;
+      }
+
+       div, p, section {
+        float: none !important;
+      }
+
+      #AnalyticsOverviewInner {
+        margin: 0 !important;
+      }
+    }
+
+    #AnalyticsSourceEd {
+      border: none !important;
+      display: block !important;
+      /*width: 90%;*/
+
+      div, p, section {
+        float: none !important;
+      }
+
+      #AnalyticsSourceEdInner {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+
+    #AnalyticsExpIndustry {
+      page-break-before: always;
+      border: none !important;
+      display: block !important;
+
+      #AnalyticsExpIndustryInner {
+        margin: 0 !important;
+      }
+    }
+
+    #AnalyticsRoleAnswers {
+      border: none !important;
+      display: block !important;
+
+      #AnalyticsRoleAnswersInner {
+        margin: 0 !important;
+      }
+    }
+  }
+
+}

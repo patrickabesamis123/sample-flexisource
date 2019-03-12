@@ -1,0 +1,1427 @@
+.emp-new-role {
+  margin: 0 15px;
+
+  .role__loader-div {
+    text-align: center;
+    padding: 190px 0;
+    min-height: 680px;
+  }
+
+  @include lg-desktop {
+    /*max-width: 1680px;
+    margin: 0 auto;*/
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .role__label {
+    color: $sky;
+    font-family: "Rockwell-Light";
+    font-size: 14px;
+    float: left;
+    line-height: 18px;
+    margin: 15px 5px 10px 0px;
+    position: relative;
+    width: 100%;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @include tablet-land {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    @include md-desktop {
+      width: 62%;
+    }
+  }
+
+  .role__label--full {
+    @include md-desktop {
+      width: 100%;
+    }
+  }
+
+  .role__pull-btn--gen {
+    float: left;
+    margin: 0px 0px 15px;
+
+
+    @include md-desktop {
+      float: right;
+      margin: 10px 0px 0px;
+    }
+  }
+
+  .role__pull-btn--pre-app {
+    float: left;
+    margin: 0px 0px 15px;
+
+
+    @include md-desktop {
+      float: right;
+      margin: 10px 0px 0px;
+    }
+  }
+
+  .role__pull-btn--standard {
+    float: left;
+    margin: 0px 0px 15px;
+
+
+    @include md-desktop {
+      float: right;
+      margin: 10px 0px 0px;
+    }
+  }
+
+  .role__pull-btn--not {
+    float: left;
+    margin: 0px 0px 15px;
+
+
+    @include desktop {
+      float: right;
+      margin: 10px 0px 0px;
+    }
+
+    @include md-desktop {
+      margin: 0px 30px 0px 0px;
+    }
+  }
+
+  .role__pull-btn--consi {
+    float: left;
+    margin: 0px 0px 15px;
+
+
+    @include md-desktop {
+      float: right;
+      margin: 10px 0px 0px;
+    }
+  }
+
+  .role__description {
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 5px 0px 10px;
+    width: 100%;
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  .role__close-btn {
+    background-color: $pvm-red;
+    @include border-radius(50%);
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+
+    .fa-close {
+      line-height: 20px;
+    }
+  }
+
+  .role__inspirations {
+    background-color: $pvm-purple;
+    @include border-radius(3px);
+    float: left;
+    margin: 20px 0px 0px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+
+    @include tablet {
+      padding: 10px;
+    }
+
+    .fa-minus, .fa-plus {
+      color: #fff;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+
+      @include desktop {
+        top: 18px;
+      }
+    }
+
+    .role__sublabel {
+      color: #fff !important;
+      font-family: $pvm-reg-font;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 14px;
+      margin: 5px 0px;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .role__subdesc {
+      color: #fff;
+      font-family: $pvm-light-font;
+      font-size: 10px;
+      line-height: 12px;
+
+      @include tablet {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .role__inspiration-list {
+      padding: 0px 0px 40px;
+
+      .role__inspiration-item {
+        color: $gray;
+        cursor: pointer;
+        background-color: #fff;
+        @include border-radius(3px);
+        display: inline-block;
+        font-font: $pvm-reg-font;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 5px 5px 0px 0px;
+        padding: 3px 5px;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .role__shuffle {
+      background-color: $pvm-green;
+      @include border-radius(50%);
+      bottom: 5px;
+      display: inline-block;
+      height: 30px;
+      padding: 5px;
+      position: absolute;
+      right: 5px;
+      text-align: center;
+      width: 30px;
+      cursor:pointer;
+
+      @include tablet {
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .fa-random {
+        color: #fff;
+      }
+    }
+  }
+
+  .role__bespoke {
+    background-color: $pvm-yellow2;
+    @include border-radius(3px);
+    float: left;
+    margin: 20px 0px 0px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+
+    @include tablet {
+      padding: 10px;
+    }
+
+    .fa-minus, .fa-plus {
+      color: $sky;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+
+      @include desktop {
+        top: 18px;
+      }
+    }
+
+    .role__sublabel {
+      color: $sky;
+      font-family: $pvm-reg-font;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 14px;
+      margin: 5px 0px;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .role__subdesc {
+      color: $gray;
+      font-family: $pvm-light-font;
+      font-size: 10px;
+      line-height: 12px;
+
+      @include tablet {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .role__bespoke-list {
+      padding: 0px 0px 40px;
+
+      .role__bespoke-item {
+        color: $gray;
+        cursor: pointer;
+        background-color: #fff;
+        @include border-radius(3px);
+        display: inline-block;
+        font-font: $pvm-reg-font;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 5px 5px 0px 0px;
+        padding: 3px 5px;
+        position: relative;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        .bespoke__tooltip {
+          @include pvm-message(20px, 250px, -5px);
+
+          .pvm-arrow-msg {
+            margin: 0px;
+          }
+        }
+      }
+    }
+
+    .role__shuffle {
+      background-color: $pvm-green;
+      @include border-radius(50%);
+      bottom: 5px;
+      display: inline-block;
+      height: 30px;
+      padding: 5px;
+      position: absolute;
+      right: 5px;
+      text-align: center;
+      width: 30px;
+
+      @include tablet {
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .fa-random {
+        color: #fff;
+      }
+    }
+  }
+
+  .role__answers {
+    border: 1px solid #dfdfdf;
+    border-right: none;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    padding: 4px 7px;
+    background: #fff;
+
+    @include iphone6-land {
+      padding: 5px 10px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 10px;
+    }
+
+    @include md-desktop {
+      padding: 10px 15px;
+    }
+
+    input[type=checkbox], input[type=radio] {
+      display: none;
+    }
+  }
+
+  .role__answers--yes {
+    @include border-radius(5px 0px 0px 5px);
+  }
+
+  .role__answers--no {
+    border: 1px solid #dfdfdf;
+    @include border-radius(0px 5px 5px 0px);
+  }
+
+  .role__answers--answered {
+    background-color: $pvm-green;
+    color: #fff;
+  }
+
+  .role__QandA-list {
+    float: left;
+    margin: 20px 0px 10px;
+    width: 100%;
+
+    .role__QandA-item {
+      float: left;
+      position: relative;
+      margin: 10px 0px;
+      width: 100%;
+
+      .role__QandA {
+        font-font: $pvm-reg-font;
+        font-size: 12px;
+        line-height: 14px;
+        float: left;
+        width: 7%;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .role__QandA--sub {
+        margin: 10px 0px 0px 25px;
+      }
+
+      .role__QandA-details {
+        font-family: $pvm-reg-font;
+        font-size: 12px;
+        line-height: 14px;
+        float: left;
+        width: 93%;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        .role__questions {
+          border: 1px solid #dfdfdf;
+          @include border-radius(3px);
+          color: $gray;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          width: 90%;
+
+          @include tablet {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+
+        .role__mult-box {
+          float: left;
+          width: 100%;
+
+          @include iphone6-land {
+            width: 50%;
+          }
+
+          @include tablet-land {
+            width: 100%;
+          }
+
+          @include desktop {
+            width: 50%;
+          }
+        }
+
+        .role__answers-mult {
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 14px;
+          width: 100%;
+
+          @include tablet {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          input[type=checkbox] {
+            position: relative;
+            top: 2px;
+          }
+        }
+
+        .role__answers-mult--disabled {
+          color: #bfbfbf;
+
+          input[type=checkbox] {
+            position: relative;
+            top: 2px;
+          }
+        }
+
+        .role__disqualify-can {
+          font-weight: normal;
+
+          @include iphone6-land {
+            margin: 2px 0px 0px 5px;
+          }
+
+          @include tablet {
+            margin: 2px 0px 0px 10px;
+          }
+
+          @include desktop {
+            float: left;
+            margin: 2px 0px 0px 50px;
+            width: 43%;
+          }
+
+          input[type=checkbox] {
+            @include iphone6-land {
+              position: relative;
+              margin: 0px;
+              top: 2px;
+            }
+          }
+        }
+
+        .role__disqualify-can--full {
+          margin: 15px 0px 0px;
+          width: 100%;
+        }
+
+        .role__disqualify-can--inline {
+          margin: 0px 40px 0px 0px;
+          width: initial;
+        }
+
+        .role__disqualify-can--one {
+          input[type=checkbox] {
+            display: none;
+          }
+        }
+      }
+
+      .role__QandA-details--sub {
+        margin: 10px 0px 0px;
+        width: 82%;
+
+        @include iphone6 {
+          width: 84%;
+        }
+      }
+
+      .role__GPA-list {
+        float: left;
+        margin: 5px 113px 0px 0px;
+        width: 75px;
+      }
+
+      .role__QandA-video {
+        padding: 1vw;
+        background: #dfdfdf;
+        border: 1px solid #ccc;
+        color: $gray;
+      }
+    }
+  }
+
+  .role__add-pre-app {
+    float: left;
+  }
+
+  .role__add-resps {
+    float: left;
+  }
+
+  .role__add-reasons {
+    float: left;
+  }
+
+  .role__sublabel {
+    color: $gray !important;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    margin: 5px 0px;
+    width: 100%;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .role__sublabel--gray {
+    color: $light-gray !important;
+  }
+
+  .role__sublabel--answers {
+    margin: 0px 0px 5px;
+  }
+
+  .role__subdesc {}
+
+  .top-pane {
+    border-bottom: 1px solid #ededed;
+    float: left;
+    padding: 0px 10px 5px;
+    position: relative;
+    width: 100%;
+
+    .role__title {
+      color: $sky;
+      font-family: "Rockwell-Light";
+      font-size: 16px !important;
+      float: left;
+      line-height: 20px;
+      margin: 15px 5px 10px 0px;
+      max-width: 600px;
+      position: relative;
+      width: 100%;
+
+      @include tablet {
+        font-size: 18pxx !important;
+        line-height: 22px;
+        margin: 60px 5px 10px 0px;
+      }
+
+      @include tablet-land {
+        font-size: 22pxx !important;
+        line-height: 32px;
+        margin: 15px 5px 10px 0px;
+        width: 65%;
+      }
+    }
+    .role__title--disabled {
+      background-color: transparent;
+      border: transparent;
+    }
+
+    .name {
+      &.fa-pencil, &.fa-save {
+        color: $light-gray2;
+        cursor: pointer;
+        font-size: 15px;
+        float: left;
+        line-height: 45px;
+        /*position: absolute;
+        right: 0px;
+        top: 0px;*/
+        width: auto;
+
+        @include tablet {
+          margin: 15px 5px 0px 0px;
+        }
+      }
+    }
+
+    .role__btn-handler {
+      @include tablet {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+      }
+
+      @include tablet-land {
+        position: relative;
+        width: 100%;
+      }
+
+      .role__save-btn {
+        color: $sky !important;
+        float: right;
+        line-height: 18px;
+        padding: 8px 10px;
+        margin: 15px 0px 10px 5px;
+        width: auto;
+
+        .fa {
+          font-size: 18px !important;
+          margin: 0px 5px 0px 0px;
+          position: relative;
+          text-align: center;
+          top: 1px;
+        }
+      }
+
+      .role__publish-btn {
+        color: #efefef !important;
+        float: right;
+        line-height: 18px;
+        padding: 8px 10px;
+        margin: 15px 0px 10px 5px;
+        width: auto;
+
+        .fa {
+          font-size: 18px !important;
+          margin: 0px 5px 0px 0px;
+          position: relative;
+          text-align: center;
+          top: 1px;
+        }
+      }
+    }
+  }
+
+  .left-pane {
+    float: left;
+    position: relative;
+    width: 100%;
+
+    @include md-desktop {
+      max-width: 270px;
+      width: 25%;
+    }
+
+    .role__where-am-i {
+      border-bottom: 1px solid #EDEDED;
+      color: $gray;
+      cursor: pointer;
+      font-family: $pvm-reg-font;
+      font-size: 13px;
+      float: left;
+      line-height: 19px;
+      margin: 10px 0px;
+      padding: 0px 10px 10px;
+      position: relative;
+      text-transform: none;
+      width: 100%;
+
+      .fa-caret-down {
+        color: $sky;
+        cursor: pointer;
+        float: left;
+        font-size: 15px;
+        line-height: 19px;
+        padding: 0px 10px 0px 0px;
+      }
+    }
+
+    .role__steps-handler {
+      float: left;
+      position: relative;
+      width: 100%;
+
+      .role__steps-list {
+        @include box-shadow(3px 2px 13px #dfdfdf);
+        color: $gray;
+        float: left;
+        font-size: 13px;
+        //padding: 0px 10px;
+        left: 0px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0px;
+        width: 100%;
+        z-index: 2;
+
+        @include iphone6 {
+          font-size: 14px;
+          max-width: 270px;
+        }
+
+        @include sm-desktop {
+          border-top: 1px solid #dfdfdf;
+          @include box-shadow(none);
+          font-size: 12px;
+        }
+
+        @include md-desktop {
+          font-size: 15px;
+          width: 100%;
+        }
+
+        .role__steps-item {
+          background-color: #fff;
+          border-bottom: 1px solid #cecece;
+          color: $sky;
+          cursor: pointer;
+          padding: 8px 0px;
+
+          &.active {
+            background-color: $pvm-yellow2;
+            color: $sky;
+          }
+
+          .role__steps-title {
+            //padding: 0px 10px;
+            margin: 0px 10px;
+
+            .fa-caret-up, .fa-caret-down {
+              float: right;
+              font-size: 15px;
+              line-height: 17px;
+              margin: 0px 10px 0px;
+            }
+          }
+
+          .role__build-role-list {
+            background-color: #f0f0f0;
+            color: $gray;
+            font-size: 12px;
+            margin: 10px 0px 0px;
+            //padding: 8px 0px;
+            padding: 0px;
+            text-transform: none;
+
+            @include iphone {
+              font-size: 13px;
+            }
+
+            @include md-desktop {
+              font-size: 14px;
+            }
+
+            .role__build-role-item {
+              border-bottom: 1px solid #cecece;
+              padding: 8px;
+
+              &:last-child {
+                border-bottom: none;
+              }
+
+              &.active {
+                background-color: #e1e1e1;
+              }
+
+              span {
+                color: $pvm-red;
+                font-size: 11px;
+                float: right;
+              }
+            }
+          }
+        }
+
+        .role__steps-item--build {
+          padding: 8px 0px 0px;
+        }
+      }
+
+      .role__steps-list--old-desk {
+        @include md-desktop {
+          @include box-shadow(none);
+          display: block !important;
+          left: 0px;
+          max-width: 270px;
+          position: relative !important;
+        }
+      }
+    }
+  }
+
+  .middle-pane {
+    background-color: #f1f1f1;
+    float: left;
+    width: 100%;
+
+    @include tablet-land {
+      border-left: 1px solid #ECECEC;
+      border-right: 1px solid #ECECEC;
+      width: 40%;
+    }
+
+    @include md-desktop {
+      min-height: 700px;
+      width: 34.4%;
+    }
+
+    @include lg-desktop {
+      width: 37.9%;
+    }
+
+    .role__requirements-list {
+      border-top: 1px solid #EDEDED;
+      float: left;
+      margin: 20px 0px 10px;
+      width: 100%;
+
+      .role__requirements-error-div {
+        font-style: italic;
+        font-size: 12px;
+        color: red;
+      }
+
+      .role__requirements-item {
+        float: left;
+        margin: 10px 0px 5px;
+        width: 100%;
+
+        @include iphone6-land {
+          width: 50%;
+        }
+
+        .role__required-app-list {
+          margin: 10px 0px 5px;
+
+          .role__required-app-item {
+            .role__requirement {
+              font-family: $pvm-reg-font;
+              font-size: 12px;
+              font-weight: normal;
+              line-height: 14px;
+
+              @include tablet {
+                font-size: 14px;
+                line-height: 16px;
+              }
+
+              input[type=checkbox] {
+                position: relative;
+                margin: 0px;
+                top: 2px;
+              }
+            }
+
+            .role__req-text {
+              border: 1px solid #dfdfdf;
+              margin: 5px 0px;
+            }
+          }
+        }
+      }
+    }
+
+    .role__mult-choice-list {
+      float: left;
+      margin: 10px 0px 0px;
+      padding: 0px 0px 0px 20px;
+      width: 100%;
+
+      @include iphone6-land {
+        padding: 0px;
+        margin: 0px;
+        width: 49%;
+      }
+
+      @include tablet-land {
+        width: 100%;
+      }
+
+      @include desktop {
+        width: 49%;
+      }
+
+      .role__mult-choice-item {
+        float: left;
+        position: relative;
+        width: 100%;
+
+        .role__mult-choice-label {
+          float: left;
+          font-font: $pvm-reg-font;
+          font-size: 12px;
+          line-height: 32px;
+          margin: 0px 5px 0px 0px;
+
+          @include tablet {
+            font-size: 14px;
+          }
+        }
+
+        .role__mult-text {
+          border: 1px solid #dfdfdf;
+          float: left;
+          width: 82.5%;
+        }
+      }
+
+      .role__mult-choice-item--add {
+        .role__mult-more {
+          float: left;
+          font-font: $pvm-reg-font;
+          font-size: 12px;
+          text-decoration: underline;
+
+          @include tablet {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-pane {
+    float: left;
+    width: 100%;
+
+    @include tablet-land {
+      width: 60%;
+    }
+
+    @include md-desktop {
+      width: 45%;
+    }
+
+    @include desktop {
+      width: 49%;
+    }
+
+    @include lg-desktop {
+      width: 46%;
+    }
+
+    .preview__handler {
+      border: 1px solid #cfcfcf;
+      float: left;
+      width: 100%;
+
+      p, li {
+        font-size: 10px;
+        line-height: 14px;
+      }
+
+      .preview__email-subj {
+        float: left;
+        font-size: 14px;
+        font-family: $pvm-bold-font;
+        width: 100%;
+      }
+
+      .preview__email-body {
+        float: left;
+        font-size: 14px;
+        font-family: $pvm-reg-font;
+        margin: 40px 0px 80px;
+        width: 100%;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .preview__logo-center {
+        float: left;
+        position: relative;
+        left: 35%;
+        margin: 50px 0px;
+        width: 20%;
+      }
+
+      .preview__banner {
+        background-size: cover;
+        background-position: center center;
+        height: 90px;
+        width: 100%;
+      }
+
+      .preview__content {
+        font-size: 10px;
+        line-height: 13px;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+
+        .preview__jobs-header {
+          color: $sky;
+          float: left;
+          font-size: 12px;
+          line-height: 15px;
+          margin: 25px 0px 5px;
+          text-transform: uppercase;
+          width: 100%;
+        }
+
+        .preview__jobs-label {
+          color: $gray;
+          font-size: 10px;
+          line-height: 13px;
+          margin: 5px 0px;
+          text-transform: uppercase;
+        }
+
+        .preview__left {
+          float: left;
+          padding: 10px 270px 10px 40px;
+          width: 100%;
+
+          .preview__logo {
+            @include border-radius(50%);
+            float: left;
+            width: 80px;
+          }
+
+          .preview__summ {
+            float: left;
+            font-size: 10px;
+            line-height: 13px;
+            padding: 0px 20px 0px 10px;
+            width: 80%;
+
+            .preview__company-name {
+              font-size: 12px;
+              line-height: 15px;
+              color: $sky;
+              margin: 0px;
+            }
+
+            .preview__industry {
+              font-size: 10px;
+              line-height: 13px;
+              margin: 0px;
+            }
+
+            .preview__employees {
+              margin: 0px;
+            }
+          }
+
+          .preview__app-tab-list {
+            float: left;
+            margin: 30px 0px 0px;
+            width: 100%;
+
+            .preview__app-tab-item {
+              border-bottom: 1px solid #ECECEC;
+              display: none;
+              float: left;
+              font-size: 9px;
+              padding: 8px 4px;
+              text-transform: uppercase;
+              width: 100%;
+
+              &.active {
+                background-color: $pvm-yellow;
+                color: $sky;
+                display: block;
+              }
+            }
+          }
+        }
+
+        .preview__left--dim {
+          background-color: #f1f1f1;
+          border-top: 1px solid #cfcfcf;
+
+          .preview__reqsh-list {
+            float: left;
+            margin: 25px 0px 10px;
+            width: 100%;
+
+            .preview__reqsh-item {
+              float: left;
+              width: 100%;
+
+              .preview__reqs-list {
+                float: left;
+                margin: 0px;
+                width: 100%;
+
+                .preview__reqs-item {
+                  float: left;
+                  list-style-type: disc;
+                  margin: 0px 0px 0px 25px;
+                  width: 100%;
+                }
+              }
+            }
+
+            .preview__reqsh-item--label {
+              font-family: $pvm-bold-font;
+              padding: 0px 20px 0px 0px;
+            }
+          }
+        }
+
+        .preview__right {
+          background-color: transparent;
+          float: left;
+          margin: 10px 0px;
+          min-height: 500px;
+          padding: 10px 15px;
+          position: absolute;
+          right: 40px;
+          top: 85px;
+          width: 30%;
+
+          .preview__jobs {
+            border: 1px solid #cfcfcf;
+            background-color: #EDEDED;
+            padding: 10px;
+          }
+
+          .preview__jobs--white {
+            background-color: #fff;
+            margin-top: 10px;
+          }
+
+          .preview__title {
+            color: $sky;
+            font-family: "Rockwell-Light";
+            font-size: 14px;
+            line-height: 21px;
+          }
+
+          .preview__pre-app-list {
+            float: left;
+            width: 100%;
+
+            .preview__pre-app-item {
+              float: left;
+              margin: 0px 0px 25px;
+              width: 100%;
+
+              .preview__question {
+                float: left;
+                margin: 0px 0px 10px;
+                width: 100%;
+              }
+
+              .preview__question-con {
+                float: left;
+                width: 100%
+              }
+
+              .role__answers {
+                font-size: 10px;
+                cursor: default;
+                padding: 3px 8px;
+              }
+
+              textarea {
+                border: 1px solid #dfdfdf;
+                margin: 10px 0px;
+                width: 95%;
+              }
+
+              button {
+                font-size: 9px !important;
+                height: 23px !important;
+                line-height: 22px !important
+              }
+
+              .preview__video {
+                background-color: #ECECEC;
+                float: left;
+                height: 80px;
+                margin: 10px 0px;
+                text-align: center;
+                width: 150px;
+
+                .fa-play {
+                  color: $gray;
+                  font-size: 45px;
+                  margin: 16px 0px 0px;
+                }
+              }
+            }
+          }
+        }
+
+        .preview__right--app {
+          background-color: #f1f1f1;
+          top: 0px;
+        }
+      }
+    }
+
+
+    .preview__handler--candidate {
+      .preview__content {
+        min-height: 700px;
+
+        .preview__left {
+          bottom: 30px;
+          padding: 10px 20px 10px 40px;
+          position: relative;
+          width: 30%;
+
+          .preview__summ {
+            padding: 0px 10px;
+            width: 100%;
+            .preview__company-name {
+              font-size: 10px;
+            }
+          }
+
+          .preview__logo {
+            border: 5px solid #fff;
+            margin: 0px 15%;
+          }
+        }
+
+        .preview__right {
+          width: 68%;
+        }
+      }
+    }
+
+    .preview__handler--email {
+      padding: 0px 50px 50px;
+    }
+  }
+
+  .bottom-pane {
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    float: left;
+    padding: 0px 10px 5px;
+    position: relative;
+    width: 100%;
+
+    .role__btn-handler {
+      float: left;
+      padding: 0px 13%;
+      position: relative;
+      width: 65%;
+
+      @include tablet {
+        width: 75%;
+      }
+
+      .role__btn-msg {
+        background-color: #fff;
+        border: 1px solid #cfcfcf;
+        @include border-radius(5px);
+        bottom: 50px;
+        @include box-shadow(3px 2px 13px #dfdfdf);
+        font-size: 11px;
+        line-height: 13px;
+        margin: 0px 13%;
+        padding: 10px;
+        position: absolute;
+        right: 52px;
+        width: 250px;
+
+        h5 {
+          font-family: "Rockwell", $pvm-reg-font;
+        }
+
+        .role__btn-msg-ok {
+          float: left;
+          height: 24px !important;
+          line-height: 24px !important;
+          margin: 15px 5px 10px 0px;
+        }
+
+        .role__btn-never-show {
+          font-weight: normal;
+          margin: 15px 0px 10px;
+          position: relative;
+
+          input[type=checkbox] {
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+
+      .role__save-btn {
+        color: $sky !important;
+        float: right;
+        line-height: 18px;
+        padding: 8px 10px;
+        margin: 15px 0px 10px 5px;
+        width: auto;
+
+        .fa {
+          font-size: 18px !important;
+          margin: 0px;
+          position: relative;
+          text-align: center;
+          top: 1px;
+
+          @include tablet {
+            margin: 0px 5px 0px 0px;
+          }
+        }
+      }
+    }
+
+    .role__prev-btn {
+      float: left;
+      margin: 15px 0 10px;
+    }
+
+    .role__next-btn {
+      float: right;
+      margin: 15px 0 10px;
+    }
+  }
+
+  .role__where {
+    position: relative;
+  }
+
+  .role__publish-btn {
+    color: #efefef !important;
+    float: right;
+    line-height: 18px;
+    padding: 8px 10px;
+    margin: 15px 0px 10px 5px;
+    width: auto;
+
+    .fa {
+      font-size: 18px !important;
+      margin: 0px;
+      position: relative;
+      text-align: center;
+      top: 1px;
+
+      @include tablet {
+        margin: 0px 5px 0px 0px;
+      }
+    }
+  }
+
+  .role__publish-btn--on {
+    background-color: $pvm-green !important;
+    border: 1px solid #02bf99;
+  }
+}
+
+.role__published {
+  background: url("../../images/confirmBG.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    @include md-desktop {
+      font-size: 56px !important;
+      padding: 160px 0px 30px;
+    }
+  }
+
+  a {
+    @include md-desktop {
+      color: $gray;
+      font-size: 32px;
+    }
+  }
+}

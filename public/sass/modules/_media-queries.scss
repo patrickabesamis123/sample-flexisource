@@ -1,0 +1,170 @@
+$iphone-scr: 320px;
+$iphone6-scr: 375px;
+$iphone7-scr: 414px;
+$iphone6-landscape-scr: 667px;
+$tablet-scr: 768px;
+$iphonex-landscape-scr: 812px;
+$tablet-land-scr: 1024px;
+$sm-desktop-scr: 1200px;
+$md-desktop-scr: 1366px;
+$air-scr: 1440px;
+$desktop-scr: 1680px;
+$lg-desktop-scr: 1730px;
+
+$iphone6-scr-down: 374px;
+$iphone6-landscape-scr-down: 666px;
+$iphonex-landscape-scr-down: 811px;
+$tablet-scr-down: 767px;
+$tablet-land-scr-dwn: 1023px;
+$sm-desktop-scr-dwn: 1199px;
+$desktop-scr-up: 1681px;
+
+$iphone-scope: (min-width: #{$iphone-scr});
+$iphone6-scope: (min-width: #{$iphone6-scr});
+$iphone7-scope: (min-width: #{$iphone7-scr});
+$iphone6-land-scope: (min-width: #{$iphone6-landscape-scr});
+$iphonex-land-scope: (min-width: #{$iphonex-landscape-scr});
+$tablet-scope: (min-width: #{$tablet-scr});
+$tablet-land-scope: (min-width: #{$tablet-land-scr});
+$sm-desktop-scope: (min-width: #{$sm-desktop-scr});
+$md-desktop-scope: (min-width: #{$md-desktop-scr});
+$desktop-scope: (min-width: #{$desktop-scr});
+$lg-desktop-scope: (min-width: #{$lg-desktop-scr});
+
+@mixin iphone {
+  @media #{$iphone-scope} {
+    @content;
+  }
+}
+
+@mixin iphone6 {
+  @media #{$iphone6-scope} {
+    @content;
+  }
+}
+
+@mixin iphone7 {
+  @media #{$iphone7-scope} {
+    @content;
+  }
+}
+
+@mixin iphone6-land {
+  @media (min-width:$iphone6-landscape-scr) {
+    @content;
+  }
+}
+
+@mixin iphonex-land {
+  @media (min-width:$iphonex-landscape-scr) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width:$tablet-scr) {
+    @content;
+  }
+}
+
+@mixin tablet-land {
+  @media (min-width:$tablet-land-scr) {
+    @content;
+  }
+}
+
+@mixin sm-desktop {
+  @media (min-width:$sm-desktop-scr) {
+    @content;
+  }
+}
+
+@mixin md-desktop {
+  @media (min-width:$md-desktop-scr) {
+    @content;
+  }
+}
+
+@mixin mac-air {
+  @media (min-width:$air-scr) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width:$desktop-scr) {
+    @content;
+  }
+}
+
+@mixin lg-desktop {
+  @media (min-width:$lg-desktop-scr) {
+    @content;
+  }
+}
+
+@mixin phone-invisible {
+  @media (max-width: #{$iphone6-landscape-scr-down}) {
+    display: none;
+  }
+}
+
+@mixin phone-land-invisible {
+  @media #{$iphone6-land-scope} {
+    display: none;
+  }
+}
+
+@mixin phone-land-visible {
+  @media (max-width: #{$iphone6-landscape-scr-down}) {
+    display: none;
+  }
+}
+
+@mixin phonex-land-invisible {
+  @media (max-width: #{$iphonex-landscape-scr}) {
+    display: none;
+  }
+}
+
+@mixin phonex-land-visible {
+  @media (min-width: #{$tablet-land-scr}) {
+    display: none;
+  }
+}
+
+@mixin tablet-invisible {
+  @media (min-width: #{$tablet-scr}) {
+    display: none;
+  }
+}
+@mixin tablet-visible {
+  @media (max-width: #{$tablet-scr-down}) {
+    display: none;
+  }
+}
+
+@mixin tablet-land-invisible {
+  @media (min-width: #{$tablet-land-scr}) {
+    display: none;
+  }
+}
+
+@mixin tablet-land-visible {
+  @media (max-width: #{$tablet-land-scr-dwn}) {
+    display: none;
+  }
+}
+
+@mixin sm-desktop-visible {
+  @media (max-width: #{$sm-desktop-scr-dwn}) {
+    display: none;
+  }
+}
+
+@mixin md-desktop-visible {
+  @media (min-width: #{$md-desktop-scr}) {
+    display: none;
+  }
+}
+

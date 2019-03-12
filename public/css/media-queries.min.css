@@ -1,0 +1,183 @@
+@media screen and (max-width:1500px){#custom-bootstrap-menu.navbar-default .navbar-nav>li>a{font-size:.8em}
+}@media screen and (min-width:1455px){#headerItems>li.custom_width{width:70px}}@media screen and (max-width:1320px){#header-link .navbar-nav>li{padding-left:0;padding-right:0}
+}@media screen and (max-width:1215px){#custom-bootstrap-menu.navbar-default .navbar-nav>li>a{color:#626262 !important}
+#custom-bootstrap-menu.navbar-default .navbar-brand{padding:0}#custom-bootstrap-menu.navbar{border-radius:5px;margin-top:15px;z-index:999;position:relative}
+#custom-bootstrap-menu .navbar-header{float:none}#custom-bootstrap-menu .navbar-toggle{display:block !important;float:right;width:auto !important;margin-right:15px}
+#custom-bootstrap-menu .navbar-collapse.collapse{display:none !important}#custom-bootstrap-menu .navbar-collapse.collapse.in{display:block !important}
+#custom-bootstrap-menu .navbar-right{width:100%}#custom-bootstrap-menu .navbar-nav>li{float:none;display:block}
+#custom-bootstrap-menu .navbar-collapse{margin-left:-15px;margin-right:-15px;border:1px solid #FFF;background-color:rgba(255,255,255,0.8);padding:15px;margin-top:25px}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a{font-size:14px}#header-link .navbar-nav{margin-top:40px}
+#header-link .navbar-nav>li{text-align:center}}@media screen and (max-width:1199px){#message_li{margin-right:0}
+#header-link .navbar-nav>li>a{padding-left:10px;padding-right:10px}}@media screen and (max-width:1024px){.StaticPages .static-bottom-content .faq-containter{width:80%}
+.Homepage .main_top_label{top:120px}#Homepage .hoverHolder{top:1038px}#Homepage .hoverme .content_candidate{bottom:161px}
+#Homepage .hoverme .content_employer{bottom:115px}#Homepage .search_container{top:265px !important}
+}@media screen and (max-width:1099px){#header-link .navbar-nav>li a{letter-spacing:0 !important;padding-left:9px;padding-right:5px}
+#Homepage .sectionTitle{font-size:80px}#Homepage .hoverme .content_candidate{bottom:171px}
+#Homepage .hoverme br{display:none}}@media screen and (max-width:991px){#modal_percent{left:245px}
+#Homepage .hoverHolder{top:1053px;width:100%}#Homepage .hoverme .content_candidate{bottom:100px}
+#Homepage .hoverme .content_candidate{bottom:51px}#Homepage .hoverHolder{top:1023px}
+}@media(max-width:767px){.text-xs-left{text-align:left}.text-xs-right{text-align:right}
+.text-xs-center{text-align:center}.text-xs-justify{text-align:justify}.pull-xs-left{float:left !important}
+.pull-xs-right{float:right !important}#Homepage .hoverme .content_candidate br,#Homepage .hoverme .content_employer br{display:none}
+.Homepage #Section2Homepage .container-fluid{width:100%}#homeVideoContainer,#homeVideoContainer video{min-height:195px;max-height:282px;height:100%;position:relative}
+#homeVideoContainer .azuremediaplayer .vjs-player{position:relative !important}#homeVideoContainer .azuremediaplayer{width:100% !important;max-height:195px;height:100% !important;font-size:175px !important}
+#NewHomeSearchContainer .homesearchfield{margin-bottom:5px;margin-left:0;margin-right:0}
+#NewHomeSearchContainer .ui-input-text{margin:0 0 5px !important}#TabContainer1 .carousel-control,.carouselthis .carousel-control{background:0;top:40% !important;padding:0 25px !important}
+#NewHomeBanner h1{min-width:100%}#NewHomeBanner h1 br{display:none}.partners br{display:none}
+#Section5homepage .partners li{display:block}#HomeContact #Form_first_name_Holder,#HomeContact #Form_last_name_Holder,#HomeContact #Form_first_password_Holder,#HomeContact #Form_second_password_Holder{float:none;width:100%}
+#notification_li,#message_li,#settings_li{position:relative}#headerItems{margin:45px 0 0 0}
+#WorkTypeList li{width:50%}.MainContentFeatureContainer img{text-align:center;margin:0 auto;left:initial;top:initial;transform:initial;position:relative;left:initial}
+.MainContentFeatureContainer>.row:first-child img{top:initial;transform:initial}.MainContentFeatureContainer .col-md-6{min-height:auto;position:relative;padding-top:25px;padding-bottom:25px}
+.MainContentFeatureContainer .featurecontentCont{padding-top:0;padding-bottom:0}#FeaturedBenefitBanner .tabbedbanner{background-position:top;background-size:cover}
+}@media(min-width:768px){.text-sm-left{text-align:left !important}.text-sm-right{text-align:right !important}
+.text-sm-center{text-align:center !important}.text-sm-justify{text-align:justify !important}
+.pull-sm-left{float:left !important}.pull-sm-right{float:right !important}#Homepage .hoverme .content_candidate br,#Homepage .hoverme .content_employer br{display:none}
+ol.progtrckr{display:table}.homesearchfield{margin-bottom:5px}#TabContainer1 .mobileslider .carousel-control{top:40%;padding:0 25px}
+#TabContainer1 .tabs .mobileslider .contentCont{max-width:80%}.carouselthis .carousel-control{background:none !important;top:40% !important;padding:0 25px !important}
+#NewHomeBanner h1{min-width:100%}#NewHomeBanner h1 br{display:none}#NewHomeSearchContainer .homesearchfield{margin-bottom:5px;margin-left:0;margin-right:0}
+.Homepage #NewHomeSearchContainer .ui-input-text{margin:0 0 5px !important}.partners br{display:none}
+#Section5homepage .partners li{display:block}#HomeContact #Form_first_name_Holder,#HomeContact #Form_last_name_Holder,#HomeContact #Form_first_password_Holder,#HomeContact #Form_second_password_Holder{float:none;width:100%}
+#notification_li,#message_li,#settings_li{position:relative}#headerItems{margin:45px 0 0 0}
+#WorkTypeList li{width:50%}.MainContentFeatureContainer img{text-align:center;margin:0 auto;left:initial;top:initial;transform:initial;position:relative;left:initial}
+.MainContentFeatureContainer>.row:first-child img{top:initial;transform:initial}.MainContentFeatureContainer .col-md-6{min-height:auto;position:relative;padding-top:25px;padding-bottom:25px}
+.MainContentFeatureContainer .featurecontentCont{padding-top:0;padding-bottom:0}}
+@media(min-width:992px){.text-md-left{text-align:left !important}.text-md-right{text-align:right !important}
+.text-md-center{text-align:center !important}.text-md-justify{text-align:justify !important}
+.pull-md-left{float:left !important}.pull-md-right{float:right !important}#JobApplication .progtrckr{display:none}
+#HomeSection1 .first,#HomeSection1,#HomeSection2{display:flex !important}ol.progtrckr{display:none !important}
+#NewHeader .navbar-nav{margin:0 auto;width:670px;float:none !important}#NewHomeBanner h1 br{display:block}
+.Homepage #NewHomeSearchContainer .ui-input-text{margin:0 0 5px !important}.partners br{display:none}
+#Section5homepage .partners li{display:inline-block;margin:0;text-align:center;padding:25px}
+#HomeContact #Form_first_name_Holder,#HomeContact #Form_last_name_Holder,#HomeContact #Form_first_password_Holder,#HomeContact #Form_second_password_Holder{float:left;width:49%}
+#notification_li,#message_li,#settings_li{position:relative}#WorkTypeList li{width:33%}
+.MainContentFeatureContainer img{text-align:center;margin:0 auto;left:50%;top:50%;transform:translate(-50%,-50%);position:absolute}
+.MainContentFeatureContainer>.row:first-child img{top:0;transform:translate(-43%,10%)}
+.MainContentFeatureContainer .col-md-6{min-height:372px;position:relative;padding-top:0;padding-bottom:0}
+.MainContentFeatureContainer .featurecontentCont{padding-top:35px;padding-bottom:35px}
+}@media(min-width:1200px){.text-lg-left{text-align:left !important}.text-lg-right{text-align:right !important}
+.text-lg-center{text-align:center !important}.text-lg-justify{text-align:justify !important}
+.pull-lg-left{float:left !important}.pull-lg-right{float:right !important}.Homepage #NewHomeSearchContainer .ui-input-text{margin:0 -10px 0 -10px !important}
+.partners br{display:block}#ClassificationMain{width:485px}#WorkTypeList li{width:25%}
+}@media screen and (max-width:1023px){a:link,a:visited{font-weight:inherit !important;text-shadow:none !important}
+#logo{text-align:center;margin:0;max-width:190px;padding-top:5px}.boxsection{margin-bottom:25px}
+.sidebar-nav{margin-left:15px;margin-bottom:25px;padding:0}#custom-search-input{display:none}
+#headerItems{margin:15px 0 0 0}#custom-search-input{margin-left:0}#Section1 .animateSection{border-right:0;padding:15px}
+.topFooter .col-md-6:nth-child(1){padding-left:15px}#TopCandidate,#TopEmployer{background-position:center}
+#Homepage .sectionTitle{font-size:300%}#Homepage .hoverme .content{text-align:center;left:0;padding:15px}
+#Homepage .hoverme .content_candidate,#Homepage .hoverme .content_employer{text-align:center;margin-left:-25px;padding:0 15px;width:100%}
+#Homepage .hoverme .content_candidate{bottom:30px}#Homepage .search_container{top:200px;padding-left:0;padding-right:0}
+#TopCandidate,#TopEmployer{min-height:600px}#HomeSection1,#HomeSection2,#HomeSection1 .first{display:block}
+#Homepage .loginme{width:100%;left:0;text-align:center;bottom:253px}.Homepage #Section2Homepage h2{font-size:60px;line-height:100%}
+.Homepage #Section2Homepage p{font-size:16px;line-height:34px}.Homepage #Section2Homepage p br{display:none}
+.FilterContent{padding:25px 0}.FilterContent input{margin:10px 0}.FilterContent #slider-range{margin:20px 0 20px 5px}
+#HomeSection1 .first,#HomeSection1 .last,#HomeSection2 .first,#HomeSection2 .last{position:relative;padding-bottom:100px}
+#HomeSection1 .first h3,#HomeSection2 .last h3{margin:0;text-align:center;padding:50px 0}
+#HomeSection1 .containersection,#HomeSection2 .containersection{float:none;width:100%;margin-left:0 !important;margin-right:0 !important}
+#Homepage .ui-slider-track .ui-btn.ui-slider-handle.max .valueslider{right:0 !important;left:100%;position:absolute}
+#Homepage .ui-slider-track .ui-btn.ui-slider-handle.min .valueslider{position:absolute;right:100%}
+#Section3Homepage .media{width:100%}#Homepage .hoverme .content{bottom:165px;width:100%}
+.HomeSearch .searchFilter{border-left:none !important}#Register_employer .register-form-container{padding:20px}
+#Register_employer .inline-field .left,#Register_employer .inline-field .right{width:100%}
+#StepConfirm .containme{margin:0}.file-upload-input{width:60%}#Register_employer.confirm-registration,#Register_employer{background-size:cover}
+.notificationContainer{top:100px;right:0;width:92%;margin:0 15px}#message_li{position:initial}
+.notificationTitle{max-width:384px}#headerItems .employer_job_bnt{float:none !important;display:block;margin-bottom:20px}
+.notificationContainer:before{margin-left:80px}#notification_li,#message_li,#settings_li{position:initial}
+#EmployerAddJob .carousel-indicators{position:absolute;width:850px;-ms-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0);transform-origin:left bottom 0;margin-left:0;left:79px;bottom:-10px}
+#EmployerAddJob .carousel-indicators{width:100%;left:0;margin-left:-15px}#EmployerAddJob .vertical_nav{position:relative;min-height:auto !important}
+#EmployerAddJob .carousel-indicators li{float:left;font-size:14px}#SearchPage #SidebarFilter{margin-left:15px}
+#SearchPage .dropdown:hover .dropdown-menu{right:0 !important;padding:0;position:relative;margin-right:-30px;margin-left:-30px;float:none}
+#SearchPage .dropdown:hover:after{content:'';clear:both}#SearchPage #SidebarFilter>li:hover .borderme{border-bottom:1px solid #ccc}
+.industryFilter,.regionFilter{width:100%;margin:15px 0;padding:0 30px}#SidebarFilter .industryFilter .listcontainer,#SidebarFilter .regionFilter .listcontainer{width:100%}
+#SearchPage .cityFilter,#SearchPage .SubIndFilter{width:100%}.cityFilter .listcontainer,#SidebarFilter .listcontainer{width:275px}
+.dropdown.salarydropdown .dropcontainer{min-width:350px}#JobListing #job_listed_con{position:relative;left:initial;top:initial;width:auto}
+#JobListing .job-listing-icons{margin:0 5px}#JobListing #logo-con{padding-left:20px;float:none !important}
+#JobListing #detail-con{width:100%;float:none !important;margin-bottom:25px}#JobListing #video-con{width:100%;padding-left:15px;padding-right:15px;text-align:center}
+#JobListing .job-listing-btn-watchlist{padding-right:0;padding-left:0}.lg_steps{display:none}
+#JobApplication #job-listing-buttons-holder{min-height:150px;padding:0 15px}#JobApplication .progtrckr{display:block}
+#JobApplication .job-listing-answer-con{border:0}#JobApplication .job-listing-answer .pvm-blue{margin-bottom:30px;border-bottom:1px solid #aaa;padding-bottom:30px}
+.job-applications-tab a{width:100%}#my_job_application_page .nav-tabs>li{width:100%}
+#my_job_application_page #job-application-holder{height:auto !important;margin-bottom:25px}
+#JobApplication .leftSection{padding:0 15px}#JobApplication .applicationQuestion td{display:block}
+#JobApplication .applicationQuestion tr .questionTitle{padding-top:25px}#JobApplication tbody>tr>td{border-bottom:0;padding-bottom:5px;padding-top:0}
+#JobApplication #ApplicationSuccess a{display:block}#JobApplication #ApplicationSuccess .Title,#JobApplication #ApplicationSuccess .subTitle{line-height:100%;margin-bottom:25px}
+#CandidateSettings #WorkHistoryForm input,#CandidateSettings #WorkHistoryForm select{border:1px solid #ccc}
+#CandidateSettings #profile_url{width:70%;float:right}#CandidateSettings .settings_container_holder .settings_container{padding:20px 0 10px}
+#CandidateSettings .settingButtons{width:100%}#candidate_profile_content .azuremediaplayer{width:100% !important;margin-top:15px;margin-bottom:15px}
+#candidate_profile_content .contact_watchlist_btn div{padding:0 15px}#candidate_profile_content .contact_watchlist_btn .btn-contact,#candidate_profile_content .btn-watchlist{width:100%}
+#candidate_profile_content .contact_watchlist_btn{margin-bottom:15px}#candidate_profile_content .view_my_con{margin-left:15px;margin-right:15px}
+#candidate_profile_content .reference_con{width:100% !important}#candidate_profile_content #ProfileBottom_r_con{padding-right:15px}
+#analytics-contents-wrapper .question-list{display:initial}#analytics-contents-wrapper .question-list .question-list-column{padding-top:10px;padding-bottom:10px}
+#analytics-contents-wrapper .answer-bar>span{bottom:24px}#analytics-contents-wrapper .answer-bar:first-child{margin-left:0}
+#analytics_option_wrapper>div{border:0}#analytics-contents-wrapper .question-options{text-align:left}
+#PublicCompany .company_logo{text-align:center}#PublicCompany .company_listing_top1{border:0}
+#PublicCompany .company_listing_top2 #com-follow-con{max-width:250px;width:100%;position:relative;margin:25px auto 0;transform:none;float:none !important}
+#applied_jobs_scroll h4{border-bottom:1px solid #eee;padding-bottom:5px}#applied_jobs_scroll .col-md-5.col-sm-5{margin-bottom:35px}
+#my_job_application_page #application-contents .jobList .col-md-8{border:none !important}
+#my_job_application_page .my-job-applications #application-contents .border-r{border:0}
+#my_job_application_page #application-details-sec1{height:initial !important;border:0}
+#my_job_application_page #application-details-sec1 .my-job-section{text-align:center}
+#my_job_application_page #application-details-sec1 .JobCompany{margin:0 auto}#my_job_application_page #application-details-sec2{padding:25px 0 0 0;border-top:2px solid #eee}
+#my_job_application_page .xs-Question{padding:0;margin:0;list-style:none}#my_job_application_page .xs-Question h5{color:#333;margin:25px 0 0 0;font-family:'Montserrat-Regular',Arial serif}
+#my_job_application_page .xs-Question li{border-bottom:1px solid #eee;padding-bottom:15px;font-family:'Montserrat-Light',Arial serif}
+#my_job_application_page .xs-Question li .PreApplyAns{list-style:none;padding:0;margin:0 -15px 25px;text-align:center}
+#my_job_application_page .xs-Question li .PreApplyAns li{border:0;text-align:center}
+#static-partners-content .static-partner-bottom-content .left .contentme,#static-partners-content .static-partner-bottom-content .right .contentme{margin:0;text-align:center}
+#static-partners-content .static-partner-bottom-content .left img,#static-partners-content .static-partner-bottom-content .right img{max-width:50%;margin:0 auto}
+#static-partners-content .static-partner-bottom-content .right .pull-right{width:100%}
+#Section5homepage .partners{display:inline-block}.BlogHolder #PostList{-webkit-column-count:unset;column-count:unset}
+.Homepage .main_top_label{padding-left:0}}@media screen and (orientation:portrait) and (max-width:767px){#Homepage .slideCandidate{height:75px}
+#Homepage .ui-rangeslider-sliders{top:-13px}#Homepage .max .valueslider{left:-10px}
+#Homepage .ui-rangeslider{width:90%;margin-left:auto;margin-right:auto}#Homepage #TopCandidate .sectionTitle{line-height:60px}
+#Homepage #TopEmployer .loginme{bottom:471px}.StaticPages .static-body-content>div,.StaticPages .static-bottom-content>div{width:100%}
+.StaticPages .static-bottom-content>div img{width:80%;margin:auto}.StaticPages .features-benefit-content,.StaticPages .features-benefit-content-top{padding-left:0;padding-right:0}
+.StaticPages .mobile-text-center{text-align:center;padding:0 !important}.StaticPages .mobile-remove-padding-right{padding-right:0 !important}
+#about-me-content-color-back{padding:25px 15px}ol.progtrckr li{display:table-row}
+ol.progtrckr li:before{bottom:-12px;left:0;margin-right:20px}ol.progtrckr li.progtrckr-todo:before{bottom:-12px}
+#CandidateSettings .settingButtons .submit_wh,#CandidateSettings .settingButtons button{width:100% !important}
+#CandidateSettings #profile_url{width:100% !important;float:none}#headerItems>li{padding:0 3px 0 3px}
+.notificationContainer{top:40px;margin-right:5px}}@media screen and (orientation:landscape) and (max-width:767px){#Homepage .ui-rangeslider-sliders{top:-18px}
+.StaticPages .static-body-content>div,.StaticPages .static-bottom-content>div{width:100%}
+.StaticPages .static-bottom-content>div img{width:100%}.StaticPages .mobile-remove-padding-right{padding-right:0 !important}
+.StaticPages .mobile-remove-padding-right{padding-right:0 !important}ol.progtrckr li{font-size:12px}
+.notificationContainer{top:40px}}@media screen and (orientation:portrait) and (min-width:768px) and (max-width:1024px){#Homepage .FilterContent #slider-range{margin:0}
+#Homepage .hoverme .content_candidate,#Homepage .hoverme .content_employer{width:100%;margin-left:-25px;text-align:center}
+#Homepage .hoverme .content_candidate{bottom:30px}#Homepage #TopEmployer .loginme{bottom:307px}
+#Homepage #TopEmployer:hover .loginme{bottom:385px}#Homepage .hoverme .content_employer{bottom:60px}
+#HomeSection1 .first,#HomeSection1 .last,#HomeSection2 .first,#HomeSection2 .last{padding-left:30px;padding-right:30px}
+.industryFilter,.regionFilter{width:50%}.StaticPages .static-body-content .col-md-4{padding:0 !important}
+.StaticPages .static-body-content>div,.StaticPages .static-bottom-content>div{width:100%}
+.StaticPages .static-bottom-content>div img{width:100%}.StaticPages .mobile-remove-padding-right{padding-right:0 !important}
+#candidate_message_container #main_threads .sidebar-nav-messages ul.nav{width:100%}
+#analytics-contents-wrapper #pieChart.chart{width:200px;height:200px}#analytics-contents-wrapper svg:not(:root){width:200px;height:200px}
+.notificationContainer{top:54px;margin-right:5px}}@media screen and (orientation:landscape) and (min-width:768px) and (max-width:1024px){#Homepage .sectionTitle{font-size:80px}
+#Homepage .search_container{top:15%;top:200px}.search_con_top{width:30%}.menu_con_top{width:45%}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a{padding-left:0}#custom-bootstrap-menu .navbar-toggle{margin-right:0}
+.StaticPages .static-body-content>div,.StaticPages .static-bottom-content>div{width:100%}
+.StaticPages .static-bottom-content>div img{width:100%}.StaticPages .mobile-remove-padding-right{padding-right:0 !important}
+#JobListing #job_listed_con{left:630px}#JobListing #video-con{padding-left:15px;padding-right:15px}
+#JobApplication #job-listing-buttons-holder{padding:0}#JobApplication #job-listing-buttons-holder .btn{padding:15px;width:100%}
+#candidate_profile_content #ProfileBottom_r_con{padding-right:15px}#candidate_profile_content .azuremediaplayer,#candidate_profile_content .contact_watchlist_btn,#candidate_profile_content .view_my_con,#candidate_profile_content .reference_con,#candidate_profile_content .divideme{width:100% !important}
+#candidate_profile_content .contact_watchlist_btn div,#candidate_profile_content .contact_watchlist_btn div a{width:100%;margin-bottom:5px}
+#analytics-contents-wrapper #pieChart.chart{width:300px;height:300px}#analytics-contents-wrapper svg:not(:root){width:300px;height:300px}
+#JobListing .job-listing-icons,#JobListing .job-listing-icons .image_con{width:80px !important}
+}@media screen and (max-width:768px){#Homepage .search_container{top:255px}.StaticPages.pricing .btn{white-space:normal}
+.Candidate .sidebar-nav{min-height:0}.Job #job-search-container .ContainAllFilter{margin-left:0}
+#job-search-container .company_logo img{margin:auto}#analytics-contents-wrapper #job-applications .section-box{margin-right:0;margin-left:0}
+#analytics-contents-wrapper #job-applications .col-md-6{padding-left:0;padding-right:0}
+#analytics-contents-wrapper .pre-application{width:200px;height:200px}#analytics-contents-wrapper .inner-circle{width:150px;height:150px}
+.candidate-analytics-tab,.candidate-analytics-tab a{width:100%}#Homepage .hoverHolder{position:relative;width:100%}
+#Homepage .hoverHolder{top:1050px}}@media screen and (max-width:767px){#modal_percent{left:44%}
+}@media screen and (max-width:630px){#Homepage .search_container{top:280px}}@media screen and (max-width:613px){.Homepage .main_top_label div{font-size:2.2em}
+}@media screen and (max-width:430px){.pvm-video-container video{width:280px;height:210px}
+.Homepage #logo{max-width:200px;width:100%}#modal_percent{left:37%;top:50px}#Homepage #home_slider{padding-right:0}
+.StaticPages #about-me-content img{width:80%}.StaticPages #contact-us-content .contact-us-form-container{width:90%}
+.ErrorPage .err_page_buttons,.StaticPages .err_page_buttons{width:100%;display:block}
+#analytics-contents-wrapper .answer-bar>span{font-size:.7em}#analytics-contents-wrapper .option-wrapper{padding-left:0}
+#Homepage .sectionContent{line-height:1}.Homepage .main_top_label{top:5%}.Homepage .main_top_label div{font-size:2em}
+.Homepage .main_top_label div br{display:none}#Homepage .search_container{top:12% !important}
+}@media screen and (max-width:585px){#modal_percent{left:42%}.ErrorPage #err_page_1{line-height:1}
+.ErrorPage .error-page-container{height:auto;padding-bottom:50px}}@media screen and (max-width:557px){.threadChildNameMsgHolder{width:85% !important}
+}@media screen and (max-width:532px){#modal_percent{left:40%}}@media screen and (max-width:320px){#preview{width:250px;height:188px}
+.modal-body{padding-left:10px}#Homepage .search_container{padding-left:0;padding-right:0}
+.Homepage .main_top_label div{font-size:2em}}@media screen and (min-width:1200px) and (max-width:1410px){#WorkTypeList li{width:33% !important}
+}

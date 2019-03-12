@@ -1,0 +1,154 @@
+
+
+.messages {
+    clear: both;
+    @include sm {
+        .border-r {
+            border: none;
+        }
+    }
+    .panel-body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .search, h2 {
+        padding: 20px 0;
+        margin: 0;
+    }
+    .search {
+        .btn {
+            margin-bottom: 0 !important;
+            padding: 6px 12px;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+    }
+
+    .member-initials {
+        /*width: 45px;*/
+        min-width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        @extend .flexbox-c-c;
+        margin: 0;
+    }
+
+    &__thread {
+        max-height: 70vh;
+        overflow-y: auto;
+        li {
+            border-bottom: 1px solid #ccc;
+        }
+        img {
+            max-width: 45px;
+        }
+    }
+
+    &__content {
+        padding: 1.5rem 4rem;
+        transition: all .3s;
+        &__content--large {
+            padding: 10px;
+        }
+        @include lg {
+            padding: 10px;
+        }
+        &:hover, &.active {
+            background-color: #00aeed;
+            cursor: pointer;
+            color: #fff;
+            h5 {
+                color: #fff;
+            }
+        }
+    }
+
+    &__chat {
+        padding: 2rem;
+        @include sm {
+            padding: 2rem 0;
+        }
+        img {
+            max-width: 45px;
+        }
+        h4 {
+            color: #37b0eb;
+        }
+
+        .conversation {
+            min-height: 40vh;
+            .messages-detail {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        @include sm {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-detail {
+        display: flex;
+        @include sm {
+            
+        }
+        div {
+            padding-left: 20px;
+            max-width: 50vw;
+            @include md {
+                padding-left: 10px;
+            }
+            h4 {
+                margin-top: 0;
+                @include md {
+                    font-size: 16px;
+                }
+            }
+            h5 {
+                color: #3AC0BE;
+                margin-bottom: 0;
+            }
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+    .chat-time {
+        font-size: 12px;
+        color: lighten($gray, 26.67);
+        text-align: right;
+        min-width: 140px;
+    }
+
+    &__footer {
+        padding-top: 2rem;
+    }
+
+    &__footer {
+        .btn-pvm {
+            max-width: 130px;
+            margin-bottom: 3rem;
+        }
+        textarea {
+            color: #545454;
+            font-size: 14px;
+            min-height: 140px;
+            max-height: 200px;
+            @include placeholder {
+                color: #999;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.Messages#PageBody {
+    min-height: 100%;
+}

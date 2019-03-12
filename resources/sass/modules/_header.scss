@@ -1,0 +1,832 @@
+.pvm-header {
+  padding: 0px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include tablet-land {
+    padding: 0px 0px 5px 0px;
+  }
+
+ // @include tablet-land {
+    //max-width: $desktop-scr; //apply this in the near future! -- domina
+    margin: 0 auto;
+
+    .pvm-logo-handler {
+      float: left;
+      padding: 10px;
+      width: 44%;
+
+      @include iphone6-land {
+        width: 25%;
+      }
+
+      @include tablet {
+        width: 30%;
+      }
+
+      @include sm-desktop {
+        width: 25%;
+      }
+
+      .brand {
+        display: inline-block;
+
+        img {
+          height: 40px;
+
+          @include iphone6-land {
+            height: 50px;
+          }
+        }
+      }
+    }
+
+    .pvm-search-handler {
+      float: left;
+      padding: 25px 0px 0px 0px;
+      width: 44%;
+
+      &.pvm-phone-land-invisible {
+        padding: 0px 15px;
+        width: 100%;
+      }
+
+      @include iphone6-land {
+        padding: 13px 0px 0px 0px;
+        width: 42%;
+      }
+
+      @include tablet {
+        padding: 20px 0px 0px 0px;
+        width: 40%;
+      }
+
+      @include tablet-land {
+        padding: 45px 80px 0px 0px;
+      }
+
+      @include sm-desktop {
+        padding: 20px 40px 0px 0px;
+      }
+
+      .pvm-search {
+        border: 1px solid #E4E4E4;
+        float: left;
+        width: 90%;
+
+        @include tablet-land {
+          width: 93%;
+        }
+
+        @include desktop {
+          width: 95%;
+        }
+      }
+
+      .fa-search {
+        color: $gray;
+        cursor: pointer;
+        border: 1px solid #E4E4E4;
+        border-left: none;
+        float: left;
+        font-size: 16px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        vertical-align: top;
+        width: 10%;
+
+        @include tablet-land {
+          font-size: 18px;
+          height: 37px;
+          line-height: 37px;
+          width: 7%;
+        }
+
+        @include desktop {
+          width: 5%;
+        }
+      }
+    }
+
+    .pvm-nav-handler {
+      float: left;
+      padding: 13px 0px 0px 0px;
+      text-align: right;
+      width: 54%;
+
+      @include iphone6-land {
+        width: 32%;
+      }
+
+      @include tablet {
+        padding: 20px 10px 0px 0px;
+        width: 30%;
+      }
+
+      @include tablet-land {
+        padding: 45px 15px 0px 0px;
+        width: 30%;
+      }
+
+      @include sm-desktop {
+        padding: 20px 15px 0px 0px;
+        width: 35%;
+      }
+
+      .pvm-profile-thumb {
+        max-width: 30px;
+
+        @include iphone6-land {
+          max-width: 35px;
+        }
+      }
+
+      .head__profile-link {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .head__dash-link {
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+        vertical-align: top;
+
+        @include tablet-land {
+          margin: 0px 0px 0px 20px;
+        }
+
+        .fa-dashboard {
+          font-size: 25px;
+          position: relative;
+          top: 5px;
+
+          @include iphone6 {
+            font-size: 31px;
+            top: -2px;
+          }
+
+          @include iphone6-land {
+            font-size: 33px;
+            top: 0px;
+          }
+
+          @include md-desktop {
+            font-size: 40px;
+            top: -4px;
+          }
+        }
+      }
+      
+      .head__notification-link {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+        position: relative;
+        vertical-align: top;
+
+        @include tablet-land {
+          margin: 0px 0px 0px 20px;
+        }
+
+        .fa-bell {
+          color: $gray;
+          font-size: 20px;
+          position: relative;
+          top: 8px;
+
+          @include iphone6 {
+            font-size: 25px;
+            top: 3px;
+          }
+
+          @include iphone6-land {
+            font-size: 27px;
+            top: 4px;
+          }
+
+          @include md-desktop {
+            font-size: 32px;
+            top: 0px;
+          }
+        }
+
+        .head__notification-list {
+          @include box-shadow(4px 2px 5px #f0f0f0);
+          display: inline-block;
+          float: left;
+          position: absolute;
+          right: 0px;
+          top: 40px;
+          width: 220px;
+          z-index: 4;
+
+          @include iphone6 {
+            width: 250px;
+          }
+
+          @include tablet-land {
+            width: 385px;
+          }
+
+          .head__notification-item {
+            background-color: #eee;
+            border-bottom: 1px solid #ccc;
+            float: left;
+            font-size: 11px;
+            padding: 5px;
+
+            @include iphone6 {
+              font-size: 12px;
+              padding: 10px;
+            }
+
+            @include tablet-land {
+              font-size: 13px;
+            }
+
+            &.seen {
+              background-color: #fbfbfb;
+            }
+
+            h5 {
+              margin: 5px 0px;
+
+              @include tablet-land {
+                margin: 10px 0px;
+              }
+            }
+
+            .head__notification-item-link {
+              color: $gray;
+              font-size: 11px;
+              line-height: 16px;
+
+              @include iphone6 {
+                font-size: 12px;
+              }
+
+              @include tablet-land {
+                font-size: 13px;
+              }
+
+              .head__notification-date {
+                float: left;
+                font-size: 9px;
+
+                @include iphone6 {
+                  font-size: 11px;
+                }
+              }
+
+              .head__notification-msg {
+                float: left;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          .head__notification-item--head {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+            width: 220px;
+
+            @include iphone6 {
+              width: 250px;
+            }
+
+            @include tablet-land {
+              width: 385px;
+            }
+
+            span {
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 10px solid #f9f9f9;
+              content: ' ';
+              height: 0;
+              position: absolute;
+              right: 0;
+              top: -10px;
+              width: 0;
+            }
+          }
+        }
+      }
+
+      .head__message-link {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+        position: relative;
+        vertical-align: top;
+
+        @include tablet-land {
+          margin: 0px 0px 0px 20px;
+        }
+
+        .fa-comments {
+          color: $gray;
+          font-size: 25px;
+          position: relative;
+          top: 5px;
+
+          @include iphone6 {
+            font-size: 30px;
+            top: -2px;
+          }
+
+          @include iphone6-land {
+            font-size: 32px;
+            top: 0px;
+          }
+
+          @include md-desktop {
+            font-size: 37px;
+            top: -5px;
+          }
+        }
+
+        .head__message-list {
+          @include box-shadow(4px 2px 5px #f0f0f0);
+          display: inline-block;
+          float: left;
+          position: absolute;
+          right: 0px;
+          top: 40px;
+          width: 220px;
+          z-index: 4;
+
+          @include iphone6 {
+            width: 250px;
+          }
+
+          @include tablet-land {
+            width: 385px;
+          }
+
+          .head__message-item {
+            background-color: #eee;
+            border-bottom: 1px solid #ccc;
+            float: left;
+            font-size: 11px;
+            padding: 5px;
+            width: 220px;
+
+            @include iphone6 {
+              font-size: 12px;
+              padding: 10px;
+              width: 250px;
+            }
+
+            @include tablet-land {
+              font-size: 13px;
+              width: 385px;
+            }
+
+            &.seen {
+              background-color: #fbfbfb;
+            }
+
+            h5 {
+              margin: 5px 0px;
+
+              @include tablet-land {
+                margin: 10px 0px;
+              }
+            }
+
+            .head__message-item-link {
+              color: $gray;
+              font-size: 11px;
+              line-height: 16px;
+
+              @include tablet-land {
+                font-size: 13px;
+              }
+
+              .head__message-date {
+                float: left;
+                font-size: 9px;
+
+                @include iphone6 {
+                  font-size: 11px;
+                }
+              }
+
+              .head__message-msg {
+                float: left;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          .head__message-item--head {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+            width: 220px;
+
+            @include iphone6 {
+              width: 250px;
+            }
+
+            @include tablet-land {
+              width: 385px;
+            }
+
+            span {
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 10px solid #f9f9f9;
+              content: ' ';
+              height: 0;
+              position: absolute;
+              right: 0;
+              top: -10px;
+              width: 0;
+            }
+          }
+        }
+
+      }
+
+      .head__settings-link {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px 5px 0px 5px;
+        position: relative;
+        vertical-align: top;
+
+        @include iphone6 {
+          margin: 0px 5px 0px 15px;
+        }
+
+        @include tablet-land {
+          margin: 0px 0px 0px 25px;
+        }
+
+        @include sm-desktop {
+          margin: 0px 0px 0px 30px;
+        }
+
+        .fa-caret-down {
+          color: $sky;
+          font-size: 35px;
+          position: relative;
+          top: 0px;
+
+          @include iphone6 {
+            font-size: 40px;
+            top: -5px;
+          }
+
+          @include iphone6-land {
+            font-size: 43px;
+            top: -5px;
+          }
+
+          @include md-desktop {
+            font-size: 47px;
+            top: -10px;
+          }
+        }
+
+        .head__setting-list {
+          @include box-shadow(4px 2px 5px #f0f0f0);
+          display: inline-block;
+          float: left;
+          position: absolute;
+          right: 0px;
+          top: 40px;
+          width: 150px;
+          z-index: 4;
+
+          .head__setting-item {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #f0f0f0;
+            float: left;
+            font-size: 11px;
+            padding: 5px;
+            text-align: left;
+            width: 150px;
+
+            @include iphone6 {
+              font-size: 12px;
+              padding: 10px;
+            }
+
+            @include tablet-land {
+              font-size: 13px;
+            }
+
+            &:first-child {
+              padding: 0px;
+              border-bottom: 0px;
+            }
+
+            .arrow-up {
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 10px solid #f9f9f9;
+              content: ' ';
+              height: 0;
+              position: absolute;
+              right: 0;
+              top: -10px;
+              width: 0;
+            }
+          }
+        }
+
+      }
+    }
+
+
+
+
+
+  //}
+}
+
+.pvm-header--v2 {
+  border-bottom: 1px solid #ededed;
+  padding: 0px;
+
+  .pvm-logo-handler {
+    margin: 0px 0px 15px;
+    padding: 0px;
+    width: 26%;
+
+    @include iphone6-land {
+      width: 15%;
+    }
+
+    @include iphonex-land {
+      width: 30%;
+    }
+
+    @include tablet-land {
+      margin: 0px;
+      width: 25%;
+    }
+
+    .brand {
+      background-color: $sky;
+      padding: 8px;
+
+      img {
+        height: 45px;
+
+        @include tablet {
+          height: 56px;
+        }
+      }
+    }
+
+    .pvm-page__title {
+      color: $gray;
+      font-family: $pvm-reg-font;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      line-height: 56px;
+      margin: 0px 0px 0px 10px;
+      text-transform: uppercase;
+
+      @include sm-desktop {
+        float: right;
+        margin: 10px 10px 0px;
+        text-align: center;
+        width: 68%;
+      }
+
+      @include desktop {
+        text-align: left;
+      }
+    }
+  }
+
+  .pvm-search-handler {
+    padding: 20px 30px 0px 0px;
+
+    @include tablet {
+      padding: 20px 80px 0px 0px;
+    }
+
+    @include tablet-land {
+      padding: 20px 20px 0px 0px;
+      width: 25%;
+    }
+
+    .pvm-search {
+      margin-bottom: 15px;
+    }
+
+    .fa-search {
+      font-size: 14px;
+      height: 32px !important;
+      line-height: 32px;
+
+      @include tablet {
+        height: 37px !important;
+        line-height: 37px;
+      }
+    }
+  }
+
+  .pvm-nav-handler {
+    padding: 20px 15px 0px 0px;
+    width: 74%;
+
+    @include iphone6-land {
+      width: 43%;
+    }
+
+    @include iphonex-land {
+      width: 70%;
+    }
+
+    @include tablet {
+      padding: 20px 0px 0px;
+    }
+
+    @include tablet-land {
+      text-align: right;
+      width: 48.5%;
+    }
+
+    .pvm-page__help {
+      color: $light-gray2;
+      display: inline-block;
+      font-family: $pvm-reg-font;
+      font-size: 12px !important;
+      letter-spacing: 0.04em;
+      line-height: 25px;
+      margin: 0px 0px 0px 5px;
+      text-transform: uppercase;
+
+      @include iphone6 {
+        margin: 0px 0px 0px 25px;
+      }
+
+      @include tablet {
+        font-size: 14px !important;
+        margin: 0px 0px 0px 30px;
+      }
+    }
+  }
+}
+
+//Nav outside dashboard  
+.pvm-header--is-login {
+  #HeaderLoginButton {
+    margin-top: 0;
+  }
+
+  #HeaderLoginButton {
+    display: none;
+    @include sm-desktop  { 
+      display: block;
+    }
+  }
+  .pvm-menu-handler {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    &.tablet-land-invisible {
+      display: none;
+    }
+    @include sm-desktop  {
+      width: 40%;
+      float: left;
+      display: none;
+      &.tablet-land-invisible {
+        display: block;
+      }
+    }
+    #custom-bootstrap-menu.navbar {
+      margin-top: 66px;
+      @include tablet-land  {
+        margin-top: 90px;
+      }
+      @include sm-desktop {
+        margin-top: 0;
+      }
+    }
+    #custom-bootstrap-menu {
+
+      .navbar-collapse {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    .head__navbar {
+      margin-bottom: 0;
+      margin-top: 60px;
+      @include tablet {
+        margin-top: 70px;
+        }
+      @include tablet-land {
+        margin-top: 95px;
+      }
+      @include sm-desktop {
+          margin-top: 0;
+      }
+
+      @include sm-desktop  {
+        margin-left: 8%;
+        padding-top: 10px; 
+      }
+      ul {
+        margin-top: 0 !important;
+        li {
+          a {
+            font-size: 12px;
+            font-family: 'Montserrat-Regular';
+            color: #000;
+            &.pvm-blue {
+              color: #00afed;
+            }
+          }
+        }
+      }
+      .navbar-toggle {
+        @include iphone7 {
+          float: right !important;
+        }
+        border-radius: .3125em;
+        border-color: #ddd;
+        background-color: #FFF;
+        color: #333;
+        position: relative;
+        float: left !important;
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        .icon-bar {
+          display: block;
+          width: 22px;
+          height: 2px;
+          border-radius: 1px;
+          background-color: #888;
+        }
+        &:hover {
+          background-color: #888;
+          .icon-bar {
+            background-color: #FFF;
+          }
+        }
+      }
+    }
+  }//End pvm-menu-handler
+
+  .pvm-menu-handler--remove-padding-top {
+    #custom-bootstrap-menu.navbar {
+      margin-top: 5px;
+      @include  iphone6-land {
+        margin-top: 15px;
+      }
+    }
+    @include  sm-desktop {
+      margin-top: 0;
+    }
+    .head__navbar {
+      .navbar-toggle {
+        float: right !important;
+      }
+    }
+  }
+
+  .pvm-nav-handler {
+    float: right;
+    width: auto;
+    max-width: 55%;
+    .btn-pvm {
+      margin-right: 5px;
+    }
+    .head__settings-link .head__setting-list {
+      z-index: 9999;
+    }
+    @include  sm-desktop {
+      width: 26%;
+    }
+    &.pvm-nav-handler--hide {
+      display: none;
+      @include sm-desktop  { 
+        display: block;
+      }
+    }
+  } //End pvm-nav-handler
+
+} //End pvm-header--is-login

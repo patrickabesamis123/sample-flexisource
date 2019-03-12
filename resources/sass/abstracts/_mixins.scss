@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+    @if $self {
+      &,
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    } @else {
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    }
+  }
+  
+  /// Make a context based selector a little more friendly
+  /// @author Hugo Giraudel
+  /// @param {String} $context
+  @mixin when-inside($context) {
+    #{$context} & {
+      @content;
+    }
+  }
+  
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 600px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 1024px;
+
+// Large tablets and desktops
+$screen-xl-min: 1920px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+@mixin placeholder {
+  @each $placeholder
+      in "::-webkit-input-placeholder",
+         ":-moz-placeholder",
+         "::-moz-placeholder", 
+         ":-ms-input-placeholder" {
+
+      /* for each placeholder in the above list print the browser vendor
+         selector, chained with its parent element */
+
+      &#{$placeholder} {
+          /* content is replaced with the actual style, passed as a block
+             in the mixin inclusion below */
+
+          @content;
+      }
+  }
+}
+
+/// Breakpoint
+@mixin breakpoint($break) {
+  @if $break == hd {
+      @media only screen and (min-width: 1900px) { @content; }
+  } @else if $break == desktop-lg {
+      @media only screen and (max-width: 1680px) { @content; }
+  } @else if $break == desktop-md {
+      @media only screen and (max-width: 1450px) { @content; }
+  } @else if $break == desktop-sm {
+      @media only screen and (max-width: 1366px) { @content; }
+  } @else if $break == desktop-xs {
+      @media only screen and (max-width: 1280px) { @content; }
+  } @else if $break == tablet {
+      @media only screen and (max-width: 1150px) { @content; }
+  } @else if $break == tablet-port {
+      @media only screen and (max-width: 900px) { @content; }
+  } @else if $break == phone-lg {
+      @media only screen and (max-width: 767px) { @content; }
+  } @else if $break == phone-md {
+      @media only screen and (max-width: 600px) { @content; }
+  } @else if $break == phone-sm {
+      @media only screen and (max-width: 480px) { @content; }
+  } @else if $break == phone-xs {
+      @media only screen and (max-width: 400px) { @content; }
+  } @else {
+      @media only screen and ($break) { @content; }
+  }
+}

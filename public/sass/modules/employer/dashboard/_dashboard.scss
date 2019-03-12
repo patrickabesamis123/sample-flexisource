@@ -1,0 +1,66 @@
+.emp-dash-container {
+	#jobs_container {
+		table {
+      table-layout: fixed;
+
+			.pvm-gray {
+				color: $gray;
+				font-family: 'Montserrat-Light',Arial,serif;
+				font-weight: normal;
+			}
+
+      .tcol_1 {
+        padding-left: 0px;
+        min-width: 150px;
+
+        @include safari6-7 {
+          width: 150px;
+        }
+      }
+		}
+	}
+}
+
+.em-dash2-conatainer {
+  .em-dash-gray-con {
+    .em-dash-gray {
+      background: $gray;
+    }
+  }
+
+  .em-dash-content-con {
+    border: 0px;
+
+    .tse-scroll-content {
+      background: #fff;
+      padding: 0px 15px;
+    }
+
+    .dash-table {
+      td {
+        border-bottom: 1px #ddd solid;
+        padding: 10px 0px;
+        width: 400px;
+      }
+    }
+
+    .job-title {
+      display: inline-block;
+      width: 70%;
+    }
+
+    .btn-pvm {
+      float: right;
+    }
+
+    .no-result {
+      background-color: #fff;
+      padding: 10px 13px;
+    }
+
+    .splashdata {
+      background: #fff;
+    }
+  }
+
+}

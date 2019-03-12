@@ -1,0 +1,135 @@
+.job-list-page {
+  .job-filter-section {
+    .job-filter__title {
+      background-color: $light-gray;
+      color: $gray;
+      margin-bottom: 0px !important;
+      padding: 10px 10px 10px 15px;
+      text-transform: uppercase;
+    }
+
+    .job-filter__main-list {
+      background-color: #f0f0f0;
+      padding-top: 10px !important;
+
+      .job-filter__main-item {
+        background-color: #f0f0f0;
+        padding: 0px 10px 0px 15px;
+
+        &.active {
+          .job-filter__subtitle {
+            .fa-angle-up {
+              display: inline !important;
+              float: right;
+            }
+            .fa-angle-down {
+              @include rotate(180deg);
+              @include transition(0.7s);
+            }
+          }
+          .job-filter__scroll {
+            display: block;
+          }
+        }
+
+        .job-filter__subtitle {
+          cursor: pointer;
+          display: block;
+          font-family: $pvm-reg-font;
+          font-size: 14px;
+          line-height: 17px;
+          margin: 0px;
+          padding: 15px 0px;
+          text-transform: uppercase;
+          text-decoration: none;
+
+          .fa {
+            font-size: 17px;
+            margin-right: 10px;
+            position: relative;
+            top: 1px;
+
+            &.fa-angle-down {
+              display: inline;
+              float: right;
+              @include transition(0.7s);
+            }
+          }
+        }
+
+        .job-filter__scroll {
+          display: none;
+          padding-right: 8px;
+          width: 100%;
+
+          &.tse-scrollable {
+            height: 200px;
+          }
+
+          .job-filter__sub-list {
+            position: relative;
+
+            .job-filter__sub-item {
+              border-bottom: 1px solid #e0e0e0;
+              cursor: pointer;
+              padding: 7px 0px;
+
+              &.active {
+                .fa-angle-down {
+                  @include rotate(180deg);
+                  @include transition(0.7s);
+                }
+
+                .job-filter__sub-label {
+                  .fa-spin {
+                    display: inline-block;
+                  }
+                }
+                
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+
+              .job-filter__sub-checkbox {
+                vertical-align: top;
+              }
+
+              .job-filter__sub-label {
+                color: $gray;
+                display: inline-block;
+                font-family: $pvm-light-font;
+                font-size: 13px;
+                margin: 0px;
+                text-transform: none;
+                width: 90%;
+                
+                .fa-spin {
+                  display: none;
+                }
+              }
+
+              .job-filter__sub-area-list {
+                font-family: $pvm-light-font;
+                margin: 10px 0px 0px 10px;
+              }
+
+              .job-filter__range-btn {
+                float: right;
+              }
+            }
+
+            .job-filter__sub-item--nz {
+              border-bottom: 3px solid #c0c0c0;
+
+              .job-filter__sub-label {
+                font-family: $pvm-reg-font;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

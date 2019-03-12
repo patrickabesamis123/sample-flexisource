@@ -1,0 +1,380 @@
+.candidate-profile-edit {
+	ul {
+		padding: 0px;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	#ProfileBottom_r_con {
+		.btn-secondary {
+			line-height: 38px;
+			padding: 0 20px;
+			min-width: 225px !important;
+			width: auto !important;
+		}
+
+		#WorkHistoryForm {
+			.row {
+				margin: 0px !important;
+			}
+		}
+	}
+
+	.CPE-section-title {
+    border-bottom: 1px solid #dfdfdf;
+    color: $sky;
+    font-family: $pvm-bold-font;
+    font-size: 1vw;
+    letter-spacing: 1;
+    line-height: 1.3vw;
+    float: left;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    width: 100%;
+	}
+
+	.CPE-section-subtitle {
+    color: $gray;
+    float: left;
+    font-family: $pvm-bold-font;
+  	font-size: 12px;
+    line-height: 16px;
+    margin: 15px 0 5px;
+    width: 100%;
+	}
+
+	.CPE-add-button {
+		float: right;
+		margin: 20px 0px 70px;
+	}
+
+	.CPE-message {
+		color: $pvm-red;
+		font-family: $pvm-reg-font;
+		font-size: 11px;
+		font-style: italic;
+		float: left;
+		width: 100%; 
+	}
+
+	.CPE-action-buttons {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+
+		.fa {
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.fa-pencil {
+			color: $pvm-green;
+			margin: 0px 5px 0px 0px;
+		}
+
+		.fa-trash-o {
+			color: $pvm-red;
+		}
+	}
+
+	.CPE-form-buttons {
+		float: left;
+		text-align: right;
+		width: 100%;
+	}
+
+	.work-company-name {
+    color: $gray;
+    float: left;
+    font-family: $pvm-bold-font;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    width: 85%;
+	}
+
+	.work-company-name--form {
+		color: #959595;
+		font-family: $pvm-reg-font;
+		text-transform: initial;
+		width: 100%;
+	}
+
+	.work-job-title {
+    color: $sky;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 3px;
+    width: 85%;
+	}
+
+	.work-job-title--form {
+		color: #959595;
+		font-family: $pvm-reg-font;
+		text-transform: initial;
+		width: 100%;
+	}
+
+	.work-completed {
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 5px;
+    width: 85%;
+	}
+
+	.work-classification-list {
+		float: left;
+		width: 100%;
+
+		.work-classification__item {
+			float: left;
+			width: 100%;
+
+			.work-classification {
+		    font-family: $pvm-bold-font;
+		    font-size: 12px;
+		    line-height: 16px;
+		    margin: 15px 0 5px;
+			}
+
+			.work-sub-classification {
+		    font-family: $pvm-reg-font;
+		    font-size: 12px;
+		    line-height: 16px;
+		    margin: 0 0 5px;
+			}
+		}
+	}
+
+	.work-type {
+		float: left;
+		margin: 0px 5px 10px 0px;
+		width: 49.6%;
+	}
+
+	.work-salary {
+		font-family: $pvm-reg-font;
+		font-size: 12px;
+		float: left;
+		line-height: 16px;
+		width: 100%
+	}
+
+	.work-salary--form {
+		margin: 0px 0px 10px 5px;
+		width: 49%;
+	}
+
+	.work-start-date {
+		float: left;
+		margin: 0px 5px 0px 0px;
+		width: 30%;
+	}
+
+	.work-end-date {
+		float: left;
+		margin: 0px 0px 0px 5px;
+		width: 30%;
+	}
+
+	.work-is-present {
+		padding: 0px;
+	}
+
+	.work-responsibilities-list {
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    float: left;
+    line-height: 16px;
+    margin: 0px 0px 5px;
+    width: 100%;
+
+    .work-responsibilities__item {
+    	float: left;
+    }
+
+		.work-responsibilities__item--form {
+			float: left;
+			width: 100%;
+
+			.work-responsibilities {
+				float: left;
+				width: 95%;
+			}
+
+			.fa-close {
+				color: $pvm-red;
+				cursor: pointer;
+				float: left;
+				font-size: 17px;
+				line-height: 38px;
+				text-align: right;
+				width: 5%;
+			}
+		}
+
+		.work-responsibilities__item--more {
+			color: $sky;
+			cursor: pointer;
+			font-family: $pvm-reg-font;
+			font-size: 13px;
+			line-height: 16px;
+		}
+	}
+
+	.work-responsibilities-list--form {
+		margin: 0px;
+	}
+
+	.work-description {
+    font-family: $pvm-reg-font;
+    font-size: 12px;
+    float: left;
+    line-height: 16px;
+		margin: 0px 0px 5px;
+	}
+
+	.work-description--form {
+		height: 100px;
+		margin: 15px 0px 10px;
+	}
+
+	.ed-is-present {
+		padding: 0px 0px 0px 10px;
+	}
+
+	.CPE-education-list {
+		float: left;
+		padding: 10px 0px;
+		width: 100%;
+
+		.CPE__education-item {
+	    border-bottom: 1px solid #dfdfdf;
+			float: left;
+	    margin: 15px 0px;
+	    padding: 0px 0px 25px;
+			position: relative;
+			width: 100%;
+
+			.CPE-education-display {
+				float: left;
+				position: relative;
+				width: 100%;
+
+        .education-degree {
+          color: $gray;
+          float: left;
+          font-family: $pvm-bold-font;
+          font-size: 13px;
+          line-height: 16px;
+          margin: 0px 0px 5px;
+          text-transform: uppercase;
+          width: 75%;
+
+          @include sm-desktop {
+            width: 72%;
+          }
+
+          @include md-desktop {
+            width: 75%;
+          }
+        }
+
+        .education-degree--full {
+          width: 90%;
+        }
+
+        .education-university {
+          color: $sky;
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          line-height: 16px;
+          margin: 0px 0px 3px;
+          width: 75%;
+
+          @include sm-desktop {
+            width: 72%;
+          }
+
+          @include md-desktop {
+            width: 75%;
+          }
+        }
+
+        .education--university--full {
+          width: 90%;
+        }
+
+        .education-completed {
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          line-height: 16px;
+          margin: 0px;
+          width: 75%;
+        }
+
+        .education-image {
+          height: 45px;
+          position: absolute;
+          top: 0px;
+          right: 50px;
+          width: auto;
+        }
+			}
+
+      .education-completed--form {
+      	float: left;
+      	width: 49%;
+      }
+
+
+			.CPE-ed-qualification-con {
+				position: relative;
+				z-index: 2;
+
+				.CPE__ed-qualification-list {
+					left: 0px;
+					position: absolute;
+					top: 38px;
+					width: 100%;
+				}
+			}
+
+			.CPE-ed-qualification-provider-con {
+				position: relative;
+				z-index: 1;
+
+				.CPE__ed-qualification-provider-list {
+					left: 0px;
+					position: absolute;
+					top: 38px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.CPE-work-list {
+		float: left;
+		padding: 10px 0px;
+		width: 100%;
+
+		.CPE__work-item {
+	    border-bottom: 1px solid #dfdfdf;
+	    float: left;
+	    margin: 15px 0;
+	    padding: 0 0 25px;
+			position: relative;
+			width: 100%;
+		}
+	}
+}

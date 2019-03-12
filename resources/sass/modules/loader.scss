@@ -1,0 +1,55 @@
+
+/**************************
+Custom
+Author: Domina C G.A.
+*/
+
+@import 'modules/media-queries';
+
+/**
+* The commented import is in observation.
+* Since this is a rebuild app and the previous devs are now gone.
+* The current devs cannot determine as of now if this modules are needed.
+**/
+
+//@import 'modules/mixins';
+//@import 'modules/general';
+//@import 'modules/printing';
+//@import 'modules/header';
+//@import 'modules/footer';
+//@import 'modules/side-nav';
+//@import 'modules/static/features';
+//@import 'modules/static/content';
+//@import 'modules/static/faqs';
+//@import 'modules/static/pricing';
+//@import 'modules/public/job-list';
+//@import 'modules/public/registration';
+//@import 'modules/employer/analytics/overview';
+//@import 'modules/employer/analytics/sourceeducation';
+//@import 'modules/employer/analytics/experienceindustry';
+//@import 'modules/employer/analytics/roleandanswers'; 
+//@import 'modules/employer/candidatepool/candidatepool';
+//@import 'modules/employer/company/company';
+//@import 'modules/employer/dashboard/dashboard';
+//@import 'modules/employer/dashboard/company-roles';
+//@import 'modules/employer/dashboard/manage-talent';
+//@import 'modules/employer/dashboard/settings';
+//@import 'modules/employer/dashboard/teams';
+//@import 'modules/employer/job/create-role';
+//@import 'modules/candidate/dashboard/dashboard'; 
+//@import 'modules/employer/job/create-role--build';
+//@import 'modules/employer/job/create-role--vid';
+//@import 'modules/employer/job/create-role--preapp';
+//@import 'modules/employer/job/create-role--standard';
+//@import 'modules/employer/job/create-role--team';
+//@import 'modules/employer/job/create-role--custom';
+//@import 'modules/employer/job/create-role--not';
+//@import 'modules/employer/job/create-role--int';
+//@import 'modules/employer/job/role-template';
+//@import 'modules/candidate/dashboard/analytics';
+//@import 'modules/candidate/dashboard/settings';
+//@import 'modules/candidate/job/app_role--quickquestion';
+//@import 'modules/candidate/profile/edit';
+//@import 'modules/candidate/profile/public-profile';
+
+@import 'modules/custom.scss';

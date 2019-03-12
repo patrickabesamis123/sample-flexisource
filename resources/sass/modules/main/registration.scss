@@ -1,0 +1,27 @@
+// Global sass
+@import 'resources/sass/global';
+
+// CUSTOM STYLES FOR REGISTRATION
+input, select, textarea {
+    border: 1px solid lighten($bg-primary, 48.63);
+    font-size: 14px;
+}
+
+#Register {
+    .locationFormContainer {
+        @include breakpoint('phone-lg') {
+            transform: translateY(20%);
+            h1 {
+                line-height: 40px;
+                padding: 10px 0;
+            }
+        }
+        .section1 {
+            padding-bottom: 25px;
+        }
+    }
+    .continue_btn {
+        width: auto;
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,17 @@
+.emp-new-role {
+  .middle-pane {
+    .role__pre-approval-content {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include md-desktop {
+        padding: 0px 15px 10px;
+      }
+
+      @include desktop {
+        padding: 0px 30px 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,929 @@
+.emp-role-template {
+  border-top: 1px solid #EDEDED;
+
+  a {
+    color: $sky;
+    float: left;
+    width: 100%;
+
+    &:hover {
+      color: #0099d5;
+    }
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  .new-role__label {
+    border-bottom: 1px solid #ededed;
+    color: $gray;
+    font-family: "Rockwell-Light", Arial;
+    font-size: 16px;
+    padding: 0px 0px 10px;
+    margin: 15px 0px 10px;
+
+    @include iphone6 {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    @include tablet-land {
+      font-size: 21px;
+      line-height: 25px;
+      margin: 25px 0px 10px;
+    }
+  }
+
+  .new-role__label--center {
+    text-align: center;
+  }
+
+  .new-role__sub-label {
+    color: gray;
+    font-family: $pvm-reg-font;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    @include tablet-land {
+      margin: 0px 0px 10px;
+    }
+  }
+
+  .new-role__title {
+    color: $sky;
+    font-family: "Rockwell-Light";
+    font-size: 15px !important;
+    float: left;
+    line-height: 19px;
+    margin: 10px 5px 10px 0px;
+    position: relative;
+    width: 100%;
+
+    @include iphone6 {
+      font-size: 16px !important;
+      line-height: 20px;
+    }
+
+    @include iphone6-land {
+      min-height: 40px;
+    }
+
+    @include tablet {
+      font-size: 18px !important;
+      line-height: 22px;
+      //margin: 60px 5px 10px 0px;
+      min-height: 54px;
+    }
+  }
+
+  .new-role__title--modal {
+    margin: 0px 0px 10px;
+    min-height: auto;
+  }
+
+  .new-role__sub-title {
+    color: $gray;
+    float: left;
+    font-family: $pvm-bold-font;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include iphone6 {
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .new-role__desc {
+    color: $gray;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+    margin: 5px 0px 25px;
+    width: 100%;
+
+    @include iphone6 {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 16px;
+      min-height: 64px;
+    }
+  }
+
+  .new-role__desc--up {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 15px 0px 5px;
+    text-transform: uppercase;
+
+    @include iphone6 {
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  .new-role__desc--center {
+    text-align: center;
+    margin: 5px 0px;
+  }
+
+  .new-role__sub-desc {
+    color: $light-gray;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 5px 0px 0px;
+    width: 100%;
+
+    @include iphone6 {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @include iphone6-land {
+      bottom: 70px;
+      left: 15px;
+      position: absolute;
+      width: 90%;
+    }
+
+    @include tablet {
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  .new-role__highlight {
+    color: $sky;
+  }
+
+  .new-role__warn {
+    color: $pvm-red;
+  }
+
+  .new-role__table-label {
+    color: $sky;
+    float: left;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 5px 0px 0px;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include tablet {
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  .new-role__table-label--half {
+    width: 50%;
+  }
+
+  .new-role__table-desc {
+    color: $gray;
+    float: left;
+    font-family: $pvm-reg-font;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+    margin: 5px 0px;
+    width: 100%;
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  .new-role__table-desc--half {
+    width: 50%;
+  }
+
+  .new-role__how {
+    padding: 10px 15px 5px;
+
+    @include tablet {
+      padding: 10px 15px 25px;
+    }
+
+    .new-role__how-title {
+      color: $sky;
+      font-family: "Rockwell-Light", Arial;
+      font-size: 18px !important;
+      line-height: 24px;
+      margin: 15px 0px;
+      text-align: center;
+
+      @include iphone6 {
+        font-size: 21px !important;
+        line-height: 27px;
+      }
+
+      @include iphone6-land {
+        font-size: 24px !important;
+        line-height: 30px;
+        margin: 30px 0px;
+      }
+
+      @include tablet-land {
+        font-size: 28px !important;
+        line-height: 36px;
+      }
+
+      @include md-desktop {
+        font-size: 32px !important;
+        line-height: 40px;
+        margin: 35px 0px 30px;
+      }
+    }
+
+    .new-role__btn-handler {
+      float: left;
+      width: 100%;
+
+      @include iphone6-land {
+        padding: 0px 4%;
+      }
+
+      @include tablet {
+        padding: 0px 10%;
+      }
+
+      @include tablet-land {
+        padding: 0px 20%;
+      }
+
+      @include md-desktop {
+        padding: 0px 27%;
+      }
+
+      @include desktop {
+        padding: 0px 31%;
+      }
+
+      .new-role__blank-btn {
+        font-size: 11px;
+        line-height: 26px;
+        margin: 0 auto;
+        text-align: center;
+
+        .fa {
+          margin: 0px 5px 0px;
+        }
+
+        @include iphone6 {
+          max-width: 350px;
+          margin: 0px;
+        }
+
+        @include iphone7 {
+          margin: 0px 0px 0px 4.5%;
+        }
+
+        @include iphone6-land {
+          float: left;
+          font-size: 12px;
+          margin: 0px 0px 0px 6%;
+          max-width: 270px;
+          width: 40%;
+        }
+
+        @include tablet-land {
+          max-width: none;
+          line-height: 31px;
+        }
+      }
+
+      .new-role__existing-btn {
+        color: $sky !important;
+        font-size: 10px;
+        line-height: 26px;
+        margin: 10px auto 0px;
+        text-align: center;
+
+        @include iphone6 {
+          font-size: 11px;
+          max-width: 350px;
+        }
+
+        @include iphone7 {
+          margin: 10px 0px 0px 4.5%;
+        }
+
+        @include iphone6-land {
+          font-size: 12px;
+          float: left;
+          margin: 0px 6% 0px 10px;
+          max-width: 270px;
+          width: 55% !important;
+        }
+
+        @include tablet-land {
+          line-height: 31px;
+        }
+
+        .fa {
+          margin: 0px 5px 0px;
+        }
+      }
+    }
+  }
+
+  .new-role__template-list {
+    float: left;
+    margin: 10px 0px 0px;
+    width: 100%;
+
+    @include iphone6-land {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+    }
+
+    .new-role__template-item {
+      background-color: #fff;
+      border: 1px solid #EDEDED;
+      @include border-radius(5px);
+      float: left;
+      margin: 0px 0px 15px;
+      padding: 10px 15px;
+      position: relative;
+      width: 100%;
+
+      @include iphone6 {
+        padding: 30px 25px;
+      }
+
+      @include iphone6-land {
+        min-height: 320px;
+        width: 49%;
+      }
+
+      @include tablet {
+        width: 32.5%;
+      }
+
+      @include tablet-land {
+        padding: 20px 15px;
+        width: 24.5%;
+      }
+
+      @include desktop {
+        padding: 20px 25px 30px;
+        width: 24%;
+      }
+
+      .new-role__draft-con {
+        float: left;
+        height: 32px !important;
+        margin: 15px 0px 5px;
+        padding: 15px 5px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+        @include iphone6-land {
+          bottom: 15px;
+          left: 15px;
+          position: absolute !important;
+          width: 90%;
+        }
+
+        @include tablet {
+        height: 37px !important;
+        padding: 15px 10px;
+
+        }
+      }
+
+      .new-role__use-btn {
+        float: left;
+        margin: 20px 0px 0px;
+        text-align: center;
+        width: 46%;
+
+        @include iphone6-land {
+          bottom: 15px;
+          left: 15px;
+          position: absolute;
+          width: 43%;
+        }
+
+        @include tablet-land {
+          line-height: 31px;
+        }
+      }
+
+      .new-role__see-btn {
+        float: left;
+        margin: 20px 0px 0px 15px;
+        text-align: center;
+        width: 46%;
+
+        @include iphone6-land {
+          bottom: 15px;
+          right: 15px;
+          position: absolute;
+          width: 43%;
+        }
+
+        @include tablet-land {
+          line-height: 31px;
+        }
+      }
+
+      .newrole__draft-label {
+        background-color: $pvm-green;
+        color: #fff;
+        font-family: $pvm-reg-font;
+        font-size: 11px;
+        line-height: 14px;
+        padding: 5px 10px;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+      }
+
+      .new-role__delete {
+        color: $pvm-red;
+        font-size: 19px;
+        line-height: 14px;
+        margin: 0px;
+        padding: 5px;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+
+        width: auto;
+
+        @include iphone6 {
+          font-size: 22px;
+          margin: 0px 5px 0px 0px;
+          top: 5px;
+
+        }
+      }
+    }
+
+    .new-role__template-item--draft {
+      background-color: #efefef;
+      border: 1px solid #cdcdcd;
+    }
+  }
+
+  .new-role__template-list--avail {
+    .new-role__template-item {
+      border: 1px solid #ddd;
+
+      @include tablet-land() {
+        width: 32.5%;
+      }
+
+      @include desktop {
+        padding: 20px 25px 30px;
+        width: 32%;
+      }
+    }
+  }
+
+
+  .new-role__drafts {
+    float: left;
+    padding: 10px 15px;
+    width: 100%;
+
+    @include md-desktop {
+      padding: 0px 5%;
+    }
+
+    @include desktop {
+      padding: 0px 10%;
+    }
+
+    @include lg-desktop {
+      padding: 0px 12%;
+    }
+
+    .new-role__see-more {
+      color: $sky;
+      float: left;
+      font-family: $pvm-reg-font;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 15px;
+      margin: 25px 0px 20px;
+      text-align: center;
+      width: 100%;
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .new-role__library {
+    background-color: #efefef;
+    float: left;
+    padding: 10px 15px;
+    width: 100%;
+
+    @include md-desktop {
+      padding: 0px 5%;
+    }
+
+    @include desktop {
+      padding: 0px 10%;
+    }
+
+    @include desktop {
+      padding: 0px 12%;
+    }
+
+    .new-role__search-lib-con {
+      @include iphone6-land {
+        margin: 0 auto;
+        max-width: 375px;
+      }
+
+      @include tablet-land {
+        margin: 0 auto 30px;
+        max-width: 480px;
+      }
+
+      .new-role__search-lib {
+        float: left;
+        width: 84%;
+
+        @include iphone6 {
+          width: 90%;
+        }
+      }
+    }
+
+    .new-role__left-nav {
+      float: left;
+      margin: 30px 0px 0px;
+      position: relative;
+      width: 100%;
+
+      @include tablet-land {
+        margin: 0px;
+        width: 25%;
+      }
+
+      .new-role__sort-link {
+        color: $gray;
+        font-family: $pvm-reg-font;
+        font-size: 11px;
+        line-height: 14px;
+        float: right;
+        width: auto;
+
+        @include tablet {
+          font-size: 13px;
+          line-height: 16px;
+        }
+
+        .fa {
+          margin: 0px 0px 0px 5px;
+        }
+      }
+
+      .new-role__class-link {
+        color: $gray;
+        float: right;
+        font-size: 11px;
+        line-height: 14px;
+        margin: 0px 0px 0px 10px;
+        width: auto;
+
+        @include tablet {
+          font-size: 13px;
+          line-height: 16px;
+        }
+
+        .fa {
+          margin: 0px 0px 0px 5px;
+        }
+      }
+
+      .new-role__sort-box {
+        background-color: #fff;
+        @include box-shadow(-3px 4px 12px #dfdfdf);
+        float: left;
+        margin: 20px 0px 0px;
+        padding: 10px;
+        position: absolute;
+        right: 36%;
+        top: 0px;
+        z-index: 2;
+
+        @include iphone6-land {
+          right: 15%;
+        }
+
+        @include tablet-land {
+          background-color: transparent;
+          @include box-shadow(none);
+          margin: 0px;
+          position: relative;
+          right: 0px;
+          top: 0px;
+          width: 100%;
+        }
+
+        .new-role__sort-list {
+          float: left;
+          width: 100%;
+
+          @include tablet-land {
+            margin: 0px 0px 40px;
+          }
+
+          @include desktop {
+            padding: 0px 30px 0px 0px;
+          }
+
+          .new-role__sort-item {
+            border-bottom: 1px solid #ededed;
+            color: $gray;
+            cursor: pointer;
+            font-family: $pvm-reg-font;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 5px 0px;
+
+            @include tablet-land {
+              font-size: 13px;
+              line-height: 16px;
+              border-bottom: 1px solid #ddd;
+              padding: 8px 0px;
+            }
+
+            &:last-child {
+              border-bottom: none;
+
+              @include tablet-land {
+                border-bottom: 1px solid #ddd;
+              }
+            }
+
+            &.active {
+              color: $sky;
+            }
+          }
+
+          .new-role__sort-item--all {
+            color: $sky;
+          }
+        }
+      }
+
+      .new-role__sort-box--class {
+        right: 0px;
+      }
+    }
+
+    .new-role__library-box {
+      float: left;
+      width: 100%;
+
+      @include tablet-land {
+        width: 75%;
+      }
+    }
+  }
+
+
+  .new-role__template-modal {
+    .modal-dialog {
+      @include tablet-land {
+        width: 850px;
+      }
+
+      @include md-desktop {
+        width: 1024px;
+      }
+
+      .modal-content {
+        float: left;
+        width: 100%;
+
+        .new-role__temp-details-list {
+          text-align: center;
+
+          .new-role__temp-details-item {
+            border-bottom: 4px solid transparent;
+            display: inline-block;
+            font-size: 9px;
+            line-height: 12px;
+            margin: 5px 0px 0px;
+            padding: 2px 4px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &.active {
+              border-bottom: 4px solid $pvm-green;
+            }
+
+            @include iphone6 {
+              font-size: 10px;
+              line-height: 13px;
+            }
+
+            @include tablet-land {
+              padding: 5px;
+            }
+
+            @include md-desktop {
+              font-size: 11px;
+              line-height: 16px;
+              padding: 5px 15px;
+            }
+          }
+
+          .new-role__temp-details-item--gray {
+            color: $light-gray2;
+          }
+        }
+
+        .new-role__left-pane {
+          border-top: 1px solid #ededed;
+          margin: 0px;
+          float: left;
+          width: 100%;
+
+          @include tablet {
+            margin: 0px 0px 20px;
+            padding: 0px 10px 0px 0px;
+            width: 40%;
+          }
+
+          .new-role__use-modal-btn {
+            float: left;
+            margin: 5px 0px;
+          }
+
+          .new-role__desc--up {
+            min-height: auto;
+
+            &.new-role__highlight {
+              margin: 0px 0px 15px;
+            }
+          }
+        }
+
+        .new-role__right-pane {
+          background-color: #efefef;
+          float: left;
+          margin: 0px 0px 10px;
+          padding: 0px 0px 15px;
+          width: 100%;
+
+          @include tablet {
+            margin: 0px 0px 20px;
+            min-height: 38vh;
+            width: 60%;
+          }
+
+          .new-role__modal-ins {
+            padding: 10px;
+
+            .new-role__det-list {
+              float: left;
+              width: 50%;
+
+              @include md-desktop {
+                width: 100%;
+              }
+
+              .new-role__det-item {
+                color: $gray;
+                float: left;
+                font-family: $pvm-reg-font;
+                font-size: 11px;
+                font-weight: normal;
+                line-height: 14px;
+                margin: 5px 0px;
+                width: 100%;
+
+                @include iphone6 {
+                  font-size: 13px;
+                  line-height: 16px;
+                }
+
+                .new-role__checklist-desc {
+                  display: inline-block;
+                  width: 95%;
+                }
+
+                .fa-check {
+                  color: $pvm-green;
+                  margin: 0px 5px 0px 0px;
+                  vertical-align: top;
+                }
+
+                .fa-close {
+                  color: $pvm-red;
+                  margin: 0px 5px 0px 0px;
+                  vertical-align: top;
+                }
+              }
+
+              .new-role__pre-app-table {
+                .new-role__pre-app-list {
+                  .new-role__pre-app-item {
+
+                  }
+                }
+              }
+            }
+
+            .new-role__det-list--req {
+              margin-bottom: 20px;
+              width: 50%;
+            }
+          }
+        }
+
+        .modal-body {
+          padding: 0px 15px;
+        }
+
+        .modal-body--header {
+          background-color: $sky;
+          padding: 15px;
+
+          .new-role__modal-title {
+            color: #fff;
+            font-family: "Rockwell-Light";
+            font-size: 15px;
+            line-height: 18px;
+            margin: 5px 0px;
+            text-align: center;
+
+            @include iphone6 {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            @include desktop {
+              font-size: 20px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #CreateRoleModal {
+    text-align: center;
+
+    .modal-dialog {
+      max-width: 375px;
+      margin: 50px auto;
+
+      .new-role__modal-title {
+        color: $sky;
+        font-family: "Rockwell";
+        font-size: 16px;
+        padding: 10px 0px 15px;
+      }
+
+      .new-role__name-text {
+        font-size: 12px;
+        height: 32px !important;
+      }
+    }
+  }
+}

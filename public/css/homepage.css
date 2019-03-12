@@ -1,0 +1,1409 @@
+@charset "UTF-8";
+#Homepagenew {
+  background-color: #FFF;
+  text-shadow: none !important;
+  font-family: "Montserrat-Regular";
+}
+
+#Homepagenew a {
+  cursor: pointer;
+}
+#Homepagenew #NewHomeSearchContainer ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+#Homepagenew #NewHomeSearchContainer ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+#Homepagenew #NewHomeSearchContainer :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+#Homepagenew :-moz-placeholder {
+  /* Firefox 18- */
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+#NewHeader #custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
+  color: #4a4a4a;
+  font-size: 12px;
+}
+#NewHeader #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover {
+  color: #38c !important;
+}
+
+#HeaderLoginButton li a:hover {
+  color: #38c !important;
+}
+
+#NewHeader #custom-bootstrap-menu.navbar-default {
+  margin: 35px 0 0 !important;
+}
+
+#HeaderLoginButton {
+  padding: 0;
+  margin: 41px 0 0 0;
+  float: right;
+}
+#HeaderLoginButton li {
+  display: inline-block;
+  font-family: "Montserrat-Regular";
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#HeaderLoginButton li a {
+  color: #4a4a4a;
+  font-size: 12px;
+}
+#HeaderLoginButton li:last-child {
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+}
+#HeaderLoginButton li:last-child a {
+  background-color: #00a2da;
+  padding: 12px;
+  color: #FFF;
+  font-weight: normal;
+}
+#HeaderLoginButton li:last-child:hover {
+  background-color: none !important;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+}
+#HeaderLoginButton li:last-child:hover a {
+  color: #4a4a4a;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+}
+
+#NewHomeBanner {
+  background-size: cover;
+  background-position: center bottom;
+  max-height: 395px;
+  min-height: 395px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#NewHomeBanner > .container {
+  position: relative;
+  z-index: 2;
+}
+#NewHomeBanner > .row {
+  position: relative;
+  z-index: 2;
+}
+
+.alternate1 {
+  background-image: url("/images/bgs/pm-home-4.png");
+}
+.alternate1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.alternate2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.alternate1:before {
+  background-color: rgba(0, 176, 237, 0.5);
+}
+
+.alternate2 {
+  background-image: url("/images/bgs/pm-home-5@2x.png");
+}
+.alternate2:before {
+  background-color: rgba(255, 253, 114, 0.6);
+}
+
+#NewHomeBanner.alternate1 h1 {
+  color: #fffd72;
+}
+#NewHomeBanner.alternate2 h1 {
+  color: #00b0ed;
+}
+#NewHomeBanner.alternate1 h3 {
+  color: #FFF;
+}
+#NewHomeBanner.alternate2 h3 {
+  color: #4a4a4a;
+}
+#NewHomeBanner h1 {
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "Rockwell";
+  text-shadow: none !important;
+  letter-spacing: 1px;
+  /*min-width: 590px;
+  min-width: 375px;*/
+  margin-top: 49px;
+}
+#NewHomeBanner h3 {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Rockwell-Light";
+  text-shadow: none !important;
+  letter-spacing: 1px;
+  margin-top: 19px;
+}
+#NewHomeBanner .BannerRegisterContainer {
+  margin: 40px 0 42px 0;
+}
+#NewHomeBanner.alternate1 .BannerRegister {
+  border: 1px solid #f8e81c;
+  background-color: #fffd72;
+  color: #4a4a4a;
+}
+#NewHomeBanner.alternate2 .BannerRegister {
+  border: 1px solid #00a2da;
+  background-color: #00b0ed;
+  color: #FFF;
+}
+#NewHomeBanner .BannerRegister {
+  padding: 10px 15px;
+  font-family: "Montserrat-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#homeVideoContainer {
+  min-height: 282px;
+}
+#homeVideoContainer video {
+  min-height: 282px;
+}
+#homeVideoContainer .vjs-big-play-button {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin: 0;
+  transform: translate(50%, 50%);
+  margin-top: -50px;
+  margin-left: -50px;
+}
+#homeVideoContainer .azuremediaplayer {
+  margin: 0 auto;
+  /*height: 283px;*/
+}
+
+#NewHomeBanner .about_video-dimensions,
+#NewHomeBanner .video-container-box {
+  width: 503px;
+  height: 283px;
+  margin: 0 auto;
+}
+
+#NewHomeSearchContainer {
+  display: block;
+  margin-top: 161px;
+  padding: 0px 15px;
+}
+#NewHomeSearchContainer h2 {
+  color: #4a4a4a;
+  font-family: "Rockwell-Light";
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 42px 0 24px;
+}
+#NewHomeSearchContainer .ui-input-text {
+  /*margin: 0 -10px 0px -10px !important;*/
+}
+#NewHomeSearchContainer .ui-input-text input {
+  border-radius: 2px;
+  border: 1px solid #9b9b9b;
+  background-color: #ffffff;
+  font-family: "Montserrat-Light";
+  font-size: 12px;
+  line-height: 25px;
+}
+#NewHomeSearchContainer .ui-input-text input:focus {
+  box-shadow: 0 0 3px #7edeff;
+  border: 1px solid #00b0ed !important;
+}
+
+#CassificationCont {
+  margin-bottom: 5px;
+}
+
+#CassificationCont .focusthis {
+  box-shadow: 0 0 3px #7edeff;
+  border: 1px solid #00b0ed !important;
+}
+
+#HomeNewFilter hr {
+  height: 2px;
+  border: none;
+  background-color: #d3d3d3;
+  margin: 6px -10px 8px;
+}
+
+#toggleFilter {
+  display: none;
+  margin-top: 39px;
+}
+
+#moreFilter, #hideFilter {
+  color: #00b0ed;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#toggleFilter h5 {
+  color: #4a4a4a;
+  font-family: "Montserrat-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#WorkTypeList {
+  padding: 0;
+  margin: 0;
+}
+#WorkTypeList:after {
+  content: "";
+  clear: both;
+}
+#WorkTypeList li {
+  padding: 0 2px 10px;
+  float: left;
+  width: 25%;
+  list-style: none;
+}
+#WorkTypeList li div {
+  background-color: transparent;
+  margin: 0;
+}
+#WorkTypeList li label {
+  margin: 0;
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.filtercheckbox:after {
+  content: "";
+  clear: both;
+}
+
+.roundedOne {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+.roundedOne .buttonme {
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  background: #FFF;
+  border: 1px solid #d3d3d3;
+}
+.roundedOne .buttonme:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00b0ed;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  top: 2px;
+  left: 2px;
+}
+.roundedOne .buttonme:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+.roundedOne input[type=checkbox]:checked + .buttonme {
+  border: 1px solid #00b0ed;
+}
+.roundedOne input[type=checkbox]:checked + .buttonme:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+#Homepagenew .ui-slider-track .ui-btn.ui-slider-handle {
+  width: 16px !important;
+  height: 16px !important;
+  top: 210% !important;
+  margin-left: -13px !important;
+  background: #FFF;
+  border-color: #d3d3d3;
+  border-radius: 50px;
+  margin-top: -17px;
+}
+#Homepagenew .ui-btn-active {
+  background-color: #00b0ed !important;
+  border-color: #00b0ed !important;
+}
+#Homepagenew .ui-rangeslider-sliders .ui-slider-track:nth-child(2) {
+  background-color: #ccc !important;
+  border-color: #ccc !important;
+}
+#Homepagenew .FilterContent .ui-slider-handle div {
+  margin-top: 20px !important;
+}
+#Homepagenew .ui-slider-track {
+  height: 5px;
+  margin-top: -3px;
+}
+#Homepagenew .valueslider {
+  margin-top: 13px;
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-shadow: none;
+  margin-left: -15px;
+}
+#Homepagenew .maxValue {
+  color: #4a4a4a;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-shadow: none;
+  position: absolute;
+  right: 0;
+  top: 19px;
+}
+#Homepagenew .FilterContainer {
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+}
+#Homepagenew .blue_btn {
+  border: 1px solid #00a2da;
+  background-color: #00b0ed;
+}
+
+#SubmitWithFilter .cancel {
+  margin-right: 5px;
+  max-width: 90px;
+}
+#SubmitWithFilter .blue_btn {
+  max-width: 90px;
+}
+
+#Homepagenew .cancel,
+#Homepagenew .blue_btn {
+  padding: 12px 17px;
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  line-height: 100%;
+}
+#Homepagenew .cancel {
+  border: 1px solid #b0b0b0;
+  background-color: #d3d3d3;
+}
+#Homepagenew #TabContainer1 {
+  margin-top: 49px;
+}
+#Homepagenew #Tab1 li.active a:after {
+  content: "";
+  border-bottom: 1px solid #2cb3b3;
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+#TabContainer1 .tab-content h2 {
+  color: #ffffff;
+  font-family: "Rockwell-Light";
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+#FeaturedOppurtunities {
+  background-color: #FFF;
+  margin-bottom: 37px;
+  margin-top: 34px;
+}
+#FeaturedOppurtunities h2 {
+  color: #4a4a4a;
+  font-family: "Rockwell-Light";
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+#Homepagenew #Tab1 {
+  margin: 0 -15px;
+  border: none;
+}
+#Homepagenew #Tab1 li {
+  width: 50%;
+  background-color: #4a4a4a;
+}
+#Homepagenew #Tab1 li a {
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+#Homepagenew #Tab1 li a:hover {
+  border-radius: 0;
+  background-color: #4a4a4a;
+  opacity: 0.8;
+}
+#Homepagenew #Tab1 li.active {
+  background-color: #35cccc;
+  border: none;
+  border-radius: 0;
+}
+#Homepagenew #Tab1 li.active a {
+  background-color: #35cccc;
+  border: none;
+  border-radius: 0;
+}
+#Homepagenew .tab-content {
+  background-color: #35cccc;
+  padding-top: 27px;
+  padding-bottom: 30px;
+}
+#Homepagenew #Section5homepage {
+  background-color: #f4f4f4;
+}
+#Homepagenew #Section5homepage .subtitle {
+  font-family: "Rockwell-Light";
+  color: #4a4a4a;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+#HomeContact {
+  background-color: #00b0ed;
+  padding-top: 35px;
+  padding-bottom: 38px;
+  text-shadow: none !important;
+}
+#HomeContact img {
+  margin: 0 auto;
+}
+#HomeContact .left {
+  border-right: 1px solid #10c2ff;
+}
+#HomeContact .left h1 {
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+#HomeContact #Form_first_name_Holder,
+#HomeContact #Form_last_name_Holder,
+#HomeContact #Form_first_password_Holder,
+#HomeContact #Form_second_password_Holder {
+  float: left;
+  width: 49%;
+}
+#HomeContact #Form_email_Holder {
+  float: left;
+  width: 100%;
+}
+#HomeContact #Form_first_name_Holder,
+#HomeContact #Form_first_password_Holder {
+  margin-right: 6px;
+}
+#HomeContact .asterisk {
+  display: none;
+}
+#HomeContact .ui-input-text {
+  background-color: transparent !important;
+}
+#HomeContact .register-form-container {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+#Homepagenew .register-form-container ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #9b9b9b;
+  font-family: "Montserrat-Light";
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: capitalize;
+}
+#Homepagenew .register-form-container ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9b9b9b;
+  font-family: "Montserrat-Light";
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: capitalize;
+}
+#Homepagenew .register-form-container :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #9b9b9b;
+  font-family: "Montserrat-Light";
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: capitalize;
+}
+#Homepagenew .register-form-container :-moz-placeholder {
+  /* Firefox 18- */
+  color: #9b9b9b;
+  font-family: "Montserrat-Light";
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: capitalize;
+}
+
+#HomeContact h1 {
+  color: #ffffff;
+  font-family: "Rockwell";
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+#HomeContact .register-form-container .field input,
+#HomeContact .register-form-container .field select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border: 1px solid #00a2da;
+  background-color: #FFF;
+  color: #959595;
+  font-family: "Montserrat-Light", Arial, serif;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+#HomeContact #Form_user_type label {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-shadow: none !important;
+}
+#HomeContact #Form_user_type li {
+  display: inline-block;
+}
+#HomeContact #Form_user_type input[type=radio] {
+  visibility: hidden;
+}
+#HomeContact #Form_user_type .text {
+  padding-top: 3px;
+}
+#HomeContact .ui-checkbox-off:after,
+#HomeContact .ui-btn.ui-radio-off:after {
+  display: none;
+}
+#HomeContact .check {
+  background-color: #FFF;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 3px;
+  border-radius: 50px;
+  top: 10px;
+}
+#HomeContact #user_type .left2 {
+  display: none;
+}
+#HomeContact #user_type .left {
+  float: left;
+  margin-top: 15px;
+  border: none;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+#HomeContact #user_type .middleColumn {
+  float: left;
+}
+#HomeContact #user_type .ui-btn.ui-checkbox-off:after, #HomeContact #user_type .ui-btn.ui-checkbox-on:after, #HomeContact #user_type .ui-btn.ui-radio-off:after, #HomeContact #user_type .ui-btn.ui-radio-on:after {
+  margin: -2px 2px 0 0px;
+}
+#HomeContact .register-form-container {
+  /*
+  .action {
+      width: 100%;
+      padding: 10px 40px;
+      border: 1px solid #909090;
+      background-color: #a9a9a9;
+      color: #FFF;
+      text-transform: uppercase !important;
+      font-family: 'Montserrat-Regular', Arial, serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+  }
+  .submityellow {
+      color: #545454;
+  }
+  */
+}
+#HomeContact .register-form-container .action {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #909090 !important;
+  background-color: #a9a9a9 !important;
+  color: #959595;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+#HomeContact .register-form-container .submityellow {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ffda45 !important;
+  background-color: #fffd71 !important;
+  color: #545454;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+#HomeContact .register-form-container .submitblue {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #007ed5 !important;
+  background-color: #00aeed !important;
+  color: #545454;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+#HomeContact .left h3 {
+  font-family: "Rockwell";
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 35px;
+  margin: 0;
+}
+#HomeContact .left p {
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 37px;
+  padding-bottom: 85px;
+}
+
+#SocialShare {
+  color: #FFF;
+  font-family: "Montserrat-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#SocialShare a:link, #SocialShare a:visited {
+  color: #FFFFFF;
+}
+#SocialShare a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+#SocialShare i.fa {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+#SocialShare .linkedin,
+#SocialShare .facebook {
+  padding: 25px;
+}
+#SocialShare .linkedin {
+  background-color: #0077b5;
+}
+#SocialShare .facebook {
+  background-color: #3b5998;
+}
+
+#Homepagenew #Testimonials {
+  background-color: #4a4a4a;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+#Testimonials .left {
+  border-right: 1px solid #5b5b5b;
+}
+#Testimonials .testimonialContent {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+#Testimonials .testimonialContent:before {
+  content: "“";
+  font-size: 105px;
+  text-align: center;
+  width: 25px;
+  position: relative;
+  margin: 0 auto -45px;
+  clear: both;
+  display: block;
+}
+#Testimonials .testimonialAuthor {
+  font-family: "Rockwell-Light";
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 21px;
+}
+
+#TabContainer1 {
+  color: #ffffff;
+  font-size: 11px;
+  font-family: "Montserrat-Light";
+  letter-spacing: 1px;
+}
+#TabContainer1 .carousel .col-md-2 {
+  position: relative;
+  min-height: 100px;
+}
+
+.FeaturedJobs {
+  color: #ffffff;
+  font-size: 11px;
+  font-family: "Montserrat-Light";
+  letter-spacing: 1px;
+}
+
+#TabContainer1 .tabs,
+.FeaturedJobs .content {
+  text-align: center;
+}
+
+#TabContainer1 .carousel .col-md-2 .content {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+#TabContainer1 .tabs .contentCont {
+  max-width: 185px;
+  margin: 0 auto;
+  text-shadow: none !important;
+}
+
+.FeaturedJobs .contentCont {
+  max-width: 185px;
+  margin: 0 auto;
+  text-shadow: none !important;
+}
+
+#TabContainer1 .tabs .content img,
+.FeaturedJobs .content img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+#TabContainer1 .carousel-control {
+  background: none;
+}
+
+#FeaturedOppurtunities .carousel-control {
+  background: none;
+  color: #4a4a4a !important;
+}
+
+#TabContainer1 .carousel-control.left,
+#FeaturedOppurtunities .carousel-control.left {
+  padding: 0 55px 0 0;
+  width: auto;
+  cursor: pointer;
+  font-size: 28px;
+  color: #FFF;
+  text-shadow: none;
+  opacity: 1;
+  top: 25px;
+}
+
+#TabContainer1 .carousel-control.right,
+#FeaturedOppurtunities .carousel-control.right {
+  padding: 0 0 0 55px;
+  width: auto;
+  cursor: pointer;
+  font-size: 28px;
+  color: #FFF;
+  text-shadow: none;
+  opacity: 1;
+  top: 25px;
+}
+
+#TabContainer1 .ViewFeaturesCont,
+.ViewjobsCont {
+  margin-top: 84px;
+}
+
+#TabContainer1 .ViewjobsCont a:link, #TabContainer1 .ViewjobsCont a:visited {
+  color: #FFF;
+}
+#TabContainer1 .ViewFeatures {
+  color: #00b0ed;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border: 1px solid #f4f4f4;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Viewjobs {
+  color: #00b0ed;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border: 1px solid #f4f4f4;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.FeaturedJobs ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+}
+.FeaturedJobs .content img {
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+}
+.FeaturedJobs .contentCont a {
+  color: #4a4a4a !important;
+}
+.FeaturedJobs .JobName {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 18px;
+}
+.FeaturedJobs .joblocation {
+  margin-top: 8px;
+  font-family: "Montserrat-Light";
+}
+
+.Viewjobs {
+  border: 1px solid #00a2da;
+  background-color: #00b0ed;
+  color: #FFF;
+}
+.Viewjobs:hover, .Viewjobs:visited {
+  color: #FFF !important;
+}
+
+#ClassificationMain {
+  position: absolute;
+  z-index: 999;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: "Montserrat-Light";
+  text-shadow: none;
+  display: none;
+  margin-left: -2px;
+}
+#ClassificationMain li {
+  padding: 5px 0;
+}
+#ClassificationMain label {
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: "Montserrat-Light";
+  text-shadow: none;
+}
+#ClassificationMain .industry_multi_main {
+  border-radius: 2px 0 0 2px;
+  background-color: #9b9b9b;
+}
+
+#ClassificationCont .pvm-light-gray-background {
+  background-color: #4a4a4a;
+}
+
+#ClassificationMain .subindustry_multi_main {
+  border-radius: 2px 0 0 2px;
+  background-color: #4a4a4a;
+}
+#ClassificationMain .sub_industry_multi li:hover label,
+#ClassificationMain .all_sub_checked_holder li:hover label {
+  color: #4a4a4a;
+}
+
+#CassificationCont .togglethis {
+  border: 1px solid;
+  padding: 7px;
+  border-radius: 0;
+  border: 1px solid #9b9b9b;
+  background-color: #ffffff;
+  color: #ccc !important;
+  margin: 0;
+  font-family: "Montserrat-regular";
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#CassificationCont .togglethis span {
+  margin-top: 5px;
+}
+
+#NewHomeSearchContainer #autoDataLocation {
+  font-family: "Montserrat-Light", Arial, serif;
+  font-size: 11px;
+  color: #4a4a4a;
+  width: 110%;
+  margin: 0 -10px;
+  position: relative;
+  border: none;
+  z-index: 2;
+  display: block !important;
+}
+#NewHomeSearchContainer #autoDataContainer {
+  position: absolute;
+  width: 242px;
+  margin: 0 -10px;
+  border: 1px solid #9b9b9b;
+  border-radius: 2px;
+  z-index: 999;
+}
+
+.ui-checkbox {
+  margin: 0px;
+}
+
+.class_inbox {
+  position: unset !important;
+  margin: 0px 5px 0px 10px !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -4px;
+  margin-left: -15px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu div {
+  display: -webkit-inline-box;
+}
+
+#ClassificationMain {
+  background-color: #9b9b9b;
+}
+
+.subindustry_multi_main li {
+  display: -webkit-inline-box;
+}
+
+.subindustry_multi_main label {
+  width: 180px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+/** modified - sign-up for free**/
+#Homepagenew .register-form-container .signup-forms {
+  display: block;
+}
+#Homepagenew .register-form-container .pvm-registration-checkbox-container {
+  margin-top: 0px;
+}
+#Homepagenew .register-form-container .pvm-registration--text-content {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+#Homepagenew .register-form-container .pvm-registration--text-content a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+#Homepagenew .register-form-container #user_type_res {
+  display: block;
+}
+#Homepagenew .register-form-container #user_type_res .left {
+  float: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Montserrat-Light", Arial, serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 4px 5px 0px 0px;
+  border-right: none !important;
+}
+#Homepagenew .register-form-container #user_type_res .red {
+  color: #ff0000;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn ul {
+  padding: 0;
+  list-style: none;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn ul li {
+  display: inline-block;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn label {
+  display: inline-block;
+  float: left;
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn label .text {
+  float: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Montserrat-Light", Arial, serif;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 7px;
+  width: 7px;
+  top: 4px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn input[type=radio]:checked ~ label .check {
+  border: 2px solid #959595;
+}
+#Homepagenew .register-form-container #user_type_res .middleColumn input[type=radio]:checked ~ label .check::before {
+  background: #959595;
+}
+#Homepagenew .register-form-container #user_type:after {
+  content: "";
+  clear: both;
+}
+#Homepagenew .register-form-container #user_type .left, #Homepagenew .register-form-container #user_type .middleColumn {
+  float: left;
+}
+#Homepagenew .register-form-container #user_type .left {
+  color: #959595;
+  text-transform: uppercase;
+  font-family: "Montserrat-Light", Arial, serif;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+  margin-top: 5px;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+}
+#Homepagenew .register-form-container #user_type .middleColumn {
+  position: absolute;
+  top: 0px;
+  left: 144px;
+}
+#Homepagenew .register-form-container .register-form-container .pvm-registration-checkbox-container {
+  margin-top: 0;
+}
+#Homepagenew .register-form-container .pvm-registration-checkbox-container .pvm-registration--checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 50% 50%;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  position: relative;
+  float: left;
+}
+#Homepagenew .register-form-container .pvm-registration-checkbox-container .pvm-registration--checkbox i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #00afed;
+}
+#Homepagenew .register-form-container #Form .Actions {
+  margin-top: 32px;
+}
+#Homepagenew .action {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #909090 !important;
+  background-color: #a9a9a9 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+#Homepagenew .submityellow {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ffda45 !important;
+  background-color: #fffd71 !important;
+  color: #545454;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+#Homepagenew .submitblue {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #007ed5 !important;
+  background-color: #00aeed !important;
+  color: #545454;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+#Homepagenew .pvm-registration-checkbox-container {
+  margin-top: 40px;
+}
+#Homepagenew .pvm-registration-checkbox-container .pvm-registration--check-items:last-child .pvm-registration--text-content p {
+  margin-bottom: 0;
+}
+#Homepagenew .pvm-registration-checkbox-container .pvm-registration--checkbox,
+#Homepagenew .pvm-registration-checkbox-container .ui-checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 50% 50%;
+  position: relative;
+  float: left;
+  border: none !important;
+}
+#Homepagenew .pvm-registration-checkbox-container .pvm-registration--checkbox i,
+#Homepagenew .pvm-registration-checkbox-container .ui-checkbox i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #00afed;
+}
+#Homepagenew .pvm-registration-checkbox-container .pvm-registration--checkbox input,
+#Homepagenew .pvm-registration-checkbox-container .ui-checkbox input {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 22px;
+  height: 22px;
+  margin-top: 0px;
+  outline: 0 !important;
+  z-index: 1;
+}
+#Homepagenew .pvm-registration-checkbox-container .pvm-registration--text-content {
+  float: left;
+  max-width: 90%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+#HomeContact .ui-radio {
+  margin: 0px !important;
+  position: inherit;
+}
+#HomeContact .check {
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 5px;
+  border-radius: 50px;
+  top: 3px;
+}
+#HomeContact #Form_user_type .text {
+  padding-top: 0px;
+}
+
+.pvm-footer {
+  font-family: "Montserrat-Regular", Arial, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pvm-footer .footer-list .footer-item .footer__link {
+  font-family: "Montserrat-Regular", Arial, serif !important;
+  font-weight: 400 !important;
+}
+
+.pvm-footer .footer__copyright,
+.pvm-footer .footer__copyright a {
+  font-family: "Montserrat-Light", Arial, serif !important;
+  font-size: 10px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.pvm-footer .footer-list .footer-item {
+  font-family: "Montserrat-Regular", Arial, serif !important;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,91 @@
+.pvm-footer {
+  background-color: #a9a9a9;
+  padding: 47px 10px 55px;
+  color: #fff;
+
+  .pvm-gray-logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-list {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    list-style-type: none;
+    margin: 40px auto 0px;
+    padding: 20px 0px;
+    text-align: center;
+
+    @include iphone6-land {
+      max-width: 80%;
+      padding: 30px;
+    }
+
+    @include md-desktop {
+      max-width: 75%;
+      padding: 30px 150px;
+    }
+    
+    .footer-item {
+      color: #fff;
+      float: left;
+      font-size: 12px;
+      line-height: 20px;
+      margin: 0px 0px 25px;
+      padding: 0px;
+      text-transform: uppercase;
+      width: 50%;
+
+      @include iphone6 {
+        padding: 0px 0px 0px 5px;
+      }
+
+      @include tablet {
+        width: 25%;
+
+        h5 {
+          line-height: 20px;
+          margin: 0px 0px 5px;
+        }
+      }
+
+      .footer__link {
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: none;
+      }
+    }
+
+    .footer-item--up {
+      font-size: 14px;
+      margin: 0px 0px 5px;
+      text-transform: uppercase;
+
+      a {
+        display: block;
+        margin: 0px 0px 5px;
+
+        @include tablet {
+          margin: 0px 0px 7px;
+        }
+      }
+    }
+
+  }
+  .footer__copyright {
+    color: #fff;
+    font-family: $pvm-light-font;
+    font-size: 10px;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+      display: inline-block;
+      margin: 0px 0px 0px 15px;
+    }
+  }
+}

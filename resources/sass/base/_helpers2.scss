@@ -1,0 +1,302 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper v2 classes.
+// -----------------------------------------------------------------------------
+
+/** Padding Top - 10 up to 100 **/
+
+.padt-10 {
+    padding-top: 10px;    
+}
+.padt-20 {
+    padding-top: 20px;    
+}
+.padt-30 {
+    padding-top: 30px;    
+}
+.padt-40 {
+    padding-top: 40px;    
+}
+.padt-50 {
+    padding-top: 50px;    
+}
+.padt-60 {
+    padding-top: 60px;    
+}
+.padt-70 {
+    padding-top: 70px;    
+}
+.padt-80 {
+    padding-top: 80px;    
+}
+.padt-90 {
+    padding-top: 90px;    
+}
+.padt-100 {
+    padding-top: 100px;    
+}
+
+/** Padding Bottom - 10 up to 100 **/
+
+.padb-10 {
+    padding-bottom: 10px;    
+}
+.padb-20 {
+    padding-bottom: 20px;    
+}
+.padb-30 {
+    padding-bottom: 30px;    
+}
+.padb-40 {
+    padding-bottom: 40px;    
+}
+.padb-50 {
+    padding-bottom: 50px;    
+}
+.padb-60 {
+    padding-bottom: 60px;    
+}
+.padb-70 {
+    padding-bottom: 70px;    
+}
+.padb-80 {
+    padding-bottom: 80px;    
+}
+.padb-90 {
+    padding-bottom: 90px;    
+}
+.padb-100 {
+    padding-bottom: 100px;
+}
+
+/** Padding Top and Bottom  **/
+
+.padtb-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.padtb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.padtb-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.padtb-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.padtb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.padtb-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.padtb-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.padtb-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.padtb-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.padtb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/** Margin Top - 10 up to 100  **/
+
+.margint-10 {
+    margin-top: 10px;    
+}
+.margint-20 {
+    margin-top: 20px;    
+}
+.margint-30 {
+    margin-top: 30px;    
+}
+.margint-40 {
+    margin-top: 40px;    
+}
+.margint-50 {
+    margin-top: 50px;    
+}
+.margint-60 {
+    margin-top: 60px;    
+}
+.margint-70 {
+    margin-top: 70px;    
+}
+.margint-80 {
+    margin-top: 80px;    
+}
+.margint-90 {
+    margin-top: 90px;    
+}
+.margint-100 {
+    margin-top: 100px;    
+}
+
+/** Margin Bottom - 10 up to 100 **/
+
+.marginb-10 {
+    margin-bottom: 10px;    
+}
+.marginb-20 {
+    margin-bottom: 20px;    
+}
+.marginb-30 {
+    margin-bottom: 30px;    
+}
+.marginb-40 {
+    margin-bottom: 40px;    
+}
+.marginb-50 {
+    margin-bottom: 50px;    
+}
+.marginb-60 {
+    margin-bottom: 60px;    
+}
+.marginb-70 {
+    margin-bottom: 70px;    
+}
+.marginb-80 {
+    margin-bottom: 80px;    
+}
+.marginb-90 {
+    margin-bottom: 90px;    
+}
+.marginb-100 {
+    margin-bottom: 100px;    
+}
+
+/** Margin Top and Bottom  **/
+
+.margintb-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.margintb-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.margintb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.margintb-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.margintb-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.margintb-60 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.margintb-70 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.margintb-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.margintb-90 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.margintb-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/** Other Classes **/
+
+.line-divider {
+    border-top: 1px solid #dfdfdf;
+    margin: 15px 0px;
+}
+
+.border-top {
+    border-top: 1px solid #dfdfdf;
+}
+.border-bottom {
+    border-bottom: 1px solid #dfdfdf;
+}
+.border-left {
+    border-left: 1px solid #dfdfdf;
+}
+.border-right {
+    border-right: 1px solid #dfdfdf;
+}
+.no-border {
+    border: 0px;
+}
+
+.no-pad {
+    padding: 0px;
+}
+.no-pad-r {
+    padding-right: 0px;
+}
+.no-pad-l {
+    padding-left: 0px;
+}
+.no-pad-t {
+    padding-top: 0px;
+}
+.no-pad-b {
+    padding-bottom: 0px;
+}
+.no-pad-lr {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+.no-margintb {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.no-marginlr {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.no-margintb-autolr {
+    margin: 0px auto;
+}
+
+/** Text Alignment and Orientation  **/
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+/** EOF **/

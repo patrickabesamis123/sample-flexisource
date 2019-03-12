@@ -1,0 +1,619 @@
+.dashboard-employer--analytics {
+  .bg-test {
+    background: white;
+  }
+
+  .ana-numbers {
+    font-family: $pvm-bold-font;
+    margin: 15px 0px 20px;
+    text-align: center;
+
+    &.primary {
+      font-size: 68px;
+    }
+
+    &.secondary {
+      font-size: 54px;
+    }
+
+    &.tertiary {
+      font-size: 48px;
+    }
+
+    &.oversize {
+      font-size: 100px;
+    }
+
+    &.sky {
+      color: $sky;
+    }
+
+    &.gray {
+      color: $gray;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
+    &.green {
+      color: $pvm-green;
+    }
+
+    &.purple {
+      color: $pvm-purple;
+    }
+
+    &.red {
+      color: $pvm-red;
+    }
+  }
+
+  /* ANALYTICS GENERAL STYLE SHEET BEGIN*/
+  .overview-controls-header {
+    @include flexbox();
+    @include flex-flow(row wrap);
+    align-content: space-around;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    padding: 10px 37px;
+
+    .overview-float {
+      @include flex-grow(1);
+      flex-basis: auto;
+    }
+
+    .overview-jobrole-filter-dropdown {
+      width: 51vw;
+    }
+
+    .jobrole_filter-dropdown-input {
+      margin: 0;
+    }
+
+    .overview-control-menu-dropdown {
+      width: 1vw;
+      text-align: right;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #959595;
+    }
+  }
+
+  .analytics-print-button {
+    /*background-color: #00aeed !important;
+    border: 1px solid #007ed5 !important;*/
+    background-color: #ddd !important;
+    border: 1px solid #ddd !important;
+
+    color: #fff !important;
+
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    font-family: "Montserrat-Regular", Arial, serif;
+    transition: background .25s linear;
+    -webkit-transition: background .25s linear;
+    padding: 5px 10px;
+    margin: 3px 10px;
+  }
+
+  .analytics-send-button {
+    /*background-color: #35cccc !important;
+    border: 1px solid #35cccc !important;*/
+    background-color: #ddd !important;
+    border: 1px solid #ddd !important;
+    color: #fff !important;
+
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    font-family: "Montserrat-Regular", Arial, serif;
+    transition: background .25s linear;
+    -webkit-transition: background .25s linear;
+    padding: 5px 10px;
+    /*margin: 10px 8px;*/
+  }
+
+  .analytics-floatleft {
+    float: left;
+  }
+
+  .analytics-tab-border {
+    margin: 0 36px;
+
+    .analytics-main-placeholder {
+      min-height: 36vw;
+      font-size: 2vw;
+      padding: 13vw 0;
+      text-align: center;
+    }
+  }
+
+  /* Tabs BEGIN */
+  .analytics-main {
+    input {
+      display: none;
+    }
+
+    .analytics-tab-sections {
+      display: none;
+      padding: 20px 0;
+      border: 1px solid #ddd;
+      border-top: none;
+
+      .analytics-tab-header {
+        @include flexbox();
+        @include flex-flow(row wrap);
+        align-content: space-around;
+
+        .analytics-float-header {
+          @include flex-grow(1);
+          flex-basis: auto;
+        }
+
+        .analytics-title {
+          width: 80%;
+        }
+
+        .analytics-control {
+          width: 20%;
+          text-align: right;
+        }
+      }
+
+    }
+
+    .ana-tabs {
+      background-color: #e0e0e0;
+      border: 1px solid #ccc;
+      @include border-radius(4px 4px 0 0);
+      color: $sky;
+      display: inline-block;
+      font-family: $pvm-reg-font;
+      font-weight: normal;
+      margin: 0 0 -1px;
+      padding: 10px 15px;
+      text-align: center;
+    }
+
+    /*	label:before {
+        margin-right: 10px;
+      }*/
+
+    /*	label[for*='1']:before { content: '\f1cb'; }
+      label[for*='2']:before { content: '\f17d'; }
+      label[for*='3']:before { content: '\f16b'; }
+      label[for*='4']:before { content: '\f1a9'; }
+    */
+    label:hover {
+      color: #888;
+      cursor: pointer;
+    }
+
+    input:checked + label {
+      color: #555;
+      border: 1px solid #ddd;
+      border-top: 2px solid #35cccc;
+      border-bottom: 1px solid #fff;
+      background: #fff;
+    }
+
+    #tab1:checked ~ #AnalyticsOverview,
+    #tab2:checked ~ #AnalyticsSourceEd,
+    #tab3:checked ~ #AnalyticsExpIndustry,
+    #tab4:checked ~ #AnalyticsRoleAnswers {
+      display: block;
+    }
+
+    @media screen and (max-width: 650px) {
+      label {
+        font-size: 0;
+      }
+      label:before {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      label {
+        padding: 15px;
+      }
+    }
+
+  }
+  /* Tabs BEGIN */
+
+  /* ANALYTICS GENERAL STYLE SHEET END*/
+
+  /* OVERVIEW CONTENT BEGIN */
+  .overview__main-details {
+    font-size: 16px;
+
+    div {
+      @include flexbox();
+      @include flex-flow(row wrap);
+      align-content: space-around;
+      margin: 0 0 10px 0;
+
+      .overview-title-normal {
+        color: #00aeed
+      }
+
+      .overview-detail-width50 {
+        width: 50%;
+      }
+
+      .overview-detail-width25 {
+        width: 25%;
+      }
+    }
+
+    span {
+      color: #00afed;
+      cursor: pointer;
+
+    }
+
+    span:hover + small {
+      display: block;
+    }
+
+    small {
+      background-color: #00afed;
+      padding: 10px;
+      display: none;
+      z-index: 5;
+      position: absolute;
+
+      .overview-detail-memberitems {
+        color: #fff;
+        display: block;
+      }
+    }
+
+  }
+
+  .overview__timeline-article {
+
+    .overview-timeline-timeframe-div {
+      margin-bottom: 60px;
+      .ana-numbers {
+        text-align: left;
+      }
+    }
+
+    .overview__roletimeline-div {
+      @include flexbox();
+      @include flex-flow(row wrap);
+      align-content: space-around;
+
+      .overview__timeline_flex_published {
+        flex-grow: 1;
+        text-align: left;
+      }
+
+      .overview__timeline_expiry {
+        flex-grow: 2;
+        text-align: center;
+      }
+
+      .overview__timeline_closed {
+        flex-grow: 1;
+        text-align: right;
+      }
+
+      span {
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .overview-timeline-hr {
+      display: block;
+      height: 3px;
+      /*border-top: 1px solid #ccc;*/
+      margin: 1em 0;
+      padding: 0;
+      color: #35cccc;
+      background-color: #35cccc;
+    }
+
+    .overview-pointers {
+      @include flexbox();
+      @include flex-flow(row wrap);
+      align-content: space-around;
+
+      .overview-tlpublished-container {
+        flex-grow: 1;
+        text-align: -webkit-left;
+
+        .overview-timeline-published-pointer {
+          border: 1px solid #35cccc;
+          height: 20px;
+          width: 20px;
+          top: -9px;
+          position: relative;
+          border-radius: 10px;
+          color: #35cccc;
+          background-color: #35cccc;
+
+        }
+      }
+
+      .overview-tlexpiry-container {
+        flex-grow: 2;
+        text-align: -webkit-center;
+
+        .overview-timeline-expiry-pointer {
+          border: 1px solid #35cccc;
+          height: 20px;
+          width: 20px;
+          top: -9px;
+          position: relative;
+          border-radius: 10px;
+          color: #35cccc;
+          background-color: #35cccc;
+
+        }
+      }
+
+      .overview-tlclosed-container {
+        flex-grow: 1;
+        text-align: -webkit-right;
+
+        .overview-timeline-closed-pointer {
+          border: 1px solid #35cccc;
+          height: 20px;
+          width: 20px;
+          top: -9px;
+          position: relative;
+          border-radius: 10px;
+          color: #35cccc;
+          background-color: #35cccc;
+
+        }
+      }
+    }
+
+    .overview-pointer-labels {
+      @include flexbox();
+      @include flex-flow(row wrap);
+      align-content: space-around;
+
+      .overview-pointer-label {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+  }
+
+  .overview__job-listing {
+    @include flexbox();
+    @include flex-flow(row wrap);
+    justify-content: space-between;
+
+    height: 200px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    .overview-joblist-views-blocks {
+      flex-grow: 1;
+      /*margin: 0 5px;*/
+      border: 1px solid #35cccc;
+      background-color: #35cccc;
+      width: 32%;
+    }
+
+    .overview-joblist-mid {
+      margin: 0 10px;
+    }
+
+    p {
+      margin: 16px;
+      font-size: 1vw;
+    }
+    
+    .ana-numbers {
+      &.secondary {
+        margin: 30px 0px 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .overview__engagement-article {
+    margin-bottom: 10px;
+    div {
+      border: 1px solid $light-gray2;
+      padding: 16px;
+    }
+
+    .overview-engagement-bar {
+      width: 70%;
+      margin: 20px auto;
+      border: none;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      canvas {
+        border: none;
+      }
+    }
+  }
+
+  .overview__sourceclicks-article {
+    @include flexbox();
+    @include flex-flow(row wrap);
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    div {
+      border: 1px solid $light-gray2;
+      padding: 16px;
+
+      p {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+    .overview-sourceclicks-div {
+      margin-right: 10px;
+      flex-grow: 1;
+      ul {
+        padding: 20px;
+        margin-bottom: 0;
+
+        li {
+          list-style: none;
+          font-size: 20px;
+          font-family: 'Montserrat-light', Arial, serif;
+
+          @include flexbox();
+          @include flex-flow(row wrap);
+          justify-content: space-between;
+
+          div {
+            border: none;
+            flex-grow: 1;
+            padding: 16px;
+
+            i {
+              margin-right: 20px;
+            }
+          }
+
+          .sourceclick-detail-right {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .overview-anotherrole-content {
+      flex-grow: 1;
+
+      .overview-anotherrole-div {
+        border: none;
+        padding: 120px 0;
+        border: none;
+      }
+    }
+  }
+
+  .overview__applications-article {
+    /*@include flexbox();
+    @include flex-flow(row wrap);
+    justify-content: space-between;*/
+    border: 1px solid $light-gray2;
+
+    .ana-numbers {
+      text-align: left;
+    }
+
+    div {
+      /*padding:16px;*/
+      h4 {
+        margin: 16px;
+      }
+
+      p {
+        font-size: 24px;
+        margin: 16px;
+      }
+
+      .overview-applications-main {
+        @include flexbox();
+        @include flex-flow(row wrap);
+        justify-content: space-between;
+
+        .overview-applications-pie {
+          border: none;
+          flex-grow: 3;
+          margin: 0;
+
+          canvas {
+            margin-right: -475px;
+          }
+        }
+
+        .overview-applications-total {
+          border: none;
+          flex-grow: 1;
+          margin: 10px 15px;
+
+          .overview-apptotals-content {
+            margin-bottom: 30px;
+
+            .overview-appdetail-labels {
+              font-size: 1vw;
+              display: block;
+              font-family: 'Montserrat-light', Arial, serif;
+              margin-bottom: 5px;
+            }
+
+            .overview-appdetail-totalcount {
+              line-height: 4vw;
+
+              p {
+                font-size: 6vw;
+                margin: 0;
+                color: #00afed;
+              }
+            }
+
+            .overview-appdetail-count {
+              line-height: 3vw;
+
+              .completed_application-color {
+                color: #35cccc;
+              }
+
+              .failed_preapp-color {
+                color: #cd79ff;
+              }
+
+              .incomplete_application-color {
+                color: $pvm-red;
+              }
+
+              .incomplete_application-main-percentage {
+
+              }
+
+              .incomplete_application-breakdown-percentage {
+
+                p {
+                  font-size: 14px;
+                  line-height: 20px;
+                  margin: 0 6px 17px;
+                  font-family: 'Montserrat-light', Arial, serif;
+
+                  span {
+                    color: $pvm-red;
+                    font-weight: bold;
+                    font-size: 24px;
+                  }
+                }
+
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+  /* OVERVIEW CONTENT END */
+}

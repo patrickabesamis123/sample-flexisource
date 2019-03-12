@@ -1,0 +1,405 @@
+.emp-new-role {
+  .middle-pane {
+    .role__build-content {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include md-desktop {
+        padding: 0px 15px 10px;
+      }
+
+      @include desktop {
+        padding: 0px 30px 30px;
+      }
+
+      label {
+        position: relative;
+
+        input[type=checkbox] {
+          position: relative;
+          top: 2px;
+          left: 0px;
+        }
+      }
+
+      .role__sublabel {
+        .fa-question {
+          color: #fff;
+          background-color: $sky;
+          @include border-radius(50%);
+          height: 15px;
+          line-height: 14px;
+          text-align: center;
+          width: 14px;
+        }
+      }
+
+      .role__desc-text {
+        border: 1px solid #dfdfdf;
+        height: 100px;
+      }
+
+      .role__role-types-list {
+        float: left;
+        margin: 0px 0px 10px;
+        width: 100%;
+
+        .role__role-types-item {
+          float: left;
+          width: 50%;
+
+          .role__role-type {
+            font-family: $pvm-reg-font;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 14px;
+
+            @include tablet {
+              font-size: 14px;
+              line-height: 16px;
+            }
+
+            input[type=checkbox] {
+              position: relative;
+              margin: 0px;
+              top: 2px;
+            }
+          }
+        }
+      }
+
+      .role__work-hrs {
+        border: 1px solid #dfdfdf;
+        padding: 5px;
+      }
+
+      .role__work-hrs--time {
+        float: left;
+        width: 68px;
+
+        @include tablet {
+          width: 70px;
+        }
+      }
+
+      .role__work-hrs--format {
+        border-left: none;
+        float: left;
+        width: 53px;
+
+        @include tablet {
+          width: 57px;
+        }
+      }
+
+      .role__to-label {
+        float: left;
+        font-family: $pvm-reg-font;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 10px 3px;
+
+        @include iphone6-land {
+          line-height: 14px;
+          padding: 10px 5px;
+        }
+      }
+
+      .role__flexibile-hr {
+        float: left;
+        font-family: $pvm-reg-font;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 14px;
+        margin: 0px 0px 25px;
+        width: 100%;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+      .role__salary {
+        float: left;
+        width: 100%;
+
+        @include iphone6 {
+          padding: 0px 5px 0px 0px;
+          width: 50%;
+        }
+
+        .role__sal-type {
+          border: 1px solid #dfdfdf;
+
+          @include tablet {
+            max-width: 280px;
+          }
+        }
+
+        .role__published-role {
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 14px;
+          margin: 0px 0px 10px;
+
+          @include tablet {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        .role__sal-range {
+          border: 1px solid #dfdfdf;
+          float: left;
+          width: 75px;
+        }
+
+        .role__consider-hr-rate {
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 14px;
+          margin: 0px 0px 25px;
+          width: 100%;
+
+          @include tablet {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+      }
+
+      .role__involve-mngt {
+        float: left;
+        margin: 0px 0px 25px;
+        width: 100%;
+
+        .role__mgnt-ans {
+          float: left;
+          font-family: $pvm-reg-font;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 14px;
+          margin: 0px 10px 0px 0px;
+
+          @include tablet {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+      }
+
+      .role__report-date {
+        border: 1px solid #dfdfdf;
+        float: left;
+        margin: 0px 5px 25px 0px;
+        width: 75px;
+
+        @include iphone6-land {
+          padding: 0px 10px 0px 0px;
+          //width: 50%;
+        }
+
+        @include tablet {
+          //max-width: 280px;
+        }
+      }
+
+      .role__immediate {
+        float: left;
+        font-weight: normal;
+        line-height: 37px;
+
+        @include tablet {
+          margin: 0px 0px 0px 20px;
+        }
+        //width: 100%;
+      }
+
+      .role__classifications {
+        float: left;
+        width:  100%;
+
+        @include iphone6-land {
+          padding: 0px 5px 0px 0px;
+          width: 50%;
+        }
+
+        .role__classification {
+          border: 1px solid #dfdfdf;
+
+          @include tablet {
+            max-width: 280px;
+          }
+        }
+      }
+
+      .role__exp-range {
+        border: 1px solid #dfdfdf;
+        float: left;
+        margin: 0px 0px 25px;
+        width: 60px;
+      }
+
+      .role__locations {
+        float: left;
+        width:  100%;
+
+        @include iphone6-land {
+          padding: 0px 5px 0px 0px;
+          width: 50%;
+        }
+
+        .role__location {
+          border: 1px solid #dfdfdf;
+
+          @include tablet {
+            max-width: 280px;
+          }
+        }
+      }
+
+      .role__availability {
+        border: 1px solid #dfdfdf;
+        float: left;
+        width: 95px;
+      }
+
+      .role__availability_date {
+        float: left;
+        margin: 8px;
+      }
+
+      // Responsibilities tab
+      .role__responsibilities-list {
+        float: left;
+        margin: 5px 0px 15px;
+        width: 100%;
+
+        .role__responsibilities-item {
+          float: left;
+          margin: 15px 0px 5px;
+          position: relative;
+          width: 100%;
+
+          .role__resp-text {
+            border: 1px solid #dfdfdf;
+            float: left;
+            height: 75px;
+            width: 90%;
+
+            @include iphone6-land {
+              height: 55px;
+              margin: 0px 5px 0px 0px;
+              width: 70%;
+            }
+
+            @include tablet {
+              height: 75px;
+              margin: 0px 0px 10px;
+              width: 90%;
+            }
+
+            @include md-desktop {
+              height: 60px;
+              margin: 0px 5px 0px 0px;
+              width: 55%;
+            }
+          }
+
+          .role__close-btn {
+            cursor: pointer;
+          }
+        }
+      }
+
+      // Considerations and Benefits
+      .role__con {
+        float: left;
+        width: 100%;
+        position: relative;
+
+        .role__reason {
+          border: 1px solid #dfdfdf;
+          float: left;
+          height: 55px;
+          width: 95%;
+        }
+      }
+
+      .role__perks-list {
+        float: left;
+        margin: 5px 0px 15px;
+        width: 100%;
+
+        .role__perks-item {
+          float: left;
+          margin: 15px 0px 5px;
+          position: relative;
+          width: 100%;
+
+          .role__resp-text {
+            border: 1px solid #dfdfdf;
+            float: left;
+            height: 75px;
+            width: 90%;
+
+            @include iphone6-land {
+              height: 55px;
+              margin: 0px 5px 0px 0px;
+              width: 70%;
+            }
+
+            @include tablet {
+              height: 75px;
+              margin: 0px 0px 10px;
+              width: 90%;
+            }
+
+            @include md-desktop {
+              height: 60px;
+              margin: 0px 5px 0px 0px;
+              width: 55%;
+            }
+          }
+
+          .role__close-btn {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .role__consideration-list {
+        float: left;
+        margin: 5px 0px 15px;
+        width: 100%;
+
+        .role__consideration-item {
+          float: left;
+          margin: 15px 0px 5px;
+          position: relative;
+          width: 100%;
+
+          .role__consideration {
+            float: left;
+            font-family: $pvm-reg-font;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 14px;
+            width: 70%;
+
+            @include tablet {
+              font-size: 14px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

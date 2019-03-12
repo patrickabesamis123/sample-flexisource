@@ -1,0 +1,38 @@
+.font14 {
+    font-size: 14px;
+    line-height: 20px;
+    @include breakpoint('tablet-port') {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.font18 {
+    font-size: 18px;
+    line-height: 24px;
+    @include breakpoint('tablet-port') {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.font24 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.font30 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.text-label {
+    font-size: 12px;
+    line-height: 18px;
+    color: lighten($text-primary, 26.67);
+    margin-bottom: 10px;
+    input[type=checkbox], input[type=radio] {
+        position: relative;
+        top: 2px;
+    }
+}

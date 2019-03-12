@@ -1,0 +1,25 @@
+#PublicCompany {
+	#job-listing-content-con {
+		.con_right_content_holder {
+			#no_jobs_data {
+				padding-top: 0px !important; 
+			}
+		}
+
+		#company_content {
+			max-height: 1200px;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+			overflow-y: scroll;
+			padding: 20px;
+			@include scrollbar();
+		}
+    .description_content {
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .company-about-us {
+      width: 100%;
+    }
+	}
+}

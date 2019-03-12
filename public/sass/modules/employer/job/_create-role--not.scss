@@ -1,0 +1,246 @@
+.emp-new-role {
+  .middle-pane {
+    .role__email-not-content {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include tablet {
+        padding: 0px 25px 10px;
+      }
+
+      @include md-desktop {
+        padding: 0px 30px 10px;
+      }
+
+      @include desktop {
+        padding: 0px 50px 30px;
+      }
+
+
+      .role__not-box {
+        border-bottom: 1px solid #EDEDED;
+        float: left;
+        margin: 0px 0px 15px;
+        padding: 10px 0px;
+        width: 100%;
+
+        @include iphone6-land {
+          max-width: 400px;
+          padding: 10px 15px;
+        }
+
+        @include tablet {
+          max-width: 500px;
+        }
+
+        @include tablet-land {
+          max-width: 400px;
+        }
+
+        @include tablet-land {
+          padding: 5px 15px 0px;
+        }
+
+        @include desktop {
+          max-width: 450px;
+        }
+
+        .role__sublabel {
+          width: 84%;
+
+          @include md-desktop {
+            line-height: 26px;
+          }
+        }
+
+        .role__not-sel {
+          margin: 10px 0px;
+        }
+      }
+
+      .role__not-box--lined {
+        border-bottom: 1px solid #dfdfdf;
+
+        @include tablet-land {
+          padding: 10px 15px;
+        }
+      }
+
+      .role__not-title {
+        cursor: pointer;
+        font-family: $pvm-reg-font;
+        font-size: 13px;
+        float: left;
+        line-height: 15px;
+        margin: 10px 0px;
+        width: 100%;
+
+        @include tablet {
+          float: left;
+          font-size: 15px;
+          line-height: 17px;
+          width: 73%;
+        }
+
+        @include md-desktop {
+          width: 60%;
+        }
+      }
+
+      .role__not-buckets-list {
+        float: left;
+        margin: 15px 0px 10px;
+        width: 100%;
+
+        .role__not-buckets-item {
+          border-top: 1px solid #dfdfdf;
+          float: left;
+          position: relative;
+          padding: 10px 0px;
+          width: 100%;
+
+          .fa-caret-down, .fa-caret-up {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+          }
+
+          .role__not-note {
+            float: left;
+            padding: 20px 0px;
+            width: 100%;
+
+            .role__note-steps-list {
+              float: left;
+              width: 100%;
+
+              @include iphone6-land {
+                width: 50%;
+              }
+
+              .role__note-steps-item {
+                @include border-radius(50%);
+                color: #fff;
+                float: right;
+                font-size: 16px;
+                line-height: 30px;
+                height: 30px;
+                margin: 0px 28px 10px 0px;
+                position: relative;
+                text-align: center;
+                width: 30px;
+
+                &:first-child {
+                  margin: 0px 20px 10px 0px;
+                }
+
+                @include tablet {
+                  font-size: 18px;
+                  height: 40px;
+                  line-height: 40px;
+                  width: 40px;
+                }
+
+                @include tablet-land {
+                  font-size: 16px;
+                  height: 30px;
+                  line-height: 30px;
+                  width: 30px;
+                }
+
+                .role__line {
+                  border: 1px dashed #cecece;
+                  bottom: 15px;
+                  float: left;
+                  left: 35px;
+                  margin: 0px;
+                  position: absolute;
+                  width: 15px;
+
+                  @include tablet {
+                    bottom: 20px;
+                    left: 45px;
+                  }
+
+                  @include tablet-land {
+                    bottom: 15px;
+                    left: 35px;
+                  }
+                }
+              }
+
+              .role__note-steps-item--1 {
+                background-color: $sky;
+              }
+
+              .role__note-steps-item--2 {
+                background-color: $pvm-green;
+              }
+
+              .role__note-steps-item--3 {
+                background-color: $pvm-red;
+              }
+            }
+          }
+
+          .role__description {
+            @include iphone6-land {
+              width: 50%;
+            }
+            @include md-desktop {
+              width: 100%;
+            }
+
+            .bbcodes {
+              background-color: #fff;
+              border: 1px solid #cfcfcf;
+              line-height: 25px;
+              padding: 2px 4px;
+            }
+          }
+
+          .role__not-note-msg {
+            float: left;
+            width: 100%;
+
+            @include iphone6-land {
+              width: 50%;
+            }
+          }
+
+          .role__not-note-msg-sugg {
+            font-size: 11px;
+            background-color: #FFFCA3;
+            padding: 5px;
+          }
+
+          .role__not-note-msg-sugg--2 {
+            background-color: transparent;
+            font-size: 11px;
+            margin: 0px 0px 25px;
+            padding: 5px;
+
+            @include md-desktop {
+              width: 100%;
+            }
+          }
+
+          .role__not-subject {
+            height: 40px;
+            margin: 10px 0px 15px;
+          }
+
+          .role__not-body {
+            height: 280px;
+            margin: 10px 0px 15px;
+
+            @include tablet {
+              height: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

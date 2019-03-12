@@ -1,0 +1,173 @@
+.emp-new-role {
+  .middle-pane {
+    .role__process-content {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include md-desktop {
+        padding: 0px 15px 10px;
+      }
+
+      @include desktop {
+        padding: 0px 30px 30px;
+      }
+    }
+  }
+
+  .right-pane {
+    .role__process-preview {
+      float: left;
+      padding: 0px 10px 10px;
+      width: 100%;
+
+      @include md-desktop {
+        padding: 0px 15px 10px;
+      }
+
+      @include desktop {
+        padding: 10px 30px 30px;
+      }
+
+      .role__bucket-list {
+        float: left;
+        width: 100%;
+
+        @include iphone6 {
+          padding: 0px 8%;
+        }
+
+        @include tablet-land {
+          padding: 0px;
+        }
+
+        .role__bucket-item {
+          background: $sky;
+          //background-color: $sky;
+          @include border-radius(5px);
+          color: #fff;
+          cursor: pointer;
+          float: left;
+          margin: 10px 5px;
+          min-height: 100px;
+          padding: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          //width: 125px;
+          width: 46%;
+
+          @include iphone6 {
+            width: 30%;
+          }
+
+          @include tablet {
+            min-height: 158px;
+            width: 23%;
+          }
+
+          @include tablet-land {
+            margin: 5px;
+            width: 150px;
+          }
+
+          .role__bucket-number {
+            color: #fff;
+            font-size: 24px !important;
+            float: left;
+            line-height: 32px;
+            margin: 10px 0px;
+            width: 100%;
+
+            @include tablet {
+              font-size: 42px !important;
+              line-height: 64px;
+              margin: 20px 0px 10px;
+            }
+          }
+
+          .role__bucket-desc {
+            float: left;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0px 0px 10px;
+            min-height: 40px;
+            width: 100%;
+          }
+
+          .role__bucket-number--add {
+            display: none;
+          }
+
+          .role__bucket-desc--add {
+            display: none;
+          }
+
+          .role__bucket-stage {
+            //display: none;
+            width: 89%;
+          }
+
+          .role__bucket-stage--show {
+            display: block;
+            float: left;
+          }
+        }
+
+        .role__bucket-item--blank {
+          background-color: #ECECEC;
+          border: 1px solid #dfdfdf;
+          color: $light-gray2;
+
+          &:hover {
+            .role__bucket-number {
+              //display: none;
+            }
+
+            .role__bucket-desc {
+              //display: none;
+            }
+
+            .role__bucket-number--add {
+              color: $pvm-green;
+              display: block;
+              font-size: 24px !important;
+              line-height: 32px;
+              margin: 10px 0px;
+
+              @include tablet {
+                font-size: 42px !important;
+                line-height: 64px;
+                margin: 20px 0px 10px;
+              }
+            }
+
+            .role__bucket-desc--add {
+              color: $pvm-green;
+              font-size: 12px;
+              line-height: 14px;
+              min-height: 40px;
+              display: block;
+            }
+          }
+
+          .role__bucket-number {
+            color: $light-gray2;
+          }
+        }
+
+        .role__bucket-item--warn {
+          background-color: $pvm-red;
+        }
+      }
+
+      .role__subdesc {
+        //color: $pvm-red;
+        float: left;
+        font-size: 11px;
+        margin: 20px 0px 10px;
+        width: 100%;
+      }
+
+    }
+  }
+}

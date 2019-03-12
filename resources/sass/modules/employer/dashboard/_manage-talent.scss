@@ -1,0 +1,2046 @@
+.TMS-page {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0px 15px;
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .divider {
+    border-color: #ccc;
+  }
+
+  .TMS__link {
+    color: $sky;
+  }
+
+  .TMS-splasher {
+    height: 100vh;
+    text-align: center;
+    padding-top: 15%;
+
+    .img {
+      top: 50%;
+      posistion: absolute
+    }
+  }
+
+  .TMS-job-details {
+    border-top: 1px solid $gray;
+    margin-top: 30px;
+    position: relative;
+
+    //@include desktop();
+
+    .TMS__closed-job {
+      background-color: #ff5159;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 10px;
+      position: fixed;
+      /*right: 0px;*/
+      right: 41vw;
+      top: 135px;
+      z-index: 3;
+
+      .TMS__closed-job-msg {
+        /*border-right: 1px solid #fff;*/
+        display: inline-block;
+        margin: 0px 10px 0px 0px;
+        /*padding-right: 5px;*/
+        position: relative;
+        width: 244px;
+        @include transition(width 0.3s);
+        text-align: center;
+
+        &.hide-notice {
+          border: 0px;
+          font-size: 0px;
+          margin: 0px;
+          padding: 0px;
+          opacity: 0;
+          width: 0px;
+        }
+      }
+
+      .fa-question {
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+
+    .primary-title {
+      margin-top: 5px !important;
+      width: 85%;
+    }
+
+    .TMS__btn-con {
+      position: absolute;
+      top: 40px;
+      right: 0px;
+
+      .TMS__edit-btn {
+        display: inline-block;
+      }
+
+      .TMS__close-btn {
+        display: inline-block;
+      }
+
+      .TMS__close-role-list {
+        background-color: #f1f1f1;
+        @include box-shadow(0px 2px 3px $light-gray);
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        right: 1px;
+        top: 32px;
+        width: 150px;
+        z-index: 10;
+
+        .TMS__close-role-item {
+          padding: 10px;
+          border-bottom: 1px solid #dfdfdf;
+
+          &:last-child {
+            border-bottom: transparent;
+          }
+
+          .TMS__close-role-link {
+            color: $gray;
+            display: block;
+            font-size: 10px;
+          }
+
+        }
+      }
+    }
+
+    .TMS__back-link {
+      font-family: $pvm-reg-font;
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+
+    .TMS-job-desc {
+      float: left;
+      position: relative;
+      padding-left: 0px !important;
+      width: 35%;
+
+      .TMS__mngt-list {
+        border-top: 1px solid #eee;
+
+        .TMS__mngt-item {
+          border-bottom: 1px solid #eee;
+          color: #999;
+          font-size: 11px;
+          padding: 10px 5px 0px 0px;
+          text-transform: uppercase;
+
+          .TMS__mngt-label {
+            color: #999;
+            display: inline-block;
+            font-size: 11px;
+            margin-bottom: 5px;
+            text-align: left;
+            text-transform: uppercase;
+            width: 30%;
+          }
+
+          .TMS__mngt-value {
+            color: $gray;
+            display: inline-block;
+            font-size: 14px;
+            text-transform: none;
+            width: 69%;
+          }
+        }
+      }
+
+      .TMS-job-summary {
+        background-color: #f4f4f4;
+        float: left;
+        min-height: 124px;
+        width: 100%;
+
+        &:before {
+          content: '';
+          height: 100%;
+          left: 0;
+          opacity: 0.8;
+          position: absolute;
+          top: 0;
+        }
+
+        .TMS__job-summary-list {
+          margin: 0 auto;
+          min-height: 134px;
+          width: 80%;
+
+          .TMS__job-summary-item {
+            float: left;
+            padding: 0px 15px;
+            text-align: center;
+            width: 50%;
+
+            .TMS__job-summary-header {
+              color: $sky;
+              font-family: $pvm-bold-font;
+              font-size: 45px;
+              line-height: 53px;
+              margin: 10px 0px 0px;
+            }
+
+            .TMS__job-summary-desc {
+              color: $gray;
+              font-family: $pvm-light-font;
+              font-size: 13px;
+              line-height: 14px;
+            }
+          }
+        }
+
+        .TMS__view-all-link {
+          background-color: transparent;
+          border: 0px;
+          display: block;
+          font-family: $pvm-light-font;
+          font-size: 14px;
+          margin-bottom: 25px;
+          text-align: center;
+          text-transform: uppercase;
+          width: 100%;
+        }
+
+        .TMS__extention-label {
+          color: $gray;
+          font-family: $pvm-light-font;
+          font-size: 11px;
+          line-height: 13px;
+          margin-top: 15px;
+          padding: 0px 15px;
+        }
+
+        .TMS__extend-btn {
+          display: inline-block;
+        }
+      }
+
+      .btn-pvm {
+        &.btn-mini {
+          &.btn-secondary {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .TMS-other-details {
+      float: left;
+      position: relative;
+      width: 65%;
+
+      .TMS__mngt-list {
+        border-bottom: 1px solid #eee;
+        border-top: 1px solid #eee;
+        margin: 0px 0px 15px;
+        padding-bottom: 4px;
+
+        .TMS__mngt-item {
+          color: #999;
+          display: inline-block;
+          font-size: 11px;
+          padding: 10px 5px 0px 15px;
+          text-transform: uppercase;
+          width: 33%;
+
+          .TMS__mngt-label {
+            color: #999;
+            display: block;
+            font-size: 11px;
+            margin-bottom: 5px;
+            text-align: left;
+            text-transform: uppercase;
+
+            .fa-info {
+              background: $pvm-yellow;
+              @include border-radius(50%);
+              bottom: 1px;
+              font-size: 13px;
+              line-height: 15px;
+              height: 15px;
+              position: relative;
+              text-align: center;
+              width: 15px;
+            }
+          }
+
+          .TMS__mngt-value {
+            color: $gray;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-transform: none;
+
+            .TMS__role-date {
+              display: inline-block;
+              min-width: 115px;
+            }
+
+            .TMS__remaining-days {
+              color: #fff;
+              background: $pvm-green;
+              padding: 3px 5px;
+              border-radius: 3px;
+              font-size: 10px;
+              letter-spacing: 0.05em;
+              line-height: 12px;
+              margin-left: 5px;
+              text-transform: uppercase;
+            }
+
+            .TMS__remaining-days--none {
+              background: $pvm-red;
+              color: #fff;
+              padding: 3px 5px;
+              border-radius: 3px;
+              font-size: 10px;
+              letter-spacing: 0.05em;
+              line-height: 12px;
+              margin-left: 5px;
+              text-transform: uppercase;
+            }
+          }
+
+          .TMS__extend-role {
+            height: 32px;
+            margin-right: 7px;
+            padding: 0px;
+            @include placeholder();
+            text-align: center;
+            width: 115px;
+          }
+
+          .TMS__role-ext {
+            display: inline-block;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .TMS__team-name {
+        color: #999;
+        display: block;
+        font-family: $pvm-reg-font;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+      .TMS__team-name--team {
+        color: $gray;
+        display: block;
+      }
+
+      .TMS__team-list {
+        margin-left: 15px;
+
+        .TMS__team-item {
+          display: inline-block;
+          vertical-align: top;
+          width: 33%;
+
+          .TMS__team-members-list {
+            float: left;
+            margin-top: 5px;
+            padding: 0px;
+            width: 100%;
+
+            .TMS__team-members-item {
+              cursor: pointer;
+              display: inline-block;
+              float: left;
+              margin: 3px 8px 8px 0;
+              min-height: 60px;
+              position: relative;
+              text-align: center;
+              @include transition(border .25s linear);
+
+              .TMS__team-manager {
+                font-family: $pvm-light-font;
+                font-size: 9px;
+                margin: 0px;
+              }
+            }
+          }
+        }
+
+        .TMS__team-item--team {
+          width: 66%;
+
+          .TMS__flex-team {
+            @include flexbox();
+            @include flex-wrap(wrap);
+          }
+        }
+      }
+    }
+  }
+
+  .TMS-applicant-section {
+    //@include desktop();
+
+    .TMS__header {
+      border-top: 1px solid #ddd;
+      font-family: $pvm-reg-font;
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0px;
+      padding-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .TMS__desc {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .TMS__bucket-list {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      //display: block;
+
+      .TMS__bucket-item {
+        border: 1px solid $sky !important;
+        @include flex(1);
+        letter-spacing: 0.1em;
+        margin:0px 5px 10px 0px;
+        position: relative;
+        text-align: center;
+        padding: 8px;
+        text-transform: uppercase;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        .TMS__drop-section-link {
+          color: $dark-gray;
+          display: block;
+          font-size: 12px;
+          font-family: $pvm-reg-font;
+          padding: 0px 5px;
+
+          .TMS__bucket-count {
+            font-size: 40px !important;
+            line-height: 49px;
+            color: #00afed;
+            font-family: $pvm-bold-font;
+            margin: 0px;
+          }
+
+          .data-loading {
+            .fa-spinner {
+              font-size: 40px;
+              line-height: 49px;
+            }
+          }
+
+          .TMS__bucket-label {
+            color: $pvm-purple;
+            font-size: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+
+          .TMS__bucket-label--custom {
+            color: $pvm-orange;
+          }
+        }
+
+        &.active {
+          .custom {
+            color: #fff;
+          }
+
+          .TMS__drop-section-link {
+            color: #fff;
+            .TMS__bucket-count {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .TMS-email {
+      display: inline-block;
+
+      .TMS-email__close {
+        /*color: $light-gray2;*/
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+
+    .TMS__email-button {
+      background-color: rgba(54,204,204,0.8);
+      border: 1px solid #35cccc;
+      color: #fff;
+      display: block;
+      font-family: $pvm-reg-font;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .TMS-applicants-view {
+      /*float: left;*/
+      margin-top: 10px;
+      position: relative;
+      width: 100%;
+
+      .TMS-left-tab {
+        float: left;
+        height: 100%;
+        min-height: 1000px;
+        overflow: hidden;
+        position: relative;
+        width: 10%;
+
+        .TMS-unsure-content {
+          background-color: #00a8eb;
+          color: #fff;
+          float: left;
+          font-family: $pvm-reg-font;
+          left: -274px;
+          margin-right: 0;
+          min-height: 1000px;
+          position: absolute;
+          width: 274px;
+
+          .TMS-content-side {
+            display: none;
+            opacity: 0;
+            padding: 25px;
+            text-align: center;
+
+            .TMS__unsure-applicant-list {
+              padding: 0;
+              margin: 25px 0 0 0;
+
+              .TMS__unsure-applicant-item {
+                display: inline-block;
+                margin-right: 7px;
+                text-align: center;
+                width: 45%;
+              }
+            }
+          }
+        }
+
+        .TMS__draft-applicants {
+          background-color: $pvm-yellow;
+          border-radius: 0 0 10px 10px;
+          color: $gray;
+          font-family: $pvm-reg-font;
+          cursor: pointer;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          line-height: 19px;
+          margin: 88px -98px 0px 0px;
+          min-width: 300px;
+          padding: 20px 40px;
+          position: absolute;
+          right: 0;
+          @include rotate(-90deg);
+          @include transform-origin(50% 100%);
+          text-transform: uppercase;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .TMS-right-tab {
+        float: left;
+        position: relative;
+        width: 100%;
+
+        .TMS__filters {
+          text-align: right;
+          margin-bottom: 10px;
+
+          .TMS__search-applicants {
+            display: inline-block;
+            width: 25%;
+          }
+
+          .TMS__sort-applicants {
+            display: inline-block;
+            margin-left: 25px;
+            width: 25%;
+          }
+        }
+
+        .TMS__applicant-list {
+          float: left;
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+
+          .TMS__applicant-item {
+            background-color: #fff;
+            @include box-shadow(0px 2px 3px $light-gray);
+            float: left;
+            margin: 30px 1.2% 10px 0px;
+            padding: 10px;
+            position: relative;
+            width: 19%;
+
+            &:nth-child(5n+1) {
+              margin-right: 0px;
+            }
+
+            .applicant-item-link {
+              /*cursor: pointer;*/
+
+              .TMS-expand-link {
+                background-color: $sky;
+                padding: 5px;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+
+                .fa-expand {
+                  color: #fff;
+                  font-size: 18px;
+                }
+              }
+
+              .TMS__applicant-identity {
+                float: left;
+                padding-top: 15px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+
+                .applicant-item-drag {
+                  position: relative;
+
+                  .applicant-item-dummy {
+                    opacity: 0;
+                    position: relative;
+                    left: 40px;
+                  }
+                }
+
+                .TMS__applicant-name {
+                  font-size: 15px;
+                  margin: 5px 0px;
+                  min-height: 16px;
+                }
+
+                .TMS__applicant-rating {
+                  font-size: 12px;
+                  width: 100%;
+                  color: #02bfbf;
+                  letter-spacing: 1.5px;
+                  align-items: center;
+                  vertical-align: middle;
+                  display: flex;
+                  /*margin: 0 0 0 2.5vw;*/
+
+                  .applicant-unrated-p {
+                    margin: 9px auto;
+                    font-size: 12px;
+                    width: 135px;
+                    line-height: 15px;
+                    height: 38px;
+                  }
+
+                  .TMS-ratingrated-div {
+                    margin: 0 auto;
+
+                    .TMS-rating-ave-div {
+                      float: left;
+                      font-size: 44px;
+                    }
+
+                    .TMS-rating-star-div {
+                      float: left;
+                      padding-top: 4px;
+
+                      .TMS-rating-star-con {
+                        position: relative;
+                        display: block;
+                        height: 26px;
+                        width: 105px;
+                        font-size: 23.5px;
+                        color: $light-gray;
+
+                        .TMS-star-top {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          color: #ffd700;
+                          width: 80%;
+                          height: 25px;
+                          display: block;
+                          overflow: hidden;
+                          z-index: 1;
+                        }
+
+                        .TMS-star-bottom {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                        }
+                      }
+
+                      p {
+                        margin: 0 0 1px;
+
+                        span {
+                          font-size: 10px;
+                        }
+                      }
+                    }
+                  }
+
+                }
+
+                .TMS__applicant-img {
+                  margin-bottom: 10px;
+                  position: relative;
+                  cursor: pointer;
+
+                  &.member-initials {
+                    z-index: 3;
+                  }
+                }
+
+                .TMS__applicant-work-exp {
+                  /*color: $light-gray2;*/
+                  font-family: $pvm-light-font;
+                  font-size: 12px;
+                  line-height: 16px;
+                  margin: 7px 0px 15px;
+                  min-height: 32px;
+                }
+              }
+
+              .TMS__applicant-more-link {
+                color: #000;
+                background-color: #ffff7f;
+                display: inline-block;
+                font-family: $pvm-reg-font;
+                font-size: 11px;
+                left: 11.5%;
+                opacity: 0.7;
+                padding: 5px 2px;
+                position: absolute;
+                @include rotate(-2deg);
+                text-align: center;
+                text-transform: uppercase;
+                top: -17px;
+                width: 75%;
+                z-index: 2;
+                cursor: pointer;
+
+                &:hover {
+                  background-color: #ffff35;
+                }
+              }
+
+              .TMS__applicant-notes {
+                float: left;
+                margin: 10px 0px 0px;
+                position: relative;
+                width: 100%;
+
+                .TMS__applicant-msgs {
+                  float: left;
+                  position: relative;
+                  width: 15%;
+
+                  .fa {
+                    /*color: $light-gray2;*/
+                    font-size: 25px;
+                    float: left;
+                    margin-top: 15px;
+                    position: relative;
+
+                    &.fa-envelope-o {
+                      color: $sky;
+                      font-size: 21px;
+                      margin-top: 15px;
+                    }
+                  }
+                }
+
+                .TMS-note-bar {
+                  background: #fff;
+                  border: 1px solid #e0e0e0;
+                  float: left;
+                  margin: 10px 0px 15px;
+                  min-height: 65px;
+                  resize: none;
+                  width: 85%;
+
+                  &:focus {
+                    + p {
+                      color: #aaa;
+                      bottom: -5px;
+                      display: block;
+                      font-size: 9px;
+                      margin-bottom: 0px;
+                      position: absolute;
+                      right: 0px;
+                      @include transition(all 0.5s linear);
+                    }
+                  }
+                }
+
+                .enter-note {
+                  display: none;
+                }
+              }
+
+              .TMS__applicant-qualifications {
+                float: left;
+                position: relative;
+
+                &::after {
+                  color: $gray;
+                  content: '\f0d7';
+                  font-family: 'FontAwesome';
+                  font-size: 18px;
+                  line-height: 9px;
+                  padding: 0;
+                  position: absolute;
+                  right: 8px;
+                  top: 15px;
+                  z-index: 1;
+                  pointer-events: none;
+                }
+
+                .TMS__applicant-status {
+                  @include appearance();
+                  margin-bottom: 20px;
+                }
+
+                .TMS-qualification-stat {
+                  float: left;
+                  width: 100%;
+
+
+                  .TMS-qualified {
+                    color: #fff;
+                    float: left;
+                    padding: 5px 0px;
+                    text-align: center;
+                    width: 25%;
+
+                    &.green {
+                      background-color: rgba(54, 204, 204, 0.8);
+                    }
+
+                    &.red {
+                      background-color: rgba(255, 117, 122, 0.8);;
+                    }
+
+                    &.orange {
+                      background-color: rgba(255, 130, 3, 0.8);
+                    }
+
+                    &:nth-child(-n+3) {
+                      border-right: 1px solid #fff;
+                    }
+
+                    &:nth-child(1) {
+                      border-radius: 5px 0 0 5px;
+                    }
+
+                    &:nth-child(4) {
+                      border-radius: 0 5px 5px 0;
+                    }
+
+                    h3 {
+                      margin: 0;
+                    }
+
+                    small {
+                      font-size: 12px;
+                    }
+
+                    /*&.TMS-qualified-loc {
+                      border-left: 1px solid #fff;
+                      border-right: 1px solid #fff;
+                    }*/
+                  }
+                }
+
+                .TMS__team-actions {
+                  background-color: #f5f5f5;
+                  border: 1px solid #e0e0e0;
+                  float: left;
+                  margin-top: 20px;
+                  width: 100%;
+                  z-index: 1000;
+
+                  p {
+                    color: $gray;
+                    font-family: $pvm-light-font;
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin: 0px;
+                    padding: 0px;
+                  }
+
+                  .TMS__team-action-links {
+                    border-right: 1px solid #e0e0e0;
+                    float: left;
+                    /*padding: 15px 1vw;*/
+                    text-align: center;
+                    width: 20%;
+
+                    &:last-child {
+                      border-right: 0;
+                    }
+
+                    .fa {
+                      /*float: left;*/
+                      font-size: 2vw;
+                      line-height: 27px;
+                      position: relative;
+                      margin: 10px auto;
+                      text-align: center;
+
+                      &.fa-spin {
+                        font-size: 18px;
+                        margin-bottom: 3px;
+                      }
+
+                   /*   &.fa-file-text-o {
+                        font-size: 25px;
+                      }
+*/
+                      .TMS-note-count {
+                        background-color: $gray;
+                        @include border-radius(50%);
+                        bottom: 20px;
+                        color: #fff;
+                        font-size: 10px;
+                        display: inline-block;
+                        height: 16px;
+                        left: 13px;
+                        line-height: 16px;
+                        position: absolute;
+                        text-align: center;
+                        width: 16px;
+                      }
+                    }
+                  }
+
+                  .TMS__team-action-links--disabled {
+                    color: $light-gray2;
+                  }
+
+                  .TMS__team-action-links--vid {
+                    a {
+                      float: left;
+                      position: relative;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .TMS__print-loading {
+              color: $sky;
+              background-color: rgba( 245,245,245,0.5);
+              display: none;
+              font-size: 20px;
+              height: 100%;
+              left: 0;
+              padding-top: 60%;
+              position: absolute;
+              text-align: center;
+              top: 0;
+              width: 100%;
+              z-index: 2;
+
+              &.active {
+                display: block;
+              }
+
+              .fa {
+                font-size: 25px;
+                position: relative;
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          .expander {
+            //display: none;
+            padding: 10px 0px 20px;
+
+            &.print-profile {
+              display: none !important;
+            }
+
+            .applicant__no-data {
+              /*color: $light-gray2;*/
+              font-family: 'Montserrat-Regular', Arial, serif;
+              font-size: 12px;
+            }
+
+            .unexpand {
+              color: $sky;
+              font-size: 24px;
+              position: absolute;
+              right: 10px;
+              top: 5px;
+            }
+
+            .TMS__applicant-header {
+              color: $sky;
+              font-family: 'Montserrat-Regular', Arial, serif;
+              font-size: 18px;
+              margin: 30px 0px 5px;
+              padding-bottom: 5px;
+              text-transform: uppercase;
+            }
+
+            .TMS__applicant-header--sub {
+              color: $gray;
+              font-size: 16px;
+              float: left;
+              width: 100%
+            }
+
+            .TMS__applicant-sub-tab {
+              background-color: $gray;
+              color: #fff;
+              padding: 3px 5px;
+              float: left;
+              font-family: $pvm-reg-font;
+              font-size: 12px;
+              margin: 10px 10px 0px 0px;
+              text-transform: uppercase;
+              width: auto;
+
+              &.active {
+                background-color: $light-gray;
+                color: $gray;
+              }
+            }
+
+            .TMS__next-prev-applicants {
+              position: absolute;
+              right: 50px;
+              top: 9px;
+
+              .fa {
+                color: $sky;
+                cursor: pointer;
+                font-size: 19px;
+                margin-right: 5px;
+              }
+            }
+
+            .TMS__profile-actions {
+              float: left;
+              padding: 4px 10px 0px;
+              width: 25%;
+
+              .TMS__applicant-status-select {
+                font-family: 'Montserrat-Regular', Arial, serif;
+                font-size: 15px;
+                margin-bottom: 20px;
+              }
+
+              .applicant__qualification {
+                color: #fff;
+                font-family: 'Montserrat-Regular', Arial, serif;
+                font-size: 15px;
+                margin-bottom: 1px;
+                padding: 15px 0px;
+                text-align: center;
+                float: left;
+                width: 50%;
+
+                &.red {
+                  background-color: rgba(255,117,122,0.8);
+                }
+
+                &.orange {
+                  background-color: rgba(255,130,3,0.8);
+                }
+
+                &.green {
+                  background-color: rgba(54,204,204,0.8);
+                }
+                &:nth-child(odd) {
+                  border-right: 1px solid #fff;
+                }
+
+                h2 {
+                  margin: 0;
+
+                  span {
+                    padding: 0 5px;
+                  }
+                }
+
+                p {
+                  margin: 0;
+                }
+              }
+
+              .applicant__rating {
+                font-size: 12px;
+                width: 100%;
+                text-align: center;
+                margin: 10px auto;
+                color: #02bfbf;
+                letter-spacing: 1.5px;
+
+
+                .TMS-rating-ave-div {
+                  float: left;
+                  font-size: 45px;
+                  margin: 0 0 0 2.5vw;
+                  padding: 6px 8px 0 0;
+                }
+
+                .TMS-rating-star-div {
+                  float: left;
+                  padding-top: 4px;
+
+                  .TMS-rating-star-con {
+                    position: relative;
+                    display: block;
+                    height: 32px;
+                    width: 105px;
+                    font-size: 23.5px;
+                    color: $light-gray;
+
+                    .TMS-star-top {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      color: #ffd700;
+                      /*width: 80%;*/
+                      height: 25px;
+                      display: block;
+                      overflow: hidden;
+                      z-index: 1;
+                    }
+
+                    .TMS-star-bottom {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    }
+                  }
+
+                  p {
+                    margin: 0 0 1px;
+
+                    span {
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+
+              .applicant__rate-div {
+                font-size: 12px;
+                padding: 6px;
+                width: 75%;
+                text-align: center;
+                margin: 1px auto;
+                color: #02bfbf;
+                border-radius: 6px;
+                letter-spacing: 1.5px;
+
+                .TMS-rating-ave-div {
+                  float: left;
+                  font-size: 50px;
+                  padding-right: 8px;
+                  padding-top: 6px;
+                }
+
+                .TMS-rating-star-div {
+                  width: 145px;
+                  margin: 0 auto;
+
+                  .TMS-rating-star-con {
+                    position: relative;
+                    display: block;
+                    height: 26px;
+                    width: 105px;
+                    font-size: 1.8vw;
+                    color: $light-gray;
+
+                    .TMS-star-top {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      color: orange;
+                      width: 80%;
+                      height: 25px;
+                      display: block;
+                      overflow: hidden;
+                      z-index: 1;
+                    }
+
+                    .TMS-star-bottom {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    }
+                  }
+
+                  p {
+                    margin: 0 0 1px;
+
+                    span {
+                      font-size: 14px;
+                    }
+                  }
+
+                  .rating {
+                    border: none;
+                    float: left;
+
+                    .rating-star--radio { display: none; }
+
+                    label:before {
+                      margin: 5px;
+                      font-size: 1.5em;
+                      font-family: FontAwesome;
+                      display: inline-block;
+                      content: "\f005";
+                    }
+
+                    .half:before {
+                      content: "\f089";
+                      position: absolute;
+                    }
+
+                    label {
+                      color: #ddd;
+                      float: right;
+                    }
+                  }
+
+                  /***** CSS Magic to Highlight Stars on Hover *****/
+                  .rating > input:checked ~ label, /* show gold star when clicked */
+                  .rating:not(:checked) > label:hover, /* hover current star */
+                  .rating:not(:checked) > label:hover ~ label {color: #FFD700 !important;} /* hover previous stars in list */
+
+                  .rating > input:checked + label:hover, /* hover current star when changing rating */
+                  .rating > input:checked ~ label:hover,
+                  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+                  .rating > input:checked ~ label:hover ~ label {color: #FFED85  !important;}
+                }
+
+                .TMS-rating-desc {
+                  font-style: italic;
+                  font-size: 10px;
+                  letter-spacing: 0px;
+                }
+              }
+
+              .applicant__qualification--req {
+                margin-bottom: 35px;
+              }
+
+              .TMS__action-links {
+                color: $sky;
+                display: inline-block;
+                font-family: 'Montserrat-Regular', Arial, serif;
+                font-size: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 30%;
+
+                .fa {
+                  font-size: 35px;
+                  display: block;
+                }
+
+                &:hover {
+                  color: #00aeda;
+                }
+              }
+
+              .TMS__applicant-note-header {
+                border-bottom: 1px solid #ccc;
+                color: $gray;
+                font-family: 'Montserrat-Bold', Arial, serif;
+                font-size: 15px;
+                margin: 20px 0px 15px;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+              }
+
+              .TMS__applicant-notes {
+
+                .TMS__applicant-note-list {
+                  list-style-type: none;
+                  margin: 0 0 30px;
+                  padding: 0;
+
+                  .TMS__applicant-note-item {
+                    border-bottom: 1px solid #f0f0f0;
+                    /*color: $light-gray2;*/
+                    font-family: 'Montserrat-Regular', Arial, serif;
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                    padding: 0px 5px;
+                    position: relative;
+                    text-align: right;
+
+                    &:last-child {
+                      border-bottom: 0;
+                    }
+
+                    .fa {
+                      color: $sky;
+                      cursor: pointer;
+                      bottom: 10px;
+                      font-size: 16px;
+                      left: 0;
+                      position: absolute;
+                    }
+
+                    .TMS__applicant-note {
+                      color: $gray;
+                      text-align: left;
+                      white-space: pre-line;
+                      word-wrap: break-word;
+                    }
+
+                    .TMS__applicant-note-date {
+                      font-family: 'Rockwell', Arial, serif;
+                      line-height: 16px;
+                    }
+
+                    .TMS__applicant-note-job-title {
+                      font-family: 'Rockwell', Arial, serif;
+                      line-height: 16px;
+                      margin-bottom: 0;
+                    }
+
+                    .TMS__applicant-note-writer {
+                      font-family: 'Rockwell', Arial, serif;
+                      line-height: 16px;
+                      margin-bottom: 0;
+                    }
+
+                  }
+                }
+
+                .TMS__applicant-note-list--scroll {
+                  height: 300px;
+                  overflow-y: scroll;
+                }
+              }
+
+              .TMS__note-area {
+                /*color: $light-gray2;*/
+                color: #333;
+                font-family: 'Montserrat-Regular', Arial, serif;
+                font-size: 12px;
+              }
+
+            }
+
+            .TMS__profile-identity {
+              float: left;
+              width: 100%;
+              padding: 0 10px;
+
+              .TMS__profile-photo {
+                float: left;
+                margin-top: 25px;
+                text-align: center;
+                width: 18%;
+              }
+
+              .TMS__profile-summary {
+                float: left;
+                margin-bottom: 25px;
+                width: 57%;
+
+                .fa {
+                  margin-right: 5px;
+                  width: 15px;
+                }
+
+                .applicant__name {
+                  color: $sky;
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 32px;
+                  letter-spacing: 1px;
+                  margin-bottom: 0px;
+                  text-transform: uppercase;
+                }
+
+                .applicant__name--nickname {
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 21px;
+                }
+
+                .applicant-email {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 5px;
+                }
+
+                .applicant-industry {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 5px;
+                }
+
+                .applicant-location {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 20px;
+                  margin-top: 7px;
+                }
+
+                .applicant-mobile {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 5px;
+
+                  .fa {
+                    font-size: 21px;
+                    padding-left: 2px;
+                    position: relative;
+                    top: 2px;
+                  }
+                }
+
+                .applicant-phone {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 5px;
+                }
+
+                .applicant-subindustry {
+                  color: $gray;
+                  font-family: 'Montserrat-Light', Arial, serif;
+                  font-size: 14px;
+                  margin-bottom: 5px;
+
+                  .fa {
+                    padding-left: 2px;
+                  }
+                }
+              }
+
+              .TMS__profile-vid-box {
+                float: left;
+                margin-top: 25px;
+                padding-left: 10px;
+                position: relative;
+                width: 25%;
+
+                .com_video_holder {
+                  /*font-size: 11px;
+                  line-height: 14px;
+                  position: absolute;
+                  top: 0px;
+                  left: 10%*/
+                }
+
+                .profile-vid-box--inner {
+                  background: #f1f1f1;
+                  border: #d0d0d0 1px solid;
+
+                  .vid-box-message--core {
+                    padding: 10px;
+                  }
+                }
+              }
+            }
+
+            .TMS__profile-navs {
+              float: left;
+              width: 75%;
+
+              .applicant__title { //Generic - can be used anywhere inside the candidate's profile
+                color: $gray;
+                font-family: 'Montserrat-Regular', Arial, serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 15px 0px 5px;
+              }
+
+              .applicant__section-list {
+                background: none;
+                border: 0px;
+                margin-left: 20px;
+                position: relative;
+                top: 1px;
+
+                .applicant__section-item {
+                  background: $sky;
+                  border: 1px solid #d0d0d0;
+                  border-bottom: 0px;
+                  @include border-radius(10px 10px 0px 0px);
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 13px;
+                  letter-spacing: 0;
+                  margin: 0px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  width: 20%;
+
+                  a {
+                    color: #fff;
+                    outline: 0;
+                    padding: 5px 10px;
+                    text-align: center;
+                    width: 100%;
+                  }
+
+                  &.active {
+                    background-color: #f1f1f1;
+                    border: 1px solid #d0d0d0;
+                    border-bottom: 0px;
+                    padding-bottom: 0px;
+
+                    a {
+                      color: $gray;
+                    }
+                  }
+                }
+
+                .applicant__section-item--single {
+                  line-height: 33px;
+                }
+              }
+
+              .tab-content {
+                background-color: #f1f1f1;
+                border: 1px solid #d0d0d0;
+                @include border-radius(4px 0px 0px 0px);
+                margin: 0px .2em 0px 23px;
+                color: black;
+
+                .applicant__about {
+                  /*color: $light-gray2;*/
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 12px;
+                  padding-bottom: 10px;
+                }
+
+                .applicant__desc {
+                  /*color: $light-gray2;*/
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 12px;
+                }
+
+                .applicant__work-exp-list {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+
+                  .applicant__work-exp-item {
+                    .applicant__employer {
+                      /*color: $light-gray2;*/
+                      font-family: 'Rockwell', Arial, serif;
+                      font-size: 13px;
+                      margin-top: 5px;
+                    }
+
+                    .applicant__indus-list {
+                      list-style-type: none;
+                      margin: 25px 0 0;
+                      padding: 0;
+
+                      .applicant__indus-value {
+                        /*color: $light-gray2;*/
+                        font-family: 'Montserrat-Regular', Arial, serif;
+                        font-size: 12px;
+                      }
+                    }
+
+                    .applicant__job-header {
+                      color: $gray;
+                      font-family: 'Montserrat-Bold', Arial, serif;
+                      font-size: 15px;
+                      margin: 35px 0px 5px;
+                      text-transform: uppercase;
+
+                      .applicant__work-details {
+                        /*color: $light-gray2;*/
+                        font-family: 'Montserrat-Regular', Arial, serif;
+                        font-size: 12px;
+                        line-height: 16px;
+                      }
+                    }
+
+                    .applicant__resposibility-list {
+                      list-style-type: circle;
+
+                      .applicant__resposibility-item {
+                        /*color: $light-gray2;*/
+                        font-family: 'Montserrat-Regular', Arial, serif;
+                        font-size: 12px;
+                      }
+                    }
+
+                    .applicant__work-desc {
+                      /*color: $light-gray2;*/
+                      font-family: 'Montserrat-Regular', Arial, serif;
+                      font-size: 12px;
+                    }
+                  }
+                }
+
+                .applicant__educ-list {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+
+                  .applicant__educ-item {
+                    .TMS__educ-holder {
+                      float: left;
+                      margin-right: 10px;
+                      width: 80%;
+
+                      .applicant__educ-header {
+                        color: $gray;
+                        font-family: 'Montserrat-Bold', Arial, serif;
+                        font-size: 15px;
+                        margin: 35px 0px 5px;
+                        text-transform: uppercase;
+
+                        .applicant__educ-details {
+                          /*color: $light-gray2;*/
+                          font-family: 'Montserrat-Regular', Arial, serif;
+                          font-size: 12px;
+                          line-height: 16px;
+                        }
+                      }
+
+                      .applicant__esp {
+                        /*color: $light-gray2;*/
+                        font-family: 'Rockwell', Arial, serif;
+                        font-size: 13px;
+                        margin-top: 5px;
+                      }
+                    }
+
+                    .applicant_esp-image {
+                      float: left;
+                      margin-top: 35px;
+                      width: 18%;
+                    }
+                  }
+                }
+
+                .applicant__reference-list {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+
+                  .applicant__reference-item {
+                    &:last-child {
+                      padding-bottom: 20px;
+                    }
+
+                    .applicant__ref-title {
+                      /*color: $light-gray2;*/
+                      font-family: 'Rockwell', Arial, serif;
+                      font-size: 13px;
+                      margin-top: 20px;
+                    }
+
+                    .applicant__ref-email {
+                      /*color: $light-gray2;*/
+                      font-family: 'Montserrat-Regular', Arial, serif;
+                      font-size: 12px;
+                      margin-bottom: 0px;
+                      text-align: right;
+                    }
+
+                    .applicant__ref-company {
+                      /*color: $light-gray2;*/
+                      font-family: 'Montserrat-Regular', Arial, serif;
+                      font-size: 12px;
+                      margin-bottom: 0px;
+                      text-align: right;
+                    }
+
+                    .applicant__ref-name {
+                      color: $gray;
+                      font-family: 'Montserrat-Bold', Arial, serif;
+                      font-size: 15px;
+                      text-align: right;
+                    }
+
+                    .applicant__ref-phone {
+                      /*color: $light-gray2;*/
+                      font-family: 'Montserrat-Regular', Arial, serif;
+                      font-size: 12px;
+                      margin-bottom: 0px;
+                      text-align: right;
+                    }
+                  }
+                }
+
+                .TMS__questions-table {
+                  /*color: $light-gray2;*/
+                  font-family: 'Montserrat-Regular', Arial, serif;
+                  font-size: 12px;
+                  width: 99%;
+
+                  .TMS__questions-file-link {
+                    color: $sky;
+                  }
+
+                  .TMS__questions-file-link--print {
+                    display: none;
+                  }
+
+                  .TMS__questions-head {
+                    color: $gray;
+                    font-family: 'Montserrat-Bold', Arial, serif;
+                    font-size: 15px;
+                  }
+
+                  .TMS__questions-header--standard {
+                    width: 30%;
+                  }
+
+                  .TMS__answers-td {
+                    white-space: pre-line;
+                  }
+
+                  .answers {
+                    font-size: 28px;
+                    padding: 8px;
+                    text-align: center;
+                  }
+
+                  .blue {
+                    color: $sky;
+                  }
+
+                  .TMS__questions-con {
+                    height: 100%;
+                    width: 100%;
+
+                    iframe {
+                      height: 300px;
+                      width: 100%;
+                    }
+                  }
+                }
+
+                .TMS__applicant-preview-docs {
+                  float: left;
+                  height: 100%;
+                  /*position: fixed;*/
+                  visibility: hidden;
+                  width: 100%;
+
+                  &.active {
+                    position: absolute;
+                    visibility: visible;
+                    top:100px;
+
+                    iframe {
+                      position: relative;
+                      width: 100%;
+                    }
+                  }
+
+                  iframe {
+                    height: 700px;
+                    position: fixed;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+
+            .TMS__profile-container {
+              float: left;
+            }
+          }
+
+          .expandedSection {
+            padding: 0px .2em;
+
+            .profile_container {
+              margin-bottom: 0px;
+            }
+          }
+
+          .tse-scrollable {
+            height: 100vh;
+            width: 100%;
+          }
+
+          .tse-scroll-content {
+            height: 100vh;
+          }
+        }
+
+        .TMS__more-applicant {
+          color: $sky;
+          cursor: pointer;
+          border: 0;
+          font-family: 'Montserrat-Bold', Arial, serif;
+          font-size: 16px;
+          float: left;
+          margin-bottom: 20px;
+          padding: 20px 0px;
+          text-align: center;
+          text-transform: uppercase;
+          width: 100%;
+        }
+      }
+
+      .TMS-applicants-showfilter-div {
+        padding: 10px;
+        background: #2cafa3;
+        color: white;
+        cursor: pointer;
+
+        .showfilter-left--div {
+          float: left;
+          width: 95%;
+
+          small {
+            text-transform: uppercase;
+
+            .showfilter-label-span {
+              float: left;
+              margin: 3px 0 0 0;
+            }
+
+            .showfilter-span-textmod {
+              font-size: 11px;
+              text-transform: capitalize;
+              float: left;
+
+              .showfilter-li-header {
+                float: left;
+                font-size: 14px;
+                margin: 4px 3px 0 0;
+              }
+
+              .showfilter-li-items {
+                float: left;
+                margin: 4px 5px 0 0;
+                background: $gray;
+                padding: 0 5px;
+              }
+
+            }
+          }
+        }
+
+        .showfilter-right--div {
+          float: right;
+          cursor: pointer;
+          font-size: 18px;
+        }
+      }
+
+      .TMS-applicants-filter-container-div {
+        padding: 10px;
+        margin: 10px 0;
+        position: absolute;
+        z-index: 100;
+        background: #009688;
+        width: 100%;
+        opacity: 0.7;
+        color: white;
+        font-weight: 100;
+        opacity: 0.9;
+        color: white;
+        font-weight: 100;
+
+        .job-filter__checkbox {
+          @include pvm-checkbox($pvm-green, 15px, 0 10px 0 0, 3px, #ccc, #fff, 19px, 0, 100%, 0%);
+          // color, size, margin, border-radius, background, line-height, left, width
+
+          .check-floatleft__i {
+            float:left;
+          }
+
+          span {
+            width: 70%;
+          }
+        }
+
+        .applicants-filter-left-div {
+          float: left;
+          width: 80%;
+
+          .TMS-applicants-filter-inner-div {
+            width: 19%;
+            max-height: 345px;
+            float: left;
+            padding: 10px;
+            background: #046e64;
+
+            .filter__main-item {
+              @include pvm-checkbox($pvm-green, 15px, 0 9px 0px 0px, 3px, #ccc, #fff, 38px, 0, 100%, 0);
+              height: 40px;
+              border-bottom: 1px solid #fff;
+
+              .job-filter__header {
+                font-size: 15px;
+                float: left;
+                width: 85%;
+                margin: 0 0 7px;
+              }
+            }
+
+            .filter-sub-div {
+              height: 270px;
+              width: 170px;
+
+              .filter-sub-ul {
+                font-size: 12px;
+
+                .filter-sub-li {
+                  padding-left: 5px;
+                  float: left;
+                  width: 100%;
+
+                  .job-filter__sub-label {
+                    font-size: 12px;
+                    font-weight: 100;
+                    max-width: 90%;
+                  }
+                }
+              }
+            }
+
+            .filterreset-btn--color {
+              color: #2cafa3;
+            }
+
+            .filterapply-btn--width {
+              width: 90px;
+            }
+          }
+
+          .TMS-applicants-filter-inner-div:nth-child(n+2) {
+            margin-left: 10px;
+          }
+        }
+
+        .applicants-filter-right-div {
+          float: right;
+          width: 20%;
+
+          .TMS-applicants-filter-control-div {
+            max-height: 345px;
+
+            .filter-control-inner-p {
+              font-size: 10px;
+            }
+          }
+        }
+
+
+        /*.TMS-applicants-filter-inner-div:nth-last-child(n+3) {
+          padding: 10px;
+          background: #046e64;
+          float: left;
+        }*/
+
+        /*.TMS-applicants-filter-inner-div:nth-last-child(1) {
+          float: right;
+        }*/
+      }
+    }
+  }
+
+  #VideoContainer .vjs-big-play-button, .questionItem .vjs-big-play-button{
+    width: 50px;
+    height: 50px;
+  }
+  #VideoContainer .amp-default-skin .vjs-big-play-button::before, .questionItem .amp-default-skin .vjs-big-play-button::before{
+    font-size: 40px
+  }
+}
+
+#EmployerManageTalent {
+
+  /*.role-title-link {
+    display: block;
+
+    &:hover {
+      .role-title {
+        color: $dark-blue;
+      }
+    }
+
+    .role-title {
+      padding-left: 0px;
+    }
+  }
+
+  .role-subtitle {
+    margin-top: 20px;
+  }**/
+
+  .TMSContainer {
+    .stepContainer {
+     /* .tab-nav-container {
+        border-collapse: initial;
+        display: block;
+        margin: 0 0 25px;
+        table-layout: initial;
+      }*/
+    }
+  }
+
+}
+
+.Edge {
+  .TMS-page {
+    .tse-scroll-content {
+      -ms-overflow-style: none;
+    }
+  }
+}
+

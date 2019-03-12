@@ -1,0 +1,160 @@
+{
+    "success":true,
+    "message":" - ",
+    "data": {
+        "report_date":"12\/10\/18",
+        "expiry_days_left":0,
+        "closing_days_left":"28",
+        "closing_reason":null,
+        "id":1739,
+        "company_id":386,
+        "job_title":"Boyet Palencia",
+        "role_type": {
+            "id": 1, "display_name": "Full time"
+        }
+        ,
+        "min_salary":35000,
+        "max_salary":50000,
+        "salary_others":null,
+        "location": {
+            "data": {
+                "id":35489,
+                "display_name":"No result",
+                "slug_name":"no-result",
+                "type":"user_input",
+                "country": {
+                    "id": 172, "display_name": "Philippines", "short_name": "PH"
+                }
+            }
+        }
+        ,
+        "working_days":[1,
+        2,
+        3,
+        5,
+        4],
+        "start_time":"08:30",
+        "finish_time":"17:00",
+        "flexible_hours":true,
+        "job_meta": {
+            "job_reason": "test", "lead_manage_team": "0"
+        }
+        ,
+        "accountabilities":[ {
+            "name": "Convert psd to html", "type_display_name": "Primary", "id": 18536
+        }
+        ],
+        "search_helpers":[ {
+            "name": "Flexible Working", "type_display_name": "Yes", "id": 22037
+        }
+        ,
+        {
+            "name": "Part Time", "type_display_name": "Yes", "id": 22038
+        }
+        ,
+        {
+            "name": "Going above salary band", "type_display_name": "Yes", "id": 22039
+        }
+        ,
+        {
+            "name": "Someone with high potential \/ less experience", "type_display_name": "Yes", "id": 22040
+        }
+        ],
+        "objectives":[],
+        "requirements":[],
+        "benefits":[],
+        "created_by": {
+            "account_type_string": "Company Member", "id": 768, "first_name": "Sandro", "last_name": "Botticelli", "email": "caryl+203@previewme.co", "nickname": "Sandro", "phone_number": "454645", "phone_extension": "", "mobile_number": "6456466", "work_title": "", "work_dept": "", "profile_picture_url": "", "azure_container_key": "vy21fch\/k50pk"
+        }
+        ,
+        "job_manager":null,
+        "job_description":"test",
+        "job_status":"draft",
+        "visibility": {
+            "teams": [], "members": [768], "compiled_members": [768]
+        }
+        ,
+        "object_id":"JV4T4EUHJ",
+        "industry": {
+            "data": {
+                "industry": {
+                    "id": 37, "display_name": "Information & Communication Technology"
+                }
+                ,
+                "sub": {
+                    "id": 320, "display_name": "Web Development & Production"
+                }
+            }
+        }
+        ,
+        "min_experience":3,
+        "max_experience":6,
+        "is_salary_public":true,
+        "salary_notes":null,
+        "salary_type":"Annual salary package",
+        "published_date":null,
+        "role_duration":30,
+        "expiry_date":null,
+        "closing_date":"Wed, 9 Jan 2019",
+        "closed_date":null,
+        "auto_close":null,
+        "auto_expire":null,
+        "publishing_date":null,
+        "immediate_start":true,
+        "questions": {
+            "pre_apply": [], "application": []
+        }
+        ,
+        "workflow_steps":[ {
+            "id": 1, "name": "Long List", "slug_name": "long_list", "enabled": true, "forced": true, "priority": 1
+        }
+        ,
+        {
+            "id": 2, "name": "Short List", "slug_name": "short_list", "enabled": true, "forced": true, "priority": 2
+        }
+        ,
+        {
+            "id": 3, "name": "Interview", "slug_name": "interview", "enabled": true, "forced": true, "priority": 3
+        }
+        ,
+        {
+            "id": 6, "name": "Job Manager Review", "slug_name": "job-manager-review", "enabled": true, "forced": false, "priority": 4
+        }
+        ,
+        {
+            "id": 7, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 5
+        }
+        ,
+        {
+            "id": 8, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 6
+        }
+        ,
+        {
+            "id": 9, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 7
+        }
+        ,
+        {
+            "id": 10, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 8
+        }
+        ,
+        {
+            "id": 12, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 9
+        }
+        ,
+        {
+            "id": 13, "name": "Create new", "slug_name": "create-new", "enabled": true, "forced": false, "priority": 10
+        }
+        ,
+        {
+            "id": 4, "name": "Hired", "slug_name": "hired", "enabled": true, "forced": true, "priority": 11
+        }
+        ,
+        {
+            "id": 5, "name": "Not Successful", "slug_name": "rejected", "enabled": true, "forced": true, "priority": 12
+        }
+        ],
+        "application_requirements": {
+            "about_me": "yes", "icebreaker_video": "no", "work_experience": "yes", "education": "yes", "references": "yes", "portfolio": "yes", "resume": "yes", "cover_letter": "no", "transcript": "no", "phone_number": "yes"
+        }
+    }
+}

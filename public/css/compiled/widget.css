@@ -1,0 +1,431 @@
+.my-pvm-job-list {
+  list-style-type: none;
+  margin: 0px auto;
+  max-width: 1366px;
+  padding: 0px;
+  text-align: left; }
+  .my-pvm-job-list.clr:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .my-pvm-job-list .MJL-handler {
+    background-color: #fff;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    /*Job list*/ }
+    .my-pvm-job-list .MJL-handler .pvmJS__company-logo {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      height: 100px;
+      margin: 0px 0px 25px; }
+    .my-pvm-job-list .MJL-handler .pvmJS__search-box {
+      padding: 4px 5px;
+      text-align: right; }
+      .my-pvm-job-list .MJL-handler .pvmJS__search-box .pvmJS__search {
+        float: left;
+        height: 32px;
+        margin: 0px 0px 10px;
+        padding: 8px;
+        width: 93.5%; }
+      .my-pvm-job-list .MJL-handler .pvmJS__search-box #pvmSearchMyJobsBtn {
+        float: left;
+        width: 5%; }
+      .my-pvm-job-list .MJL-handler .pvmJS__search-box .fa-search {
+        background-color: #545454;
+        color: #fff;
+        cursor: pointer;
+        float: left;
+        font-size: 19px;
+        height: 32px;
+        line-height: 25px;
+        position: relative;
+        text-align: center;
+        top: 0px;
+        width: 100%; }
+    .my-pvm-job-list .MJL-handler #pvmGetMyJobs {
+      float: left;
+      width: 100%; }
+    .my-pvm-job-list .MJL-handler .pvmJS__group-title {
+      color: #5c5c5c;
+      display: none;
+      font-family: "Montserrat", Arial, Serif;
+      font-weight: normal;
+      font-size: 14px;
+      margin: 10px 0px 0px; }
+    .my-pvm-job-list .MJL-handler .pvmJS__group-title--groupings-on {
+      display: block; }
+    .my-pvm-job-list .MJL-handler .pvmJS__job-list {
+      border-top: 2px solid #EDEDED;
+      float: left;
+      list-style-type: none;
+      margin: 13px 0px 50px;
+      padding: 25px 0px 0px;
+      width: 100%; }
+      .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item {
+        border-bottom: 1px solid #EDEDED;
+        float: left;
+        width: 100%; }
+        .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col {
+          float: left;
+          margin: 15px 0px 10px;
+          padding: 0px 0px 15px;
+          width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col:last-child {
+            border-bottom: none; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__logo {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            float: left;
+            height: 100px;
+            vertical-align: top; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__logo--off {
+            display: none; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details {
+            display: inline-block;
+            float: left;
+            margin: 0px 0px 0px 15px;
+            position: relative;
+            width: 79.95%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__job-title {
+              color: #00AEED;
+              font-family: "Montserrat", Arial, Serif;
+              font-size: 18px;
+              font-weight: normal;
+              float: left;
+              letter-spacing: 0.05em;
+              margin: 0px 0px 10px;
+              text-shadow: none;
+              text-decoration: none;
+              width: 90%;
+              word-wrap: break-word; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__link-handler {
+              font-size: 16px;
+              position: absolute;
+              top: 0px;
+              right: 0px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__link-handler .pvmJS__watch-link {
+                color: #02BFBF;
+                margin: 0px 5px 0px 0px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__link-handler .pvmJS__share-link {
+                color: #02BFBF; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler {
+              float: left;
+              width: 100%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+                color: #545454;
+                display: inline-block;
+                float: left;
+                font-family: "Montserrat", Arial, Serif;
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: 0.05em;
+                margin: 0px 5px 20px 0px;
+                text-shadow: none;
+                width: 50%;
+                word-wrap: break-word; }
+                .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc.full {
+                  display: none; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc--vid-off {
+                width: 98%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc--vid-none {
+                width: 98%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc--column {
+                margin: 15px 0px 20px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+                height: auto !important;
+                margin: 0px 0px 0px 10px;
+                position: relative; }
+                .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+                  height: 150px;
+                  width: 210px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con--on {
+                background-color: #f4f4f4;
+                display: inline-block;
+                height: 120px;
+                text-align: center;
+                vertical-align: top;
+                width: 35.5%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con--off {
+                display: none !important; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con--none {
+                display: none !important; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con--with {
+                background-color: transparent; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__other-details {
+              color: #aaa;
+              font-size: 12px;
+              font-family: "Montserrat", Arial, Serif;
+              font-weight: 300;
+              float: left;
+              margin: 10px 0px 0px;
+              position: relative;
+              width: 100%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__other-details .fa {
+                margin: 0px 5px 0px 0px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__other-details .pvmJS__location {
+                margin: 0px 20px 0px 0px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__other-details .pvmJS__date-posted {
+                margin: 0px 20px 0px 0px; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__other-details .pvmJS__job-type {
+                margin: 0px 20px 0px 0px; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__apply {
+              display: none;
+              float: right;
+              margin: 10px 0px 15px;
+              width: 100%; }
+              .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__apply .pvmJS__apply-btn {
+                background-color: #00AEED;
+                color: #fff;
+                float: right;
+                font-family: "Montserrat", Arial;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.03em;
+                padding: 5px;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 100px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off {
+            width: 100%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__job-title {
+              margin: 0px 0px 15px;
+              width: 90%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__link-handler {
+              right: 15px; }
+        .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 {
+          min-height: 345px;
+          width: 50%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2.pvmJS__no-desc {
+            min-height: 200px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__logo--sm {
+            height: 50px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__job-title {
+            min-height: 60px;
+            margin: 0px 0px 0px 10px;
+            width: 58%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+            float: left;
+            margin: 20px 0px;
+            width: 100%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+              width: 230px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc--vid-none {
+            width: 95%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details {
+            width: 95%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__location {
+              float: left;
+              margin: 0px 0px 5px;
+              width: 100%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__date-posted {
+              float: left;
+              width: 40%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__job-type {
+              float: left;
+              width: 35%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details--logo-off .pvmJS__job-title {
+            margin: 0px;
+            width: 80%; }
+        .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 {
+          min-height: 345px;
+          width: 33%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3.pvmJS__no-desc {
+            min-height: 200px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__logo--sm {
+            height: 50px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__job-title {
+            min-height: 80px;
+            margin: 15px 0px 0px;
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+            float: left;
+            margin: 20px 0px;
+            width: 100%; }
+            .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+              height: 120px;
+              min-width: initial;
+              width: 150px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .fa {
+            min-width: 12px; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__location {
+            float: left;
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__date-posted {
+            float: left;
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__job-type {
+            float: left;
+            width: 100%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details--logo-off .pvmJS__job-title {
+            margin: 0px;
+            width: 70%; }
+          .my-pvm-job-list .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc {
+            width: 90%; }
+    .my-pvm-job-list .MJL-handler .pvmJS__pvm-logo {
+      display: block;
+      height: 50px;
+      margin: 0 auto; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details {
+  width: 100%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+    width: 65%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+    float: left;
+    margin: 0px 0px 0px 10px;
+    width: 15%; }
+    .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+      height: 160px;
+      min-width: initial;
+      width: 250px; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc {
+  width: 65%; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc--vid-none {
+  width: 97%; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc--vid-off {
+  width: 97%; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 {
+  min-height: 220px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2.pvmJS__no-desc {
+    min-height: 150px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details {
+    width: 97%; }
+    .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__job-title {
+      min-height: 60px;
+      width: 64%; }
+    .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+      width: 100%; }
+    .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+      width: 23%; }
+      .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+        height: 180px;
+        width: 310px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details--logo-off .pvmJS__job-title {
+    margin: 0px;
+    width: 86%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc {
+    width: 95%; }
+
+.my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 {
+  min-height: 350px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3.pvmJS__no-desc {
+    min-height: 200px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__job-title {
+    margin: 0px 0px 0px 5px;
+    min-height: 60px;
+    width: 60%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+    width: 100%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+    width: 23%; }
+    .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+      height: 120px;
+      width: 220px; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details--logo-off .pvmJS__job-title {
+    margin: 0px;
+    width: 80%; }
+  .my-pvm-job-list--667 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc {
+    width: 95%; }
+
+.my-pvm-job-list--1024 .MJL-handler .pvmJS__search-box .pvmJS__search {
+  padding: 0px;
+  width: 92.5%; }
+
+.my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details {
+  width: 90.95%; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+    width: 70%; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+    float: left;
+    margin: 0px 0px 20px 20px;
+    width: 23%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+      height: 120px;
+      min-width: initial;
+      width: 150px; }
+
+.my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off {
+  width: 100%; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__job-title {
+    margin: 0px;
+    width: 88%; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc--vid-none {
+    width: 95%; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col .pvmJS__job-details--logo-off .pvmJS__det-handler .pvmJS__job-desc--vid-off {
+    width: 95%; }
+
+.my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 {
+  min-height: 200px; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2.pvmJS__no-desc {
+    min-height: 150px; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details {
+    width: 95%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__job-title {
+      margin: 10px 0px 0px 20px;
+      min-height: 45px;
+      width: 75%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+      width: 100%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+      float: left;
+      margin: 20px 0px;
+      width: 100%; }
+      .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+        height: 200px;
+        width: 330px; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details {
+      width: 95%; }
+      .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__location {
+        margin: 0px 20px 0px 0px;
+        width: auto; }
+      .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__date-posted {
+        width: auto; }
+      .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details .pvmJS__other-details .pvmJS__job-type {
+        width: auto; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--2 .pvmJS__job-details--logo-off .pvmJS__job-title {
+    margin: 0px;
+    min-height: 45px;
+    width: 90%; }
+
+.my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 {
+  min-height: 230px; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3.pvmJS__no-desc {
+    min-height: 130px; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details {
+    width: 95%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__job-title {
+      margin: 10px 0px 0px 20px;
+      min-height: 45px;
+      width: 74%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__job-desc {
+      width: 100%; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con {
+      float: left;
+      margin: 0px 0px 20px 0px;
+      width: 23%; }
+      .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__det-handler .pvmJS__video-con .pvmJS__videos {
+        height: 150px;
+        width: 230px; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__location {
+      width: auto; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__date-posted {
+      width: auto; }
+    .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details .pvmJS__other-details .pvmJS__job-type {
+      width: auto; }
+  .my-pvm-job-list--1024 .MJL-handler .pvmJS__job-list .pvmJS__job-item .pvmJS__job-col--3 .pvmJS__job-details--logo-off .pvmJS__job-title {
+    margin: 0px;
+    min-height: 45px;
+    width: 85%; }
